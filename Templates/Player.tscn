@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyfkw4bd8l5bm"]
+
+[ext_resource type="Script" path="res://Templates/Player.gd" id="1_b24bn"]
+[ext_resource type="PackedScene" uid="uid://c6sxpm72yp1x1" path="res://Models/Arrow.tscn" id="8_06tmo"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iat6b"]
+points = PackedVector3Array(0.267016, 0.766948, -0.1164, -0.291458, -0.761872, -0.0276713, -0.291252, -0.761336, 0.0307681, 0.268404, -0.800496, -0.0873515, 0.0595203, 0.725185, 0.291707, -0.142914, 0.751361, -0.258503, 0.176354, -0.757722, 0.234724, 0.0307677, -0.761328, -0.291249, -0.260518, 0.78619, 0.118015, -0.142848, -0.722061, 0.261502, 0.266301, 0.764882, 0.119199, -0.119879, -0.971825, 0.0318498, 0.145392, 0.748031, -0.257351, 0.0923368, 0.96888, 0.0923368, -0.196733, -0.708295, -0.22508, -0.286001, 0.718859, -0.0846668, -0.142848, 0.722061, 0.261502, 0.291707, -0.725185, 0.0595203, -0.0287456, 0.972175, -0.119923, 0.198947, -0.676966, -0.224046, -0.0565014, -0.726422, 0.292202, 0.0923368, -0.96888, 0.0923368, -0.0585673, -0.932875, -0.178936, -0.248347, -0.638684, 0.16812, 0.0307681, 0.761336, -0.291252, 0.225451, 0.671658, 0.1974, -0.148495, 0.930441, 0.121583, -0.0846668, -0.718859, -0.286001, 0.292202, 0.726422, -0.0565014, -0.207688, 0.896906, -0.0880939, 0.121583, -0.930441, -0.148495, -0.0878682, -0.894648, 0.210278)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g31r6"]
+albedo_color = Color(0.313726, 0.827451, 0.25098, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_igjey"]
+material = SubResource("StandardMaterial3D_g31r6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r87rq"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_avask"]
+material = SubResource("StandardMaterial3D_r87rq")
+size = Vector3(0.2, 0.4, 0.2)
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]
+script = ExtResource("1_b24bn")
+debug_root = NodePath("Root")
+body = NodePath("Body")
+
+[node name="Shape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.100125, 0)
+shape = SubResource("ConvexPolygonShape3D_iat6b")
+
+[node name="Root" type="Node3D" parent="."]
+
+[node name="Arrow" parent="Root" instance=ExtResource("8_06tmo")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 1)
+
+[node name="Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_igjey")
+
+[node name="Eye_R" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.185982, 0.408104, 0.42554)
+mesh = SubResource("BoxMesh_avask")
+
+[node name="Eye_L" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.202422, 0.408104, 0.42554)
+mesh = SubResource("BoxMesh_avask")

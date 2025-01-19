@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DashEngineResource" load_steps=2 format=3 uid="uid://755qfvxt35yu"]
+
+[ext_resource type="Script" path="res://Common/Prototypes/DashEngineResource.cs" id="1_d17ta"]
+
+[resource]
+script = ExtResource("1_d17ta")
+DashSpeed = 0.0
+FuelConsumptionRate = 0.0
+Type = 0
+Title = "<empty>"
+Description = ""
+Weight = 0.0

@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://cc2471nqxdi2h"]
+
+[ext_resource type="Script" path="res://Templates/HUD/Gauge.gd" id="1_eo0x2"]
+
+[sub_resource type="FontVariation" id="FontVariation_nuky8"]
+spacing_glyph = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhyha"]
+bg_color = Color(0, 0, 0, 0.784314)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.745098, 0.0392157, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_28j0i"]
+bg_color = Color(1, 0.744, 0.04, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="Gauge" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 280.0
+offset_bottom = 30.0
+script = ExtResource("1_eo0x2")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+offset_right = 80.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.745098, 0.0431373, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("FontVariation_nuky8")
+text = "SHIELD"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 2
+offset_left = 80.0
+offset_right = 280.0
+offset_bottom = 30.0
+theme_override_constants/outline_size = 4
+theme_override_styles/background = SubResource("StyleBoxFlat_rhyha")
+theme_override_styles/fill = SubResource("StyleBoxFlat_28j0i")
+value = 20.0
+show_percentage = false

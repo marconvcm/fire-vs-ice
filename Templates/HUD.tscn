@@ -1,0 +1,117 @@
+[gd_scene load_steps=9 format=3 uid="uid://t03w0dfijfat"]
+
+[ext_resource type="Script" path="res://Templates/HUD.gd" id="1_55dsa"]
+[ext_resource type="PackedScene" uid="uid://cc2471nqxdi2h" path="res://Templates/HUD/Gauge.tscn" id="1_r7fer"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e172l"]
+bg_color = Color(0, 0, 0, 0.784314)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.227451, 0.52549, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2mwrn"]
+bg_color = Color(0.227451, 0.52549, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fhgej"]
+bg_color = Color(0, 0, 0, 0.784314)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.439216, 0.878431, 0, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vvaw"]
+bg_color = Color(0.439216, 0.878431, 0, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ka1ta"]
+bg_color = Color(0, 0, 0, 0.784314)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.984314, 0.337255, 0.027451, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2vuk1"]
+bg_color = Color(0.984314, 0.337255, 0.027451, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_55dsa")
+
+[node name="ShieldGauge" parent="." instance=ExtResource("1_r7fer")]
+offset_left = 30.0
+offset_top = 625.0
+offset_right = 310.0
+offset_bottom = 655.0
+
+[node name="Label" parent="ShieldGauge" index="0"]
+theme_override_colors/font_color = Color(0.227451, 0.52549, 1, 1)
+
+[node name="ProgressBar" parent="ShieldGauge" index="1"]
+theme_override_styles/background = SubResource("StyleBoxFlat_e172l")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2mwrn")
+
+[node name="FuelGauge" parent="." instance=ExtResource("1_r7fer")]
+offset_left = 30.0
+offset_top = 675.0
+offset_right = 310.0
+offset_bottom = 705.0
+
+[node name="Label" parent="FuelGauge" index="0"]
+theme_override_colors/font_color = Color(0.439216, 0.878431, 0, 1)
+text = "FUEL"
+
+[node name="ProgressBar" parent="FuelGauge" index="1"]
+theme_override_styles/background = SubResource("StyleBoxFlat_fhgej")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3vvaw")
+
+[node name="HeatGauge" parent="." instance=ExtResource("1_r7fer")]
+offset_left = 30.0
+offset_top = 725.0
+offset_right = 310.0
+offset_bottom = 755.0
+
+[node name="Label" parent="HeatGauge" index="0"]
+theme_override_colors/font_color = Color(0.984314, 0.337255, 0.027451, 1)
+text = "HEAT"
+
+[node name="ProgressBar" parent="HeatGauge" index="1"]
+theme_override_styles/background = SubResource("StyleBoxFlat_ka1ta")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2vuk1")
+
+[editable path="ShieldGauge"]
+[editable path="FuelGauge"]
+[editable path="HeatGauge"]

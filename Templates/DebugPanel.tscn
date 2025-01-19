@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://752xbach55lb"]
+
+[ext_resource type="Script" path="res://Templates/DebugPanel.gd" id="1_ne7g3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeki8"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.19, 0.19, 0.19, 0.694118)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.8, 0.396078)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="DebugPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ne7g3")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 650.0
+offset_bottom = 810.0
+
+[node name="Panel" type="PanelContainer" parent="VBox"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yeki8")
+
+[node name="Label" type="Label" parent="VBox/Panel"]
+layout_mode = 2
+text = "Hello World"
+
+[node name="Value" type="Label" parent="VBox/Panel"]
+layout_mode = 2
+text = "Hello World"
+horizontal_alignment = 2

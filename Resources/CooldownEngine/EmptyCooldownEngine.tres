@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CooldownEngineResource" load_steps=2 format=3 uid="uid://k0rndalqs2qa"]
+
+[ext_resource type="Script" path="res://Common/Prototypes/CooldownEngineResource.cs" id="1_bj8ek"]
+
+[resource]
+script = ExtResource("1_bj8ek")
+CooldownRate = 0.0
+Type = 0
+Title = "<empty>"
+Description = ""
+Weight = 0.0
