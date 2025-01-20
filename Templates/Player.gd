@@ -1,13 +1,13 @@
 class_name Player extends Actor
 
 func get_move_axis() -> Vector3:
-   return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
+    return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
 
 func get_aim_axis() -> Vector3:
-   return PlayerInput.get_aim_direction().normalized()
+    return PlayerInput.get_aim_direction().normalized()
 
 func _process(_delta: float) -> void:
-   if PlayerInput.is_right_modifier_pressed():
-      speed_scale = lerp(speed_scale, 2.0, 0.1)
-   else:
-      speed_scale = lerp(speed_scale, 1.0, 0.1)
+    if PlayerInput.is_right_modifier_pressed():
+        speed_scale = lerp(speed_scale, 2.0, 0.1)
+    else:
+        speed_scale = lerp(speed_scale, 1.0, 0.1)

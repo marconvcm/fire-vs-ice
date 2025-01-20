@@ -9,23 +9,23 @@ func _ready():
    pass
 
 func watch(key, value):
-   add_watch_panel(key, value)
+    add_watch_panel(key, value)
 
 func add_watch_panel(key, value):
-   var panel
+    var panel
 
-   if not watch_list_panel.has(key):
-      panel = panel_prototype.duplicate()
-      panel.visible = true
-      watch_list_panel[key] = panel
-      vbox.add_child(panel)
-   else:
-      panel = watch_list_panel[key]
+    if not watch_list_panel.has(key):
+        panel = panel_prototype.duplicate()
+        panel.visible = true
+        watch_list_panel[key] = panel
+        vbox.add_child(panel)
+    else:
+        panel = watch_list_panel[key]
 
-   panel.get_node("Label").text = key
-   panel.get_node("Value").text = str(value)
+    panel.get_node("Label").text = key
+    panel.get_node("Value").text = str(value)
 
 func unwatch(key):
-   if watch_list_panel.has(key):
-      watch_list_panel[key].queue_free()
-      watch_list_panel.erase(key)
+    if watch_list_panel.has(key):
+        watch_list_panel[key].queue_free()
+        watch_list_panel.erase(key)

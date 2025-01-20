@@ -10,14 +10,14 @@ var min_position: Vector3 = Vector3(-50, 0, -16)
 var max_position: Vector3 = Vector3(50, 16, 16)
 
 func _physics_process(_delta: float) -> void:
-   target.camera_rotation = rotation
-   gimbal.position = gimbal.position.lerp(target.global_position, sensitivity).clamp(min_position, max_position)
+    target.camera_rotation = rotation
+    gimbal.position = gimbal.position.lerp(target.global_position, sensitivity).clamp(min_position, max_position)
 
-   DebugPlugin.instance.watch("target.is_moving()", target.is_moving())
+    DebugPlugin.instance.watch("target.is_moving()", target.is_moving())
 
-   if target.is_moving():
-      fov = lerp(fov, moving_fov, sensitivity)
-   else:
-      fov = lerp(fov, idle_fov, sensitivity)
+    if target.is_moving():
+        fov = lerp(fov, moving_fov, sensitivity)
+    else:
+        fov = lerp(fov, idle_fov, sensitivity)
 
-   look_at_from_position(gimbal.global_position, target.position, Vector3.UP)
+    look_at_from_position(gimbal.global_position, target.position, Vector3.UP)
