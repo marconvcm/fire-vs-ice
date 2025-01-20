@@ -1,5 +1,7 @@
 class_name InputManager extends Node
 
+#region Virtual functions to be overridden by child classes
+
 func get_axis() -> Vector3:
    return Vector3(get_horizontal_axis(), 0, get_vertical_axis())
 
@@ -31,6 +33,10 @@ func get_aim_horizontal_axis() -> float:
 
 func get_aim_direction() -> Vector3:
    return Vector3(get_aim_horizontal_axis(), 0, get_aim_vertical_axis())
+
+#endregion
+
+#region Helper functions for common actions
 
 func is_main_action_pressed() -> bool:
    return self.is_action_pressed("MainAction")
@@ -73,3 +79,5 @@ func left_modifier_strength() -> float:
 
 func right_modifier_strength() -> float:
    return self.get_modifier_strength("RightModifier")
+
+#endregion

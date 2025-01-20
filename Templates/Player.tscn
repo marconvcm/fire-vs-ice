@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dyfkw4bd8l5bm"]
 
-[ext_resource type="Script" path="res://Templates/Player.gd" id="1_b24bn"]
+[ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
 [ext_resource type="PackedScene" uid="uid://c6sxpm72yp1x1" path="res://Models/Arrow.tscn" id="8_06tmo"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iat6b"]

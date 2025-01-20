@@ -9,6 +9,7 @@ const GRAVITY = 9.8
 @export var body: MeshInstance3D
 
 var camera_rotation = Vector3.ZERO
+var current_looking_direction = Vector3.ZERO    
 
 func _ready():
     pass
@@ -35,19 +36,31 @@ func get_moving_direction() -> Vector3:
     return global_transform.origin - get_move_axis()
 
 func get_looking_direction() -> Vector3:
-    return global_transform.origin - (get_aim_axis() * 100)
+    
+    var direction = Vector3.ZERO 
+    
+    if get_aim_axis().length() > 0:
+        direction = global_transform.origin - (get_aim_axis() * 100)
+    else:
+        direction = get_moving_direction()
+
+    current_looking_direction = current_looking_direction.lerp(direction, speed_scale / 4)
+    
+    return current_looking_direction
 
 func _physics_process(_delta: float) -> void:
     var move_strength = get_move_axis()
-    var aim_strength = get_aim_axis()
     var looking_direction = get_looking_direction()
     var moving_direction = get_moving_direction()
     var gravity_strength = get_gravity_strength()
 
     velocity = (move_strength * speed_scale * speed) + gravity_strength
 
+    DebugPlugin.instance.watch("velocity", velocity)
+    DebugPlugin.instance.watch("current_looking_direction", current_looking_direction)
+
     if has_any_strength():
-        body.look_at(looking_direction if aim_strength.length() > 0 else moving_direction, Vector3.UP)
+        body.look_at(looking_direction)
 
     if move_strength.length() > 0:
         debug_root.look_at(moving_direction, Vector3.UP)

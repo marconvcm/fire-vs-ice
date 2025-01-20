@@ -19,6 +19,6 @@ func _ready():
          print_debug("DebugPlugin instance already exists! parent: " + str(instance.get_parent()))
          return   
 
-func watch_node(key: String, value: Variant):
+func watch(key: String, value: Variant):
    if debug_enabled:
       panel.watch(key, value)
