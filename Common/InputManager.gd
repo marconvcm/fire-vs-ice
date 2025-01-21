@@ -26,10 +26,10 @@ func get_digital() -> Vector2:
     return Vector2(x, y)
 
 func get_aim_vertical_axis() -> float:
-    return Input.get_axis("AimVertical-", "AimVertical+")
+    return Input.get_axis("AimVertical+", "AimVertical-")
 
 func get_aim_horizontal_axis() -> float:
-    return Input.get_axis("AimHorizontal+", "AimHorizontal-")
+    return Input.get_axis("AimHorizontal-", "AimHorizontal+")
 
 func get_aim_direction() -> Vector3:
     return Vector3(get_aim_horizontal_axis(), 0, get_aim_vertical_axis())
