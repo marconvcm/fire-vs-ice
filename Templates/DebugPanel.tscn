@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://752xbach55lb"]
 
-[ext_resource type="Script" path="res://Templates/DebugPanel.gd" id="1_ne7g3"]
+[ext_resource type="Script" uid="uid://bo18g5631i15x" path="res://Templates/DebugPanel.gd" id="1_ne7g3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeki8"]
 content_margin_left = 10.0
