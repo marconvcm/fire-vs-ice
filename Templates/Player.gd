@@ -1,7 +1,9 @@
 class_name Player extends Actor
 var lobbed_fireball=preload("lobbed_fireball.tscn")
+var shot_fireball=preload("shot_fireball.tscn")
 const lobbing_angle=45;
 const lobbing_speed=10;
+const shooting_speed=20;
 var radius:float=1.0
 func get_move_axis() -> Vector3:
     return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
@@ -19,4 +21,10 @@ func _process(_delta: float) -> void:
         fireballInst.position=self.position+facing*radius
         fireballInst.linear_velocity=self.velocity
         fireballInst.fire(facing,lobbing_speed)
+        add_sibling(fireballInst)
+    if PlayerInput.is_secondary_action_released():
+        var fireballInst=shot_fireball.instantiate()
+        fireballInst.position=self.position+facing*radius
+        fireballInst.linear_velocity=self.velocity
+        fireballInst.fire(facing,shooting_speed)
         add_sibling(fireballInst)
