@@ -7,4 +7,6 @@ func fire( facing:Vector3, speed:float ) -> void:
 
 
 func _on_body_entered(body):
+    if body.has_method("takeDamage"):
+        body.takeDamage(directdamage);
     self.queue_free()

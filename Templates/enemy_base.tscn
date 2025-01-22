@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdn1uix62n76q"]
+
+[ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_bplvx"]
+[ext_resource type="Script" uid="uid://icffwagcqbj0" path="res://Templates/Actor.gd" id="2_nogoe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cinjn"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8t518"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bplvx"]
+transparency = 1
+albedo_color = Color(0.113415, 0.535326, 0.725318, 0.486275)
+
+[node name="EnemyBase" type="CharacterBody3D" node_paths=PackedStringArray("body")]
+script = ExtResource("1_bplvx")
+body = NodePath("Body")
+metadata/_custom_type_script = ExtResource("2_nogoe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_cinjn")
+
+[node name="Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_8t518")
+surface_material_override/0 = SubResource("StandardMaterial3D_bplvx")
