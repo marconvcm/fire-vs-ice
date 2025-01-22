@@ -17,5 +17,6 @@ func _process(_delta: float) -> void:
     if PlayerInput.is_main_action_released():
         var fireballInst=lobbed_fireball.instantiate()
         fireballInst.position=self.position+facing*radius
+        fireballInst.linear_velocity=self.velocity
         fireballInst.fire(facing,lobbing_speed)
         add_sibling(fireballInst)
