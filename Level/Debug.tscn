@@ -181,6 +181,7 @@ doppler_tracking = 2
 current = true
 fov = 20.0
 script = ExtResource("6_a57uu")
+debug = false
 sensitivity = 0.05
 target = NodePath("../../../Player")
 gimbal = NodePath("..")

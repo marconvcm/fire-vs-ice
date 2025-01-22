@@ -2,6 +2,7 @@ class_name Actor extends CharacterBody3D
 
 const GRAVITY = 9.8
 
+@export var debug:bool = false
 @export var gravity_scale = 1.2
 @export var speed = 5.0
 @export var speed_scale = 1.0
@@ -55,19 +56,16 @@ func get_looking_direction() -> Vector3:
 func _physics_process(_delta: float) -> void:
     var move_strength = get_move_axis()
     var looking_direction = get_looking_direction()
-    var moving_direction = get_moving_direction()
     var gravity_strength = get_gravity_strength()
 
     velocity = (move_strength * speed_scale * speed) + gravity_strength
-
-    DebugPlugin.instance.watch("velocity", velocity)
-    DebugPlugin.instance.watch("current_looking_direction", current_looking_direction)
-    DebugPlugin.instance.watch("facing",facing)
-
     if has_any_strength():
         body.look_at(looking_direction)
-
-    if move_strength.length() > 0:
-        debug_root.look_at(moving_direction, Vector3.UP)
-
+    if debug:
+        var moving_direction = get_moving_direction()
+        DebugPlugin.instance.watch("velocity", velocity)
+        DebugPlugin.instance.watch("current_looking_direction", current_looking_direction)
+        DebugPlugin.instance.watch("facing",facing)
+        if move_strength.length() > 0:
+            debug_root.look_at(moving_direction, Vector3.UP)
     move_and_slide()

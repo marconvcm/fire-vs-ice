@@ -21,6 +21,7 @@ size = Vector3(0.2, 0.4, 0.2)
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]
 script = ExtResource("1_b24bn")
+debug = true
 debug_root = NodePath("Root")
 body = NodePath("Body")
 
