@@ -9,4 +9,8 @@ func fire( facing:Vector3, speed:float ) -> void:
 func _on_body_entered(body):
     if body.has_method("takeDamage"):
         body.takeDamage(directdamage);
+    for splashedbody in $SplashDamageArea.get_overlapping_bodies():
+        print(splashedbody)
+        if splashedbody.has_method("takeDamage"):
+            splashedbody.takeDamage(splashdamage)
     self.queue_free()

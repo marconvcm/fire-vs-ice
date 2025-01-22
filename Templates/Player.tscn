@@ -44,3 +44,6 @@ mesh = SubResource("BoxMesh_avask")
 [node name="Eye_L" type="MeshInstance3D" parent="Body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.202422, 0.408104, 0.42554)
 mesh = SubResource("BoxMesh_avask")
+
+[node name="AudioListener3D" type="AudioListener3D" parent="."]
+current = true

@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdn1uix62n76q"]
+[gd_scene load_steps=7 format=3 uid="uid://cdn1uix62n76q"]
 
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_bplvx"]
 [ext_resource type="Script" uid="uid://icffwagcqbj0" path="res://Templates/Actor.gd" id="2_nogoe"]
+[ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_nogoe"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cinjn"]
 
@@ -22,3 +23,7 @@ shape = SubResource("BoxShape3D_cinjn")
 [node name="Body" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_8t518")
 surface_material_override/0 = SubResource("StandardMaterial3D_bplvx")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_nogoe")
+bus = &"SFX"
