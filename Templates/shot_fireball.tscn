@@ -8,6 +8,8 @@
 
 [node name="shot_fireball" type="RigidBody3D"]
 gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_5e2h8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -15,3 +17,5 @@ shape = SubResource("SphereShape3D_47iq7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_5e2h8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

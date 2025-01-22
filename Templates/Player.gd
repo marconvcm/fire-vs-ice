@@ -5,6 +5,8 @@ const lobbing_angle=45;
 const lobbing_speed=10;
 const shooting_speed=20;
 var radius:float=1.0
+var heat:float = 1000
+const heatlossrateindex=[0,0.5,1,3,10]#yes this is currently pretty arbitrary
 func get_move_axis() -> Vector3:
     return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
 

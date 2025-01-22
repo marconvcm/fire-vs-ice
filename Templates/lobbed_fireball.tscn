@@ -12,6 +12,8 @@ emission = Color(1, 0, 0, 1)
 emission_energy_multiplier = 1263.42
 
 [node name="Fireball" type="RigidBody3D"]
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_8kgip")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -20,3 +22,5 @@ shape = SubResource("SphereShape3D_t54ii")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_8kgip")
 surface_material_override/0 = SubResource("StandardMaterial3D_8kgip")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
