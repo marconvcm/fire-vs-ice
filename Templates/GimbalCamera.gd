@@ -9,6 +9,9 @@ class_name GimbalCamera extends Camera3D
 var min_position: Vector3 = Vector3(-50, 0, -16)
 var max_position: Vector3 = Vector3(50, 16, 16)
 
+func _ready():
+    gimbal=self.get_parent()
+
 func _physics_process(_delta: float) -> void:
     target.camera_rotation = rotation
     gimbal.position = gimbal.position.lerp(target.global_position, sensitivity).clamp(min_position, max_position)

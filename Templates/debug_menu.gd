@@ -5,9 +5,9 @@ var music=AudioServer.get_bus_index("Music")
 var sfx=AudioServer.get_bus_index("SFX")
 
 func _ready():
-    $"VBoxContainer/Master Volume Slider".value=db_to_linear(master)
-    $"VBoxContainer/Music Volume Slider".value=db_to_linear(music)
-    $"VBoxContainer/SFX Volume Slider".value=db_to_linear(sfx)
+    $"TabContainer/Basic Options/Master Volume Slider".value=db_to_linear(master)
+    $"TabContainer/Basic Options/Music Volume Slider".value=db_to_linear(music)
+    $"TabContainer/Basic Options/SFX Volume Slider".value=db_to_linear(sfx)
 func _process(_delta):
     if PlayerInput.is_pause_just_pressed():
         if self.visible:
@@ -28,3 +28,9 @@ func _on_music_volume_slider_value_changed(value):
 
 func _on_sfx_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(sfx, linear_to_db(value))
+
+
+func _on_reset_button_pressed():
+    get_tree().paused=false
+    get_tree().reload_current_scene()
+    

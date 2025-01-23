@@ -7,51 +7,55 @@ process_mode = 2
 visible = false
 script = ExtResource("1_epxs4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
+[node name="TabContainer" type="TabContainer" parent="."]
+offset_left = 581.0
+offset_top = 314.0
+offset_right = 621.0
+offset_bottom = 354.0
+current_tab = 0
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Basic Options" type="VBoxContainer" parent="TabContainer"]
+layout_mode = 2
+alignment = 1
+metadata/_tab_index = 0
+
+[node name="Reset Button" type="Button" parent="TabContainer/Basic Options"]
 layout_mode = 2
 text = "Reset Level"
 
-[node name="Master Volume" type="Label" parent="VBoxContainer"]
+[node name="Master Volume" type="Label" parent="TabContainer/Basic Options"]
 layout_mode = 2
 text = "Master Volume"
 
-[node name="Master Volume Slider" type="HSlider" parent="VBoxContainer"]
+[node name="Master Volume Slider" type="HSlider" parent="TabContainer/Basic Options"]
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
-[node name="Music Volume" type="Label" parent="VBoxContainer"]
+[node name="Music Volume" type="Label" parent="TabContainer/Basic Options"]
 layout_mode = 2
 text = "Music Volume"
 
-[node name="Music Volume Slider" type="HSlider" parent="VBoxContainer"]
+[node name="Music Volume Slider" type="HSlider" parent="TabContainer/Basic Options"]
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
-[node name="SFX Volume" type="Label" parent="VBoxContainer"]
+[node name="SFX Volume" type="Label" parent="TabContainer/Basic Options"]
 layout_mode = 2
 text = "SFX Volume"
 
-[node name="SFX Volume Slider" type="HSlider" parent="VBoxContainer"]
+[node name="SFX Volume Slider" type="HSlider" parent="TabContainer/Basic Options"]
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
-[connection signal="value_changed" from="VBoxContainer/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
-[connection signal="value_changed" from="VBoxContainer/Music Volume Slider" to="." method="_on_music_volume_slider_value_changed"]
-[connection signal="value_changed" from="VBoxContainer/SFX Volume Slider" to="." method="_on_sfx_volume_slider_value_changed"]
+[node name="Level Select" type="GridContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[connection signal="pressed" from="TabContainer/Basic Options/Reset Button" to="." method="_on_reset_button_pressed"]
+[connection signal="value_changed" from="TabContainer/Basic Options/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Basic Options/Music Volume Slider" to="." method="_on_music_volume_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Basic Options/SFX Volume Slider" to="." method="_on_sfx_volume_slider_value_changed"]
