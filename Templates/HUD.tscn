@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://t03w0dfijfat"]
 
-[ext_resource type="Script" uid="uid://dt1uwn8un8bku" path="res://Templates/HUD.gd" id="1_55dsa"]
+[ext_resource type="Script" uid="uid://cjbdqdrhox6ue" path="res://Templates/HUD.gd" id="1_55dsa"]
 [ext_resource type="PackedScene" uid="uid://cc2471nqxdi2h" path="res://Templates/HUD/Gauge.tscn" id="1_r7fer"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e172l"]

@@ -2,7 +2,6 @@ class_name EnemyBase extends Actor
 var health:int = 10
 
 func takeDamage(damage:int)->void:
-    print("Hit!")
     $AudioStreamPlayer3D.play()
     health-=damage
     if health<=0:

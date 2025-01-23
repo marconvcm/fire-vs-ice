@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://0wecm0reukno"]
+[gd_scene load_steps=14 format=3 uid="uid://0wecm0reukno"]
 
 [ext_resource type="Script" uid="uid://day1uayo1e0ss" path="res://Templates/World.gd" id="1_dhj0i"]
 [ext_resource type="PackedScene" uid="uid://dyfkw4bd8l5bm" path="res://Templates/Player.tscn" id="1_r0n2a"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://t03w0dfijfat" path="res://Templates/HUD.tscn" id="4_wjrnp"]
 [ext_resource type="Script" uid="uid://dyqkscel6ddgv" path="res://Templates/GimbalCamera.gd" id="6_a57uu"]
 [ext_resource type="PackedScene" uid="uid://cdn1uix62n76q" path="res://Templates/enemy_base.tscn" id="7_dhj0i"]
+[ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="8_pk561"]
 
 [sub_resource type="Environment" id="Environment_p7svl"]
 ambient_light_source = 2
@@ -204,5 +205,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 
 [node name="EnemyBase" parent="." instance=ExtResource("7_dhj0i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.177, 8.34036, 0)
+
+[node name="DebugMenu" parent="." instance=ExtResource("8_pk561")]
 
 [editable path="Player"]

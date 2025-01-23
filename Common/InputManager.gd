@@ -20,6 +20,9 @@ func is_action_pressed(action: String) -> bool:
 func is_action_released(action: String) -> bool:
     return Input.is_action_just_released(action)
 
+func is_action_just_pressed(action: String)->bool:
+    return Input.is_action_just_pressed(action)
+
 func get_digital() -> Vector2:
     var x = sign(Input.get_action_strength("DigitalRight") - Input.get_action_strength("DigitalLeft"))
     var y = sign(Input.get_action_strength("DigitalDown") - Input.get_action_strength("DigitalUp"))
@@ -37,6 +40,15 @@ func get_aim_direction() -> Vector3:
 #endregion
 
 #region Helper functions for common actions
+
+func is_pause_pressed() -> bool:
+    return self.is_action_pressed("Pause")
+    
+func is_pause_released() -> bool:
+    return self.is_action_released("Pause")
+    
+func is_pause_just_pressed() -> bool:
+    return self.is_action_just_pressed("Pause")
 
 func is_main_action_pressed() -> bool:
     return self.is_action_pressed("MainAction")
