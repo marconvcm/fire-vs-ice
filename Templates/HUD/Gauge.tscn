@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cc2471nqxdi2h"]
 
-[ext_resource type="Script" path="res://Templates/HUD/Gauge.gd" id="1_eo0x2"]
+[ext_resource type="Script" uid="uid://dcev0pudue3d7" path="res://Templates/HUD/Gauge.gd" id="1_eo0x2"]
 
 [sub_resource type="FontVariation" id="FontVariation_nuky8"]
 spacing_glyph = 2
