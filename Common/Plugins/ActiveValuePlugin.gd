@@ -18,9 +18,9 @@ func _process(delta: float) -> void:
     if is_enabled:
         tick(delta)
 
-func set_max_value(max: float) -> void:
-    max_value=max
-    max_value_changed.emit(max)
+func set_max_value(maxv: float) -> void:
+    max_value=maxv
+    max_value_changed.emit(maxv)
 
 func set_rate(newrate: float)->void:
     rate=newrate

@@ -67,14 +67,13 @@ mesh = SubResource("BoxMesh_avask")
 current = true
 
 [node name="RageTimer" type="Timer" parent="."]
+wait_time = 5.0
 
 [node name="LobTimer" type="Timer" parent="."]
 
 [node name="ShootTimer" type="Timer" parent="."]
 
 [node name="DashTimer" type="Timer" parent="."]
-
-[node name="HeatLossTimer" type="Timer" parent="."]
 
 [node name="RageAoEArea" type="Area3D" parent="."]
 collision_layer = 2

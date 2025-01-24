@@ -6,8 +6,12 @@ const lobbing_speed=10;
 var lobbing_cost=5;
 const shooting_speed=20;
 var shooting_cost=1;
+var rage_cost=10;
+var rage_damage=10;
 var radius:float=1.0
+var raging:bool = false
 @onready var heat = $Heat
+@onready var ragetimer=$RageTimer
 var maxheat:float = 1000.0
 
 func _ready():
@@ -39,8 +43,10 @@ func _process(_delta: float) -> void:
     if PlayerInput.is_shoot_released() and if_enough_heat(shooting_cost):
         lose_heat(shooting_cost)
         shoot_fireball()
-    if PlayerInput.is_rage_pressed():
-        pass
+    if PlayerInput.is_rage_pressed() and !raging and if_enough_heat(rage_cost):
+        rage_start()
+    if raging and !PlayerInput.is_rage_pressed():
+        rage_end()
 
 func lob_fireball():
     var fireballInst=lobbed_fireball.instantiate()
@@ -56,6 +62,20 @@ func shoot_fireball()->void:
     fireballInst.fire(facing,shooting_speed)
     add_sibling(fireballInst)
     
+func rage_start()->void:
+    raging=true
+    heat.deplete(rage_cost)
+    var area=$RageAoEArea
+    area.get_child(1).visible=true
+    for target_body in area.get_overlapping_bodies():
+        if target_body.has_method("takeDamage"):
+            target_body.takeDamage(rage_damage)
+            
+func rage_end()->void:
+    raging=false
+    var area=$RageAoEArea
+    area.get_child(1).visible=false
+
 func if_enough_heat(damage:int)->bool:
     return (heat.value>damage)
     
