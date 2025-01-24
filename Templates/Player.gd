@@ -20,13 +20,13 @@ func _process(_delta: float) -> void:
         speed_scale = lerp(speed_scale, 2.0, 0.1)
     else:
         speed_scale = lerp(speed_scale, 1.0, 0.1)
-    if PlayerInput.is_main_action_released():
+    if PlayerInput.is_lob_released():
         var fireballInst=lobbed_fireball.instantiate()
         fireballInst.position=self.position+facing*radius
         fireballInst.linear_velocity=self.velocity
         fireballInst.fire(facing,lobbing_speed)
         add_sibling(fireballInst)
-    if PlayerInput.is_secondary_action_released():
+    if PlayerInput.is_shoot_released():
         var fireballInst=shot_fireball.instantiate()
         fireballInst.position=self.position+facing*radius
         fireballInst.linear_velocity=self.velocity

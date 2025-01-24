@@ -50,29 +50,29 @@ func is_pause_released() -> bool:
 func is_pause_just_pressed() -> bool:
     return self.is_action_just_pressed("Pause")
 
-func is_main_action_pressed() -> bool:
-    return self.is_action_pressed("MainAction")
+func is_lob_pressed() -> bool:
+    return self.is_action_pressed("Lob")
 
-func is_main_action_released() -> bool:
-    return self.is_action_released("MainAction")
+func is_lob_released() -> bool:
+    return self.is_action_released("Lob")
 
-func is_secondary_action_pressed() -> bool:
-    return self.is_action_pressed("SecondaryAction")
+func is_shoot_pressed() -> bool:
+    return self.is_action_pressed("Shoot")
 
-func is_secondary_action_released() -> bool:
-    return self.is_action_released("SecondaryAction")
+func is_shoot_released() -> bool:
+    return self.is_action_released("Shoot")
 
-func is_aux1_action_pressed() -> bool:
-    return self.is_action_pressed("Aux1Action")
+func is_dash_pressed() -> bool:
+    return self.is_action_pressed("Dash")
 
-func is_aux1_action_released() -> bool:
-    return self.is_action_released("Aux1Action")
+func is_dash_released() -> bool:
+    return self.is_action_released("Dash")
 
-func is_aux2_action_pressed() -> bool:
-    return self.is_action_pressed("Aux2Action")
+func is_rage_pressed() -> bool:
+    return self.is_action_pressed("Rage")
 
-func is_aux2_action_released() -> bool:
-    return self.is_action_released("Aux2Action")
+func is_rage_released() -> bool:
+    return self.is_action_released("Rage")
 
 func is_left_modifier_pressed() -> bool:
     return self.is_action_pressed("LeftModifier")
