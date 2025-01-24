@@ -7,55 +7,75 @@ process_mode = 2
 visible = false
 script = ExtResource("1_epxs4")
 
-[node name="TabContainer" type="TabContainer" parent="."]
-offset_left = 581.0
-offset_top = 314.0
-offset_right = 621.0
-offset_bottom = 354.0
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -101.5
+offset_right = 125.0
+offset_bottom = 101.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="PanelContainer"]
+layout_mode = 2
 current_tab = 0
 
-[node name="Basic Options" type="VBoxContainer" parent="TabContainer"]
+[node name="Basic Options" type="VBoxContainer" parent="PanelContainer/TabContainer"]
 layout_mode = 2
 alignment = 1
 metadata/_tab_index = 0
 
-[node name="Reset Button" type="Button" parent="TabContainer/Basic Options"]
+[node name="Reset Button" type="Button" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 text = "Reset Level"
 
-[node name="Master Volume" type="Label" parent="TabContainer/Basic Options"]
+[node name="Master Volume" type="Label" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 text = "Master Volume"
 
-[node name="Master Volume Slider" type="HSlider" parent="TabContainer/Basic Options"]
+[node name="Master Volume Slider" type="HSlider" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
-[node name="Music Volume" type="Label" parent="TabContainer/Basic Options"]
+[node name="Music Volume" type="Label" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 text = "Music Volume"
 
-[node name="Music Volume Slider" type="HSlider" parent="TabContainer/Basic Options"]
+[node name="Music Volume Slider" type="HSlider" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
-[node name="SFX Volume" type="Label" parent="TabContainer/Basic Options"]
+[node name="SFX Volume" type="Label" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 text = "SFX Volume"
 
-[node name="SFX Volume Slider" type="HSlider" parent="TabContainer/Basic Options"]
+[node name="SFX Volume Slider" type="HSlider" parent="PanelContainer/TabContainer/Basic Options"]
 layout_mode = 2
 max_value = 1.0
 step = 0.01
 
-[node name="Level Select" type="GridContainer" parent="TabContainer"]
+[node name="Level Select" type="GridContainer" parent="PanelContainer/TabContainer"]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[connection signal="pressed" from="TabContainer/Basic Options/Reset Button" to="." method="_on_reset_button_pressed"]
-[connection signal="value_changed" from="TabContainer/Basic Options/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
-[connection signal="value_changed" from="TabContainer/Basic Options/Music Volume Slider" to="." method="_on_music_volume_slider_value_changed"]
-[connection signal="value_changed" from="TabContainer/Basic Options/SFX Volume Slider" to="." method="_on_sfx_volume_slider_value_changed"]
+[node name="Debug" type="Button" parent="PanelContainer/TabContainer/Level Select"]
+layout_mode = 2
+text = "Debug"
+
+[node name="Debug2" type="Button" parent="PanelContainer/TabContainer/Level Select"]
+layout_mode = 2
+text = "Debug2"
+
+[connection signal="pressed" from="PanelContainer/TabContainer/Basic Options/Reset Button" to="." method="_on_reset_button_pressed"]
+[connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/Music Volume Slider" to="." method="_on_music_volume_slider_value_changed"]
+[connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/SFX Volume Slider" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Debug" to="." method="_on_debug_pressed"]
+[connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Debug2" to="." method="_on_debug_2_pressed"]
