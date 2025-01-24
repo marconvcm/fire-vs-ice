@@ -27,6 +27,8 @@ radius = 2.0
 height = 4.0
 
 [node name="Fireball" type="RigidBody3D"]
+collision_layer = 2
+collision_mask = 60
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_8kgip")
@@ -39,6 +41,8 @@ mesh = SubResource("SphereMesh_8kgip")
 surface_material_override/0 = SubResource("StandardMaterial3D_8kgip")
 
 [node name="SplashDamageArea" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 60
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SplashDamageArea"]
 shape = SubResource("SphereShape3D_8kgip")

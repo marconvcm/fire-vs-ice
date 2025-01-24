@@ -117,6 +117,15 @@ Rage={
 "events": []
 }
 
+[layer_names]
+
+3d_physics/layer_1="Player"
+3d_physics/layer_2="Player Projectile"
+3d_physics/layer_3="Enemy"
+3d_physics/layer_4="Enemy Projectile"
+3d_physics/layer_5="Environment Static"
+3d_physics/layer_6="Environment Breakable"
+
 [rendering]
 
 renderer/rendering_method="mobile"

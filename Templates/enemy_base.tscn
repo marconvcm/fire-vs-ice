@@ -13,6 +13,8 @@ transparency = 1
 albedo_color = Color(0.113415, 0.535326, 0.725318, 0.486275)
 
 [node name="EnemyBase" type="CharacterBody3D" node_paths=PackedStringArray("body")]
+collision_layer = 4
+collision_mask = 63
 script = ExtResource("1_bplvx")
 body = NodePath("Body")
 metadata/_custom_type_script = ExtResource("2_nogoe")

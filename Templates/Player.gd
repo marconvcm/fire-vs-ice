@@ -32,3 +32,5 @@ func _process(_delta: float) -> void:
         fireballInst.linear_velocity=self.velocity
         fireballInst.fire(facing,shooting_speed)
         add_sibling(fireballInst)
+    if PlayerInput.is_rage_pressed():
+        pass
