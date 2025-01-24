@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cvbpsnkebnbr0"]
+[gd_scene load_steps=8 format=3 uid="uid://cvbpsnkebnbr0"]
 
 [ext_resource type="Script" uid="uid://bwifcyupwd6qp" path="res://Templates/lobbed_fireball.gd" id="1_8kgip"]
 
@@ -17,6 +17,15 @@ emission_energy_multiplier = 1263.42
 [sub_resource type="SphereShape3D" id="SphereShape3D_8kgip"]
 radius = 2.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fn4ny"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 0.278431)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ee0yi"]
+material = SubResource("StandardMaterial3D_fn4ny")
+radius = 2.0
+height = 4.0
+
 [node name="Fireball" type="RigidBody3D"]
 contact_monitor = true
 max_contacts_reported = 1
@@ -25,7 +34,7 @@ script = ExtResource("1_8kgip")
 [node name="DirectHitHitbox" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_t54ii")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Direct Image" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_8kgip")
 surface_material_override/0 = SubResource("StandardMaterial3D_8kgip")
 
@@ -33,5 +42,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_8kgip")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SplashDamageArea"]
 shape = SubResource("SphereShape3D_8kgip")
+
+[node name="AoE Image" type="MeshInstance3D" parent="SplashDamageArea"]
+visible = false
+mesh = SubResource("SphereMesh_ee0yi")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
