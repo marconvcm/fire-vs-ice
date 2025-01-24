@@ -11,6 +11,10 @@ func connect_active_value(target_active_value: ActiveValuePlugin) -> void:
       progress_bar.max_value = target_active_value.max_value
       progress_bar.value = target_active_value.value
       target_active_value.value_changed.connect(_on_value_changed)
+      target_active_value.max_value_changed.connect(_on_max_value_changed)    
 
 func _on_value_changed(value: float) -> void:
    progress_bar.value = value
+
+func _on_max_value_changed(max: float) -> void:
+    progress_bar.max_value=max

@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dyfkw4bd8l5bm"]
+[gd_scene load_steps=12 format=3 uid="uid://dyfkw4bd8l5bm"]
 
 [ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
+[ext_resource type="Script" uid="uid://b5srtuqsudr8u" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
 [ext_resource type="PackedScene" uid="uid://c6sxpm72yp1x1" path="res://Models/Arrow.tscn" id="8_06tmo"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iat6b"]
@@ -19,12 +20,28 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_r87rq")
 size = Vector3(0.2, 0.4, 0.2)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_j6awe"]
+radius = 5.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tltr5"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 0.243137)
+
+[sub_resource type="SphereMesh" id="SphereMesh_88hry"]
+material = SubResource("StandardMaterial3D_tltr5")
+radius = 5.0
+height = 10.0
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]
 collision_mask = 60
 script = ExtResource("1_b24bn")
 debug = true
 debug_root = NodePath("Root")
 body = NodePath("Body")
+
+[node name="Heat" type="Node" parent="."]
+script = ExtResource("2_tltr5")
+metadata/_custom_type_script = ExtResource("2_tltr5")
 
 [node name="Shape" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.100125, 0)
@@ -48,3 +65,24 @@ mesh = SubResource("BoxMesh_avask")
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 current = true
+
+[node name="RageTimer" type="Timer" parent="."]
+
+[node name="LobTimer" type="Timer" parent="."]
+
+[node name="ShootTimer" type="Timer" parent="."]
+
+[node name="DashTimer" type="Timer" parent="."]
+
+[node name="HeatLossTimer" type="Timer" parent="."]
+
+[node name="RageAoEArea" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 60
+
+[node name="RageAoEShape" type="CollisionShape3D" parent="RageAoEArea"]
+shape = SubResource("SphereShape3D_j6awe")
+
+[node name="RageAoECloud" type="MeshInstance3D" parent="RageAoEArea"]
+visible = false
+mesh = SubResource("SphereMesh_88hry")

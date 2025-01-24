@@ -10,6 +10,7 @@ class_name ActiveValuePlugin extends Node
 @export var is_depletable: bool = false
 
 signal value_changed(value)
+signal max_value_changed(max)
 signal value_empty()
 signal value_full()
 
@@ -17,11 +18,24 @@ func _process(delta: float) -> void:
     if is_enabled:
         tick(delta)
 
+func set_max_value(max: float) -> void:
+    max_value=max
+    max_value_changed.emit(max)
+
+func set_rate(newrate: float)->void:
+    rate=newrate
+    
+func set_enabled(state:bool)->void:
+    is_enabled=state
+    
+func set_depletable(state:bool)->void:
+    is_depletable=state
+
 func tick(delta: float) -> void:
     if is_rechargeable:
-        recharge(rate * max_value * delta)
+        recharge(rate * delta)
     if is_depletable:
-        deplete(rate * max_value * delta)
+        deplete(rate * delta)
 
 func deplete(amount: float) -> void:
     set_value(value - amount)
