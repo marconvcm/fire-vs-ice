@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://dyfkw4bd8l5bm"]
+[gd_scene load_steps=13 format=3 uid="uid://dyfkw4bd8l5bm"]
 
 [ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
 [ext_resource type="Script" uid="uid://b5srtuqsudr8u" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
+[ext_resource type="PackedScene" uid="uid://cmkkrdkvywr3a" path="res://Templates/game_over.tscn" id="4_88hry"]
 [ext_resource type="PackedScene" uid="uid://c6sxpm72yp1x1" path="res://Models/Arrow.tscn" id="8_06tmo"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iat6b"]
@@ -85,3 +86,6 @@ shape = SubResource("SphereShape3D_j6awe")
 [node name="RageAoECloud" type="MeshInstance3D" parent="RageAoEArea"]
 visible = false
 mesh = SubResource("SphereMesh_88hry")
+
+[node name="GameOver" parent="." instance=ExtResource("4_88hry")]
+visible = false

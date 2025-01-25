@@ -83,5 +83,6 @@ func lose_heat(damage:int)->void:
     heat.deplete(damage)
 
 func die()->void:
-    #put AV feedback for death here
-    get_tree().reload_current_scene()
+    $GameOver.visible=true
+    #probably put a death animation and some other things here
+    get_tree().paused=true
