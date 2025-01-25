@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://dibia5vyd1iig"]
+
+[ext_resource type="PackedScene" uid="uid://qpcu1n8mkn37" path="res://Models/map1 greyboxed.blend" id="1_1rv4e"]
+[ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="1_5gmx1"]
+[ext_resource type="Script" uid="uid://day1uayo1e0ss" path="res://Templates/World.gd" id="1_ics5d"]
+[ext_resource type="PackedScene" uid="uid://dyfkw4bd8l5bm" path="res://Templates/Player.tscn" id="2_ai77n"]
+[ext_resource type="PackedScene" uid="uid://752xbach55lb" path="res://Templates/DebugPanel.tscn" id="3_ics5d"]
+[ext_resource type="PackedScene" uid="uid://t03w0dfijfat" path="res://Templates/HUD.tscn" id="4_ics5d"]
+[ext_resource type="Script" uid="uid://dyqkscel6ddgv" path="res://Templates/GimbalCamera.gd" id="7_terk3"]
+[ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="8_vf83r"]
+
+[sub_resource type="Environment" id="Environment_vf83r"]
+ambient_light_source = 2
+ambient_light_color = Color(0.723479, 0.893062, 0.995215, 1)
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_ics5d")
+
+[node name="DebugPlugin" type="Node" parent="." node_paths=PackedStringArray("world", "panel")]
+script = ExtResource("1_5gmx1")
+world = NodePath("..")
+panel = NodePath("../DebugPanel")
+metadata/_custom_type_script = ExtResource("1_5gmx1")
+
+[node name="DebugPanel" parent="." instance=ExtResource("3_ics5d")]
+scale = Vector2(2, 2)
+
+[node name="HUD" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_ics5d")]
+player = NodePath("../Player")
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vf83r")
+
+[node name="Global" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 38.503, 0)
+shadow_enabled = true
+
+[node name="Level 1 Geometry" parent="." instance=ExtResource("1_1rv4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.471668, 0, 1.52263)
+
+[node name="Player" parent="." instance=ExtResource("2_ai77n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0864, 1.72562, -6.32268)
+
+[node name="Mount" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2501, 48.5085, 14.741)
+
+[node name="Gimbal" type="Node3D" parent="Mount"]
+
+[node name="Camera" type="Camera3D" parent="Mount/Gimbal" node_paths=PackedStringArray("target", "gimbal")]
+transform = Transform3D(-1, -7.24768e-08, 4.88862e-08, 0, 0.559193, 0.829038, -8.74228e-08, 0.829038, -0.559193, 0, 0, 0)
+v_offset = 1.5
+doppler_tracking = 2
+current = true
+fov = 20.0
+script = ExtResource("7_terk3")
+sensitivity = 0.05
+target = NodePath("../../../Player")
+gimbal = NodePath("..")
+moving_fov = 30.0
+idle_fov = 25.0
+
+[node name="DebugMenu" parent="." instance=ExtResource("8_vf83r")]
+
+[editable path="Player"]

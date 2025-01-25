@@ -44,3 +44,8 @@ func _on_debug_pressed():
 func _on_debug_2_pressed():
     get_tree().paused=false
     get_tree().change_scene_to_file("Level/Debug2.tscn")
+
+
+func _on_level_1_pressed():
+    get_tree().paused=false
+    get_tree().change_scene_to_file("Level/Level1.tscn")

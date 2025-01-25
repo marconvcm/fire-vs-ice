@@ -36,7 +36,8 @@ panel = NodePath("../DebugPanel")
 [node name="DebugPanel" parent="." instance=ExtResource("3_rn20b")]
 scale = Vector2(2, 2)
 
-[node name="HUD" parent="." instance=ExtResource("4_dm60h")]
+[node name="HUD" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_dm60h")]
+player = NodePath("../Player")
 
 [node name="Environment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p7svl")
