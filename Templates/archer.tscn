@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bro1yudoqydnp"]
+
+[ext_resource type="Script" uid="uid://dwnau3bbcrj3p" path="res://Templates/archer.gd" id="1_1caoe"]
+[ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_obkgi"]
+
+[node name="Archer" type="CharacterBody3D"]
+script = ExtResource("1_1caoe")
+metadata/_custom_type_script = ExtResource("1_obkgi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]

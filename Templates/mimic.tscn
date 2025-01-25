@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh1txm4isvu0e"]
+
+[ext_resource type="Script" uid="uid://70fvor7r5b5j" path="res://Templates/mimic.gd" id="1_6u7i7"]
+[ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_kioik"]
+
+[node name="Mimic" type="CharacterBody3D"]
+script = ExtResource("1_6u7i7")
+metadata/_custom_type_script = ExtResource("1_kioik")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="Body" type="MeshInstance3D" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
