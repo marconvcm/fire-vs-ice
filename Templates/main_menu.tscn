@@ -1,0 +1,124 @@
+[gd_scene load_steps=2 format=3 uid="uid://mi51376onsg8"]
+
+[ext_resource type="Script" uid="uid://dmfrkb5o57003" path="res://Templates/main_menu.gd" id="1_mwywa"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_mwywa")
+
+[node name="MainMenuLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenuLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -64.0
+offset_right = 39.5
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title Label (replace with icon and art later)" type="Label" parent="MainMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Fire VS Ice"
+
+[node name="Play" type="Button" parent="MainMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Options" type="Button" parent="MainMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Credits" type="Button" parent="MainMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+
+[node name="OptionsMenuLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsMenuLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -74.5
+offset_right = 59.0
+offset_bottom = 74.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Master Volume" type="Label" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="Master Volume Slider" type="HSlider" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="Music Volume" type="Label" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="Music Volume Slider" type="HSlider" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="SFX Volume" type="Label" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="SFX Volume Slider" type="HSlider" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="Options Back Button" type="Button" parent="OptionsMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="CreditsMenuLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CreditsMenuLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -374.0
+offset_top = -107.0
+offset_right = 374.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Credits" type="Label" parent="CreditsMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "A game by (in alphabetical order currently) Felix DuBois, Happyfork, Koro, Marcos, Mutt, and XZO
+
+Programming: Felix DuBois, Marcos, Happyfork
+Visuals: XZO, Koro
+Audio: Mutt
+
+Made with Godot 4.4 (beta release 1)"
+horizontal_alignment = 1
+
+[node name="Credits Back Button" type="Button" parent="CreditsMenuLayer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[connection signal="pressed" from="MainMenuLayer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MainMenuLayer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MainMenuLayer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="value_changed" from="OptionsMenuLayer/VBoxContainer/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="value_changed" from="OptionsMenuLayer/VBoxContainer/Music Volume Slider" to="." method="_on_music_volume_slider_value_changed"]
+[connection signal="value_changed" from="OptionsMenuLayer/VBoxContainer/SFX Volume Slider" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="pressed" from="OptionsMenuLayer/VBoxContainer/Options Back Button" to="." method="_on_options_back_button_pressed"]
+[connection signal="pressed" from="CreditsMenuLayer/VBoxContainer/Credits Back Button" to="." method="_on_credits_back_button_pressed"]

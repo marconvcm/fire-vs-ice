@@ -60,6 +60,10 @@ layout_mode = 2
 max_value = 1.0
 step = 0.01
 
+[node name="Main Menu" type="Button" parent="PanelContainer/TabContainer/Basic Options"]
+layout_mode = 2
+text = "Main Menu"
+
 [node name="Level Select" type="GridContainer" parent="PanelContainer/TabContainer"]
 visible = false
 layout_mode = 2
@@ -81,6 +85,7 @@ text = "Level 1 (Greybox)"
 [connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/Music Volume Slider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/SFX Volume Slider" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="pressed" from="PanelContainer/TabContainer/Basic Options/Main Menu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Debug" to="." method="_on_debug_pressed"]
 [connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Debug2" to="." method="_on_debug_2_pressed"]
 [connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Level1" to="." method="_on_level_1_pressed"]
