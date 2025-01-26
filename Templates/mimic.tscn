@@ -1,14 +1,51 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh1txm4isvu0e"]
+[gd_scene load_steps=8 format=3 uid="uid://dh1txm4isvu0e"]
 
 [ext_resource type="Script" uid="uid://70fvor7r5b5j" path="res://Templates/mimic.gd" id="1_6u7i7"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_kioik"]
+[ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_hbyha"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6u7i7"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hbyha"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_m85ol"]
+radius = 5.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6u7i7"]
+radius = 10.0
 
 [node name="Mimic" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 51
 script = ExtResource("1_6u7i7")
 metadata/_custom_type_script = ExtResource("1_kioik")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="Hitbox" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_6u7i7")
 
 [node name="Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_hbyha")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_hbyha")
+
+[node name="ActivationArea" type="Area3D" parent="."]
+collision_layer = 8
+
+[node name="ActivationAreaShape" type="CollisionShape3D" parent="ActivationArea"]
+shape = SubResource("SphereShape3D_m85ol")
+
+[node name="DeactivationAreaShape" type="CollisionShape3D" parent="ActivationArea"]
+shape = SubResource("SphereShape3D_6u7i7")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+collision_mask = 49
+
+[node name="GiveUpTimer" type="Timer" parent="."]
+
+[node name="ExplodeTimer" type="Timer" parent="."]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]

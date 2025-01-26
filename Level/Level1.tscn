@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dibia5vyd1iig"]
+[gd_scene load_steps=11 format=3 uid="uid://dibia5vyd1iig"]
 
 [ext_resource type="PackedScene" uid="uid://qpcu1n8mkn37" path="res://Models/map1 greyboxed.blend" id="1_1rv4e"]
 [ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="1_5gmx1"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://t03w0dfijfat" path="res://Templates/HUD.tscn" id="4_ics5d"]
 [ext_resource type="Script" uid="uid://dyqkscel6ddgv" path="res://Templates/GimbalCamera.gd" id="7_terk3"]
 [ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="8_vf83r"]
+[ext_resource type="PackedScene" uid="uid://dh1txm4isvu0e" path="res://Templates/mimic.tscn" id="9_sxufl"]
 
 [sub_resource type="Environment" id="Environment_vf83r"]
 ambient_light_source = 2
@@ -60,5 +61,8 @@ moving_fov = 30.0
 idle_fov = 25.0
 
 [node name="DebugMenu" parent="." instance=ExtResource("8_vf83r")]
+
+[node name="Mimic" parent="." instance=ExtResource("9_sxufl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1.93767, -76)
 
 [editable path="Player"]

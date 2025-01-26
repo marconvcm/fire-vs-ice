@@ -1,14 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://bro1yudoqydnp"]
+[gd_scene load_steps=8 format=3 uid="uid://bro1yudoqydnp"]
 
 [ext_resource type="Script" uid="uid://dwnau3bbcrj3p" path="res://Templates/archer.gd" id="1_1caoe"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_obkgi"]
+[ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_huixx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_02ebo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gnp5"]
+albedo_color = Color(0, 0.705882, 0.901961, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_7um0d"]
+material = SubResource("StandardMaterial3D_2gnp5")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_m6j17"]
 
 [node name="Archer" type="CharacterBody3D"]
 script = ExtResource("1_1caoe")
 metadata/_custom_type_script = ExtResource("1_obkgi")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="Hitbox" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_02ebo")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_7um0d")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_huixx")
+
+[node name="ActivationArea" type="Area3D" parent="."]
+
+[node name="ActivationAreaShape" type="CollisionShape3D" parent="ActivationArea"]
+shape = SubResource("SphereShape3D_m6j17")
