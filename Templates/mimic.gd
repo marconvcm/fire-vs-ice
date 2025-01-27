@@ -10,10 +10,11 @@ var target_position=null
 
 #states: 0=hiding, 1=activated/chasing, 2=looking for player, 3=returning to hiding spot
 func _ready():
-    $GiveUpTimer.timeout.connect(state_transition, 3)
+    $GiveUpTimer.timeout.connect(giveup)
     $ExplodeTimer.timeout.connect(explode)
     navi.velocity_computed.connect(Callable(_on_velocity_computed))
     health=5
+    speed=2
 
 func _process(_delta):
     match state:
@@ -24,7 +25,11 @@ func _process(_delta):
                 set_movement_target(target.global_position)
         2:
             if is_target_visible():
-                state_transition(1)
+                set_movement_target(target.global_position)
+                if !$GiveUpTimer.is_stopped(): $GiveUpTimer.stop()
+            else:
+                if $GiveUpTimer.is_stopped(): $GiveUpTimer.start()
+                
         3:
             if target!=null:
                 set_movement_target(target.global_position)
@@ -32,7 +37,7 @@ func _process(_delta):
             pass
 
 func _physics_process(_delta):
-    if target!=null and (state==1||state==3):
+    if target!=null and (!state==0):
         var next_path_position: Vector3 = navi.get_next_path_position()
         var new_velocity: Vector3 = global_position.direction_to(next_path_position)*speed
         _on_velocity_computed(new_velocity)
@@ -85,3 +90,6 @@ func set_movement_target(movement_target: Vector3):
 func _on_velocity_computed(safe_velocity: Vector3):
     velocity=safe_velocity
     move_and_slide()
+
+func giveup():
+    state_transition(3)

@@ -6,8 +6,8 @@ class_name GimbalCamera extends Camera3D
 @export var moving_fov: float = 25.0
 @export var idle_fov: float = 20.0
 
-var min_position: Vector3 = Vector3(-50, 0, -16)
-var max_position: Vector3 = Vector3(50, 16, 16)
+var min_position: Vector3 = Vector3(-5000, 0, -1600)
+var max_position: Vector3 = Vector3(5000, 1600, 1600)
 
 func _ready():
     gimbal=self.get_parent()

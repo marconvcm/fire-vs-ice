@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkag48566au5g"]
+
+[ext_resource type="AudioStream" uid="uid://bddcvagg6t4jl" path="res://Resources/pirate_doomstufftest.mp3" id="1_3hnca"]
+[ext_resource type="Script" uid="uid://bh02hofjfi7pi" path="res://music_player.gd" id="2_rfxee"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_3hnca")
+autoplay = true
+bus = &"Music"
+script = ExtResource("2_rfxee")
