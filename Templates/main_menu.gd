@@ -13,10 +13,9 @@ func _ready():
     $"OptionsMenuLayer/VBoxContainer/SFX Volume Slider".value=db_to_linear(sfx)
 
 func _on_play_pressed():
-    get_tree().change_scene_to_file("Level/Level1.tscn")
+    get_tree().change_scene_to_file("Level/level_1_editable.tscn")
 
 func _on_options_pressed():
-    print("Hello?")
     mainmenu.visible=false
     options.visible=true
 

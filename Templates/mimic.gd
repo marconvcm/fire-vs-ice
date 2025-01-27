@@ -3,14 +3,16 @@ class_name mimic extends EnemyBase
 #Mimic can be deactivated if the player leaves the deactivation range and is out of the mimic's line of sight
 var state:int=0
 var target=null
-const runspeed=10
 var contactdamage=50
 var explodedamage=200
+var target_position=null
+@onready var navi = $NavigationAgent3D
 
 #states: 0=hiding, 1=activated/chasing, 2=looking for player, 3=returning to hiding spot
 func _ready():
     $GiveUpTimer.timeout.connect(state_transition, 3)
     $ExplodeTimer.timeout.connect(explode)
+    navi.velocity_computed.connect(Callable(_on_velocity_computed))
     health=5
 
 func _process(_delta):
@@ -19,16 +21,21 @@ func _process(_delta):
             pass
         1:
             if target!=null:
-                velocity=runspeed*Vector3(0,0,0) +get_gravity_strength()#need to update for actual motion, probably using navigation agents
-                move_and_slide()
+                set_movement_target(target.global_position)
         2:
             if is_target_visible():
                 state_transition(1)
         3:
-            pass
+            if target!=null:
+                set_movement_target(target.global_position)
         _:
             pass
 
+func _physics_process(_delta):
+    if target!=null and (state==1||state==3):
+        var next_path_position: Vector3 = navi.get_next_path_position()
+        var new_velocity: Vector3 = global_position.direction_to(next_path_position)*speed
+        _on_velocity_computed(new_velocity)
 
 func _on_activation_area_body_shape_entered(_body_rid, collidingbody, _body_shape_index, local_shape_index):
     match state:
@@ -71,3 +78,10 @@ func begin_hiding():
     
 func end_hiding():
     pass
+
+func set_movement_target(movement_target: Vector3):
+    navi.set_target_position(movement_target)
+    
+func _on_velocity_computed(safe_velocity: Vector3):
+    velocity=safe_velocity
+    move_and_slide()
