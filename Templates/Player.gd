@@ -10,6 +10,7 @@ var rage_cost=10;
 var rage_damage=10;
 var radius:float=1.0
 var raging:bool = false
+var max_lob_charged:bool=false
 @onready var heat = $Heat
 @onready var ragetimer=$RageTimer
 @onready var shoottimer=$ShootTimer
@@ -23,6 +24,7 @@ func _ready():
     heat.set_depletable(true)
     heat.set_value(maxheat)
     heat.value_empty.connect(die)
+    lobtimer.timeout.connect(maxLobChargeReached)
     
 func get_move_axis() -> Vector3:
     return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
@@ -39,13 +41,13 @@ func _process(_delta: float) -> void:
         speed_scale = lerp(speed_scale, 2.0, 0.1)
     else:
         speed_scale = lerp(speed_scale, 1.0, 0.1)
-    if PlayerInput.is_lob_pressed() and if_enough_heat(lobbing_cost):
-        lobtimer.start
-    if PlayerInput.is_lob_released() and if_enough_heat(lobbing_cost):
-        lose_heat(lobbing_cost)
+    if PlayerInput.is_lob_pressed() and !max_lob_charged and lobtimer.is_stopped():
+        lobtimer.start()
+    if PlayerInput.is_lob_released():
         var strength= (lobtimer.get_wait_time()-lobtimer.get_time_left())/lobtimer.get_wait_time()
-        print(lobtimer.get_time_left())
-        lob_fireball()
+        print(strength)
+        lose_heat(lobbing_cost)
+        lob_fireball(strength)
     if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
         lose_heat(shooting_cost)
         shoot_fireball()
@@ -55,12 +57,15 @@ func _process(_delta: float) -> void:
     if raging and !PlayerInput.is_rage_pressed():
         rage_end()
 
-func lob_fireball():
+func lob_fireball(strength:float):
     var fireballInst=lobbed_fireball.instantiate()
+    fireballInst.set_strength(strength)
     fireballInst.position=self.position+facing*radius
     fireballInst.linear_velocity=self.velocity
     fireballInst.fire(facing,lobbing_speed)
     add_sibling(fireballInst)
+    max_lob_charged=false
+    lobtimer.stop()
     
 func shoot_fireball()->void:
     var fireballInst=shot_fireball.instantiate()
@@ -93,3 +98,6 @@ func die()->void:
     $GameOver.visible=true
     #probably put a death animation and some other things here
     get_tree().paused=true
+
+func maxLobChargeReached():
+    max_lob_charged=true
