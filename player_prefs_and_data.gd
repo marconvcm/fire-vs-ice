@@ -9,10 +9,8 @@ var SFXVolume: float
 
 func _ready():
     if FileAccess.file_exists(prefslocation):
-        print('File exists')
         readPrefs()
     else:
-        print('File does not exist')
         defaultPrefs()
         writePrefs()
 

@@ -13,6 +13,7 @@ var raging:bool = false
 @onready var heat = $Heat
 @onready var ragetimer=$RageTimer
 @onready var shoottimer=$ShootTimer
+@onready var lobtimer=$LobTimer
 var maxheat:float = 1000.0
 
 func _ready():
@@ -38,8 +39,12 @@ func _process(_delta: float) -> void:
         speed_scale = lerp(speed_scale, 2.0, 0.1)
     else:
         speed_scale = lerp(speed_scale, 1.0, 0.1)
+    if PlayerInput.is_lob_pressed() and if_enough_heat(lobbing_cost):
+        lobtimer.start
     if PlayerInput.is_lob_released() and if_enough_heat(lobbing_cost):
         lose_heat(lobbing_cost)
+        var strength= (lobtimer.get_wait_time()-lobtimer.get_time_left())/lobtimer.get_wait_time()
+        print(lobtimer.get_time_left())
         lob_fireball()
     if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
         lose_heat(shooting_cost)
