@@ -1,10 +1,11 @@
 class_name EnemyBase extends Actor
-var health:int = 10
+var health:float = 10.0
 var dying:bool = false
 
-func takeDamage(damage:int)->void:
+func takeDamage(damage:float)->void:
     $AudioStreamPlayer3D.play()
     health-=damage
+    print(damage)
     if health<=0 and !dying:
         prepareToDie()
 

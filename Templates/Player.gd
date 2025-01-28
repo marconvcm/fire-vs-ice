@@ -6,8 +6,10 @@ const lobbing_speed=10;
 var lobbing_cost=5;
 const shooting_speed=20;
 var shooting_cost=1;
-var rage_cost=10;
-var rage_damage=10;
+var rage_cost=30;
+var rage_cost_per_second=15;
+var rage_start_damage=10;
+var rage_damage_per_second=5
 var radius:float=1.0
 var raging:bool = false
 var max_lob_charged:bool=false
@@ -15,6 +17,7 @@ var max_lob_charged:bool=false
 @onready var ragetimer=$RageTimer
 @onready var shoottimer=$ShootTimer
 @onready var lobtimer=$LobTimer
+@onready var rage_area=$RageAoEArea
 var maxheat:float = 1000.0
 
 func _ready():
@@ -32,11 +35,14 @@ func get_move_axis() -> Vector3:
 func get_aim_axis() -> Vector3:
     return PlayerInput.get_aim_direction().normalized().rotated(Vector3.UP, camera_rotation.y)
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
     if heat.value<0:
         die()
     if PlayerInput.is_pause_just_pressed():
         get_tree().paused=true
+    if raging:
+        lose_heat(rage_cost_per_second*delta)
+        rage_damage(rage_damage_per_second*delta)
     if PlayerInput.is_right_modifier_pressed():
         speed_scale = lerp(speed_scale, 2.0, 0.1)
     else:
@@ -45,7 +51,8 @@ func _process(_delta: float) -> void:
         lobtimer.start()
     if PlayerInput.is_lob_released():
         var strength= (lobtimer.get_wait_time()-lobtimer.get_time_left())/lobtimer.get_wait_time()
-        print(strength)
+        if raging:
+            strength*=2
         lose_heat(lobbing_cost)
         lob_fireball(strength)
     if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
@@ -72,16 +79,21 @@ func shoot_fireball()->void:
     fireballInst.position=self.position+facing*radius
     fireballInst.linear_velocity=self.velocity
     fireballInst.fire(facing,shooting_speed)
+    if raging:
+        fireballInst.damage*=2
     add_sibling(fireballInst)
     
 func rage_start()->void:
     raging=true
-    heat.deplete(rage_cost)
-    var area=$RageAoEArea
-    area.get_child(1).visible=true
-    for target_body in area.get_overlapping_bodies():
+    lose_heat(rage_cost)
+    rage_area.get_child(1).visible=true
+    rage_damage(rage_start_damage)
+
+            
+func rage_damage(damage:float)->void:
+    for target_body in rage_area.get_overlapping_bodies():
         if target_body.has_method("takeDamage"):
-            target_body.takeDamage(rage_damage)
+            target_body.takeDamage(damage)
             
 func rage_end()->void:
     raging=false
