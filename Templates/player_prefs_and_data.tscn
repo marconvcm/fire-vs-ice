@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cajabo1d7eykv"]
+
+[ext_resource type="Script" uid="uid://sp5pyhotsx2v" path="res://player_prefs_and_data.gd" id="1_0eel0"]
+
+[node name="PlayerPrefsAndData" type="Node"]
+process_mode = 3
+script = ExtResource("1_0eel0")

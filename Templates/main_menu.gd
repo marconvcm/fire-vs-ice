@@ -8,9 +8,9 @@ var music=AudioServer.get_bus_index("Music")
 var sfx=AudioServer.get_bus_index("SFX")
 
 func _ready():
-    $"OptionsMenuLayer/VBoxContainer/Master Volume Slider".value=db_to_linear(master)
-    $"OptionsMenuLayer/VBoxContainer/Music Volume Slider".value=db_to_linear(music)
-    $"OptionsMenuLayer/VBoxContainer/SFX Volume Slider".value=db_to_linear(sfx)
+    $"OptionsMenuLayer/VBoxContainer/Master Volume Slider".value=PlayerPrefsAndData.MasterVolume
+    $"OptionsMenuLayer/VBoxContainer/Music Volume Slider".value=PlayerPrefsAndData.MusicVolume
+    $"OptionsMenuLayer/VBoxContainer/SFX Volume Slider".value=PlayerPrefsAndData.SFXVolume
 
 func _on_play_pressed():
     get_tree().change_scene_to_file("Level/level_1_editable.tscn")
@@ -24,6 +24,7 @@ func _on_credits_pressed():
     credits.visible=true
 
 func _on_options_back_button_pressed():
+    PlayerPrefsAndData.writePrefs()
     options.visible=false
     mainmenu.visible=true
 
@@ -33,11 +34,14 @@ func _on_credits_back_button_pressed():
 
 func _on_master_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(master, linear_to_db(value))
+    PlayerPrefsAndData.MasterVolume=value
 
 
 func _on_music_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(music, linear_to_db(value))
+    PlayerPrefsAndData.MusicVolume=value
 
 
 func _on_sfx_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(sfx, linear_to_db(value))
+    PlayerPrefsAndData.SFXVolume=value

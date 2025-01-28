@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bro1yudoqydnp"]
+[gd_scene load_steps=9 format=3 uid="uid://bro1yudoqydnp"]
 
 [ext_resource type="Script" uid="uid://dwnau3bbcrj3p" path="res://Templates/archer.gd" id="1_1caoe"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_obkgi"]
 [ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_huixx"]
+[ext_resource type="Texture2D" uid="uid://bnbvecseayv04" path="res://Models/example_sprite_sheet.png" id="4_02ebo"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_02ebo"]
 
@@ -31,3 +32,11 @@ stream = ExtResource("3_huixx")
 
 [node name="ActivationAreaShape" type="CollisionShape3D" parent="ActivationArea"]
 shape = SubResource("SphereShape3D_m6j17")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.14577e-06, 1.18074, -0.000815868)
+texture = ExtResource("4_02ebo")
+hframes = 13
+vframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

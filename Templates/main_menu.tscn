@@ -101,9 +101,9 @@ grow_vertical = 2
 
 [node name="Credits" type="Label" parent="CreditsMenuLayer/VBoxContainer"]
 layout_mode = 2
-text = "A game by (in alphabetical order currently) Felix DuBois, Happyfork, Koro, Marcos, Mutt, and XZO
+text = "A game by (in alphabetical order currently) Felix DuBois, Koro, Marcos, Mutt, and XZO
 
-Programming: Felix DuBois, Marcos, Happyfork
+Programming: Felix DuBois, Marcos
 Visuals: XZO, Koro
 Audio: Mutt
 

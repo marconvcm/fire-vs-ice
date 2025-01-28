@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="fire_vs_ice"
-run/main_scene="res://Level/Debug.tscn"
+run/main_scene="uid://claa8pljhm2xb"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 PlayerInput="*res://Common/InputManager.gd"
 MusicPlayer="*res://music_player.gd"
+PlayerPrefsAndData="*res://player_prefs_and_data.gd"
 
 [display]
 

@@ -5,9 +5,9 @@ var music=AudioServer.get_bus_index("Music")
 var sfx=AudioServer.get_bus_index("SFX")
 
 func _ready():
-    $"PanelContainer/TabContainer/Basic Options/Master Volume Slider".value=db_to_linear(master)
-    $"PanelContainer/TabContainer/Basic Options/Music Volume Slider".value=db_to_linear(music)
-    $"PanelContainer/TabContainer/Basic Options/SFX Volume Slider".value=db_to_linear(sfx)
+    $"PanelContainer/TabContainer/Basic Options/Master Volume Slider".value=PlayerPrefsAndData.MasterVolume
+    $"PanelContainer/TabContainer/Basic Options/Music Volume Slider".value=PlayerPrefsAndData.MusicVolume
+    $"PanelContainer/TabContainer/Basic Options/SFX Volume Slider".value=PlayerPrefsAndData.SFXVolume
 func _process(_delta):
     if PlayerInput.is_pause_just_pressed():
         if self.visible:
@@ -20,14 +20,17 @@ func _process(_delta):
 
 func _on_master_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(master, linear_to_db(value))
+    PlayerPrefsAndData.MasterVolume=value
 
 
 func _on_music_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(music, linear_to_db(value))
+    PlayerPrefsAndData.MusicVolume=value
 
 
 func _on_sfx_volume_slider_value_changed(value):
     AudioServer.set_bus_volume_db(sfx, linear_to_db(value))
+    PlayerPrefsAndData.SFXVolume=value
 
 
 func _on_reset_button_pressed():
@@ -54,3 +57,7 @@ func _on_level_1_pressed():
 func _on_main_menu_pressed():
     get_tree().paused=false
     get_tree().change_scene_to_file("res://Templates/main_menu.tscn")
+
+func unpause():
+    PlayerPrefsAndData.writePrefs()
+    get_tree().paused=false
