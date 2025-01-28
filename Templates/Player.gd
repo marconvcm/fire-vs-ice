@@ -12,6 +12,7 @@ var radius:float=1.0
 var raging:bool = false
 @onready var heat = $Heat
 @onready var ragetimer=$RageTimer
+@onready var shoottimer=$ShootTimer
 var maxheat:float = 1000.0
 
 func _ready():
@@ -40,9 +41,10 @@ func _process(_delta: float) -> void:
     if PlayerInput.is_lob_released() and if_enough_heat(lobbing_cost):
         lose_heat(lobbing_cost)
         lob_fireball()
-    if PlayerInput.is_shoot_released() and if_enough_heat(shooting_cost):
+    if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
         lose_heat(shooting_cost)
         shoot_fireball()
+        shoottimer.start()
     if PlayerInput.is_rage_pressed() and !raging and if_enough_heat(rage_cost):
         rage_start()
     if raging and !PlayerInput.is_rage_pressed():

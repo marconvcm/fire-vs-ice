@@ -1,10 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2ysc24f3ok0i"]
+[gd_scene load_steps=5 format=3 uid="uid://c2ysc24f3ok0i"]
 
 [ext_resource type="Script" uid="uid://ccylwg1a3ay8b" path="res://Templates/shot_fireball.gd" id="1_5e2h8"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_47iq7"]
+radius = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5e2h8"]
+albedo_color = Color(1, 0, 0, 0.858824)
 
 [sub_resource type="SphereMesh" id="SphereMesh_5e2h8"]
+material = SubResource("StandardMaterial3D_5e2h8")
+radius = 0.1
+height = 0.2
 
 [node name="shot_fireball" type="RigidBody3D"]
 collision_layer = 2

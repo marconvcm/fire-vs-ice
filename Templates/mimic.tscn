@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dh1txm4isvu0e"]
+[gd_scene load_steps=9 format=3 uid="uid://dh1txm4isvu0e"]
 
 [ext_resource type="Script" uid="uid://70fvor7r5b5j" path="res://Templates/mimic.gd" id="1_6u7i7"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_kioik"]
 [ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_hbyha"]
+[ext_resource type="Texture2D" uid="uid://bnbvecseayv04" path="res://Models/example_sprite_sheet.png" id="4_m85ol"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6u7i7"]
 
@@ -25,6 +26,7 @@ metadata/_custom_type_script = ExtResource("1_kioik")
 shape = SubResource("CapsuleShape3D_6u7i7")
 
 [node name="Body" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_hbyha")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
@@ -49,6 +51,13 @@ one_shot = true
 [node name="ExplodeTimer" type="Timer" parent="."]
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.111
+billboard = 1
+texture = ExtResource("4_m85ol")
+hframes = 13
+vframes = 8
 
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]
