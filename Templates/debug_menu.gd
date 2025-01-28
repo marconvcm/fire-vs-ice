@@ -12,7 +12,7 @@ func _process(_delta):
     if PlayerInput.is_pause_just_pressed():
         if self.visible:
             self.visible=false
-            get_tree().paused=false
+            unpause()
         else:
             self.visible=true
     pass
@@ -34,28 +34,28 @@ func _on_sfx_volume_slider_value_changed(value):
 
 
 func _on_reset_button_pressed():
-    get_tree().paused=false
+    unpause()
     get_tree().reload_current_scene()
     
 
 
 func _on_debug_pressed():
-    get_tree().paused=false
+    unpause()
     get_tree().change_scene_to_file("Level/Debug.tscn")
 
 
 func _on_debug_2_pressed():
-    get_tree().paused=false
+    unpause()
     get_tree().change_scene_to_file("Level/Debug2.tscn")
 
 
 func _on_level_1_pressed():
-    get_tree().paused=false
+    unpause()
     get_tree().change_scene_to_file("Level/level_1_editable.tscn")
 
 
 func _on_main_menu_pressed():
-    get_tree().paused=false
+    unpause()
     get_tree().change_scene_to_file("res://Templates/main_menu.tscn")
 
 func unpause():
