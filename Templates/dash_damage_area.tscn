@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cg5gfv0llam7h"]
+
+[ext_resource type="Script" uid="uid://dmrl783c4ta4o" path="res://Templates/dash_damage_area.gd" id="1_tiiw7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xeiic"]
+resource_local_to_scene = true
+size = Vector3(2, 0.1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tiiw7"]
+albedo_color = Color(1, 0, 0, 0.843137)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tiiw7"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_tiiw7")
+
+[node name="DashDamageArea" type="Area3D"]
+collision_layer = 2
+collision_mask = 44
+script = ExtResource("1_tiiw7")
+
+[node name="DashDamageAreaShape" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_xeiic")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_tiiw7")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

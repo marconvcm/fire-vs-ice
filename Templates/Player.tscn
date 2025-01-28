@@ -67,9 +67,6 @@ mesh = SubResource("BoxMesh_avask")
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 current = true
 
-[node name="RageTimer" type="Timer" parent="."]
-wait_time = 5.0
-
 [node name="LobTimer" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
@@ -78,7 +75,13 @@ one_shot = true
 wait_time = 0.1
 one_shot = true
 
-[node name="DashTimer" type="Timer" parent="."]
+[node name="DashCooldownTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="DashDurationTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
 
 [node name="RageAoEArea" type="Area3D" parent="."]
 collision_layer = 2
@@ -93,3 +96,6 @@ mesh = SubResource("SphereMesh_88hry")
 
 [node name="GameOver" parent="." instance=ExtResource("4_88hry")]
 visible = false
+
+[node name="DashRaycast" type="RayCast3D" parent="."]
+collision_mask = 48

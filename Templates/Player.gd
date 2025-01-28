@@ -14,13 +14,20 @@ var radius:float=1.0
 var raging:bool = false
 var max_lob_charged:bool=false
 @onready var heat = $Heat
-@onready var ragetimer=$RageTimer
 @onready var shoottimer=$ShootTimer
 @onready var lobtimer=$LobTimer
 @onready var rage_area=$RageAoEArea
 var maxheat:float = 1000.0
-var dashlength=15
+var dash_cost=10
+var dashlength=5
 var dashwidth=2
+var dashspeed=5*speed
+var dashstartpoint=null
+@onready var dashraycast=$DashRaycast
+@onready var dashdurationtimer=$DashDurationTimer
+@onready var dashcooldowntimer=$DashCooldownTimer
+var dash_rage_area=preload("dash_damage_area.tscn")
+var current_dash_rage_area=null
 
 func _ready():
     heat.set_max_value(maxheat)
@@ -30,6 +37,7 @@ func _ready():
     heat.set_value(maxheat)
     heat.value_empty.connect(die)
     lobtimer.timeout.connect(maxLobChargeReached)
+    dashdurationtimer.timeout.connect(dashend)
     
 func get_move_axis() -> Vector3:
     return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
@@ -51,8 +59,9 @@ func _process(delta: float) -> void:
         lose_heat(rage_cost_per_second*delta)
         rage_damage(rage_damage_per_second*delta)
     
-    if PlayerInput.is_dash_just_pressed():
-        dash()
+    if PlayerInput.is_dash_just_pressed() and dashcooldowntimer.is_stopped() and if_enough_heat(dash_cost):
+        lose_heat(dash_cost)
+        dashstart()
     
     if PlayerInput.is_run_pressed():
         speed_scale = lerp(speed_scale, 2.0, 0.1)
@@ -73,7 +82,17 @@ func _process(delta: float) -> void:
         shoot_fireball()
         shoottimer.start()
 
-
+func _physics_process(delta):
+    if is_dashing():
+        var gravity_strength=get_gravity_strength()
+        velocity=facing*dashspeed+gravity_strength
+        move_and_slide()
+        if current_dash_rage_area!=null:
+            var dash_distance=self.global_position-dashstartpoint
+            current_dash_rage_area.grow(dash_distance)
+    else:
+        super._physics_process(delta)
+        
 
 func lob_fireball(strength:float):
     var fireballInst=lobbed_fireball.instantiate()
@@ -125,5 +144,28 @@ func die()->void:
 func maxLobChargeReached():
     max_lob_charged=true
 
-func dash():
-    pass
+func dashstart():
+    #facing is locked due to not changing the physics process from default actor class, use that for direction
+    dashstartpoint=self.global_position
+    dashdurationtimer.start()
+    dashcooldowntimer.start()
+    set_collision_mask_value(3,0)
+    set_collision_mask_value(4,0)
+    if raging:
+        current_dash_rage_area=dash_rage_area.instantiate()
+        current_dash_rage_area.position=self.position
+        if facing.z>=0:
+            current_dash_rage_area.rotation=Vector3(0, asin(facing.x),0)
+        else:
+            current_dash_rage_area.rotation=Vector3(0, PI-asin(facing.x),0)
+        print(asin(facing.x))
+        add_sibling(current_dash_rage_area)
+    
+func dashend():
+    dashstartpoint=null
+    set_collision_mask_value(3,1)
+    set_collision_mask_value(4,1)
+    current_dash_rage_area=null
+
+func is_dashing()->bool:
+    return dashstartpoint!=null
