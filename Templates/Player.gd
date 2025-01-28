@@ -19,6 +19,8 @@ var max_lob_charged:bool=false
 @onready var lobtimer=$LobTimer
 @onready var rage_area=$RageAoEArea
 var maxheat:float = 1000.0
+var dashlength=15
+var dashwidth=2
 
 func _ready():
     heat.set_max_value(maxheat)
@@ -40,13 +42,23 @@ func _process(delta: float) -> void:
         die()
     if PlayerInput.is_pause_just_pressed():
         get_tree().paused=true
+        
+    if raging and !PlayerInput.is_rage_pressed():
+        rage_end()
+    if PlayerInput.is_rage_pressed() and !raging and if_enough_heat(rage_cost):
+        rage_start()    
     if raging:
         lose_heat(rage_cost_per_second*delta)
         rage_damage(rage_damage_per_second*delta)
-    if PlayerInput.is_right_modifier_pressed():
+    
+    if PlayerInput.is_dash_just_pressed():
+        dash()
+    
+    if PlayerInput.is_run_pressed():
         speed_scale = lerp(speed_scale, 2.0, 0.1)
     else:
         speed_scale = lerp(speed_scale, 1.0, 0.1)
+        
     if PlayerInput.is_lob_pressed() and !max_lob_charged and lobtimer.is_stopped():
         lobtimer.start()
     if PlayerInput.is_lob_released():
@@ -55,14 +67,13 @@ func _process(delta: float) -> void:
             strength*=2
         lose_heat(lobbing_cost)
         lob_fireball(strength)
+        
     if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
         lose_heat(shooting_cost)
         shoot_fireball()
         shoottimer.start()
-    if PlayerInput.is_rage_pressed() and !raging and if_enough_heat(rage_cost):
-        rage_start()
-    if raging and !PlayerInput.is_rage_pressed():
-        rage_end()
+
+
 
 func lob_fireball(strength:float):
     var fireballInst=lobbed_fireball.instantiate()
@@ -113,3 +124,6 @@ func die()->void:
 
 func maxLobChargeReached():
     max_lob_charged=true
+
+func dash():
+    pass

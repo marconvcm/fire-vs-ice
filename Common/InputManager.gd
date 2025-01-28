@@ -62,8 +62,8 @@ func is_shoot_pressed() -> bool:
 func is_shoot_released() -> bool:
     return self.is_action_released("Shoot")
 
-func is_dash_pressed() -> bool:
-    return self.is_action_pressed("Dash")
+func is_dash_just_pressed() -> bool:
+    return self.is_action_just_pressed("Dash")
 
 func is_dash_released() -> bool:
     return self.is_action_released("Dash")
@@ -74,22 +74,16 @@ func is_rage_pressed() -> bool:
 func is_rage_released() -> bool:
     return self.is_action_released("Rage")
 
-func is_left_modifier_pressed() -> bool:
-    return self.is_action_pressed("LeftModifier")
+func is_run_pressed() -> bool:
+    return self.is_action_pressed("Run")
 
-func is_left_modifier_released() -> bool:
-    return self.is_action_released("LeftModifier")
-
-func is_right_modifier_pressed() -> bool:
-    return self.is_action_pressed("RightModifier")
-
-func is_right_modifier_released() -> bool:
-    return self.is_action_released("RightModifier")
-
-func left_modifier_strength() -> float:
-    return self.get_modifier_strength("LeftModifier")
-
-func right_modifier_strength() -> float:
-    return self.get_modifier_strength("RightModifier")
+func is_run_released() -> bool:
+    return self.is_action_released("Run")
+#
+#func left_modifier_strength() -> float:
+    #return self.get_modifier_strength("LeftModifier")
+#
+#func right_modifier_strength() -> float:
+    #return self.get_modifier_strength("RightModifier")
 
 #endregion
