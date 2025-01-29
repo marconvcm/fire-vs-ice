@@ -1,7 +1,7 @@
 [gd_scene load_steps=68 format=3 uid="uid://dyfkw4bd8l5bm"]
 
-[ext_resource type="Script" path="res://Templates/Player.gd" id="1_b24bn"]
-[ext_resource type="Script" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
+[ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
+[ext_resource type="Script" uid="uid://b5srtuqsudr8u" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
 [ext_resource type="PackedScene" uid="uid://cmkkrdkvywr3a" path="res://Templates/game_over.tscn" id="4_88hry"]
 [ext_resource type="Texture2D" uid="uid://ckhk6a6kuba0x" path="res://Models/back.sprites/Untitled-20001.tres" id="5_heyyl"]
 [ext_resource type="Texture2D" uid="uid://b47cuv8uvavx1" path="res://Models/back.sprites/Untitled-20002.tres" id="6_ljp7o"]
@@ -501,11 +501,11 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fjdfr"]
 _data = {
-&"Left Idle": SubResource("Animation_c4nt8"),
 &"Back Idle": SubResource("Animation_nvpld"),
 &"Front Idle": SubResource("Animation_qy2v6"),
-&"Right Idle": SubResource("Animation_1pftl"),
-&"RESET": SubResource("Animation_n178h")
+&"Left Idle": SubResource("Animation_c4nt8"),
+&"RESET": SubResource("Animation_n178h"),
+&"Right Idle": SubResource("Animation_1pftl")
 }
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]

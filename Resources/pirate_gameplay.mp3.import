@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/pirate_gameplay.mp3-71999457e097d878822bae6c2
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

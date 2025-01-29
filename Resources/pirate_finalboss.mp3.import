@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/pirate_finalboss.mp3-0c040a545bbafc6a6a72014b
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

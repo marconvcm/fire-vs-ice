@@ -51,19 +51,19 @@ func _process(delta: float) -> void:
     if PlayerInput.is_pause_just_pressed():
         get_tree().paused=true
         
-    var animationdirection=get_aim_axis()
+    var animationdirection=PlayerInput.get_aim_direction().normalized()
     if animationdirection==Vector3.ZERO:
-        animationdirection=get_move_axis()
+        animationdirection=PlayerInput.get_axis().normalized()
     if abs(animationdirection.z)>=abs(animationdirection.x):
         if animationdirection.z>0:
-            animator.play("Right Idle")
+            animator.play("Front Idle")
         else:
-            animator.play("Left Idle")
+            animator.play("Back Idle")
     else:
         if animationdirection.x>0:
-            animator.play("Back Idle")
+            animator.play("Right Idle")
         elif animationdirection.x!=0:
-            animator.play("Front Idle")
+            animator.play("Left Idle")
             
     if raging and !PlayerInput.is_rage_pressed():
         rage_end()
