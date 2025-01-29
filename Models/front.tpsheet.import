@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://18l21vbivnaf"
+path="res://.godot/imported/front.tpsheet-6baf250b355ac08d5712c6f7338b4a12.res"
+
+[deps]
+
+files=["res://Models/front.sprites/Untitled-2.jpg0001.tres", "res://Models/front.sprites/Untitled-2.jpg0002.tres", "res://Models/front.sprites/Untitled-2.jpg0003.tres", "res://Models/front.sprites/Untitled-2.jpg0004.tres", "res://Models/front.sprites/Untitled-2.jpg0005.tres", "res://Models/front.sprites/Untitled-2.jpg0006.tres", "res://Models/front.sprites/Untitled-2.jpg0007.tres", "res://Models/front.sprites/Untitled-2.jpg0008.tres", "res://Models/front.sprites/Untitled-2.jpg0009.tres", "res://Models/front.sprites/Untitled-2.jpg0010.tres", "res://Models/front.sprites/Untitled-2.jpg0011.tres", "res://Models/front.sprites/Untitled-2.jpg0012.tres", "res://Models/front.sprites/Untitled-2.jpg0013.tres", "res://Models/front.sprites/Untitled-2.jpg0016.tres", "res://Models/front.sprites/Untitled-2.jpg0014.tres", "res://Models/front.sprites/Untitled-2.jpg0015.tres"]
+
+source_file="res://Models/front.tpsheet"
+dest_files=["res://.godot/imported/front.tpsheet-6baf250b355ac08d5712c6f7338b4a12.res", "res://Models/front.sprites/Untitled-2.jpg0001.tres", "res://Models/front.sprites/Untitled-2.jpg0002.tres", "res://Models/front.sprites/Untitled-2.jpg0003.tres", "res://Models/front.sprites/Untitled-2.jpg0004.tres", "res://Models/front.sprites/Untitled-2.jpg0005.tres", "res://Models/front.sprites/Untitled-2.jpg0006.tres", "res://Models/front.sprites/Untitled-2.jpg0007.tres", "res://Models/front.sprites/Untitled-2.jpg0008.tres", "res://Models/front.sprites/Untitled-2.jpg0009.tres", "res://Models/front.sprites/Untitled-2.jpg0010.tres", "res://Models/front.sprites/Untitled-2.jpg0011.tres", "res://Models/front.sprites/Untitled-2.jpg0012.tres", "res://Models/front.sprites/Untitled-2.jpg0013.tres", "res://Models/front.sprites/Untitled-2.jpg0016.tres", "res://Models/front.sprites/Untitled-2.jpg0014.tres", "res://Models/front.sprites/Untitled-2.jpg0015.tres"]
+
+[params]
+

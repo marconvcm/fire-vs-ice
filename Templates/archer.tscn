@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bro1yudoqydnp"]
+[gd_scene load_steps=10 format=3 uid="uid://bro1yudoqydnp"]
 
 [ext_resource type="Script" uid="uid://dwnau3bbcrj3p" path="res://Templates/archer.gd" id="1_1caoe"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_obkgi"]
 [ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_huixx"]
-[ext_resource type="Texture2D" uid="uid://bnbvecseayv04" path="res://Models/example_sprite_sheet.png" id="4_02ebo"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_02ebo"]
 
@@ -14,8 +13,15 @@ albedo_color = Color(0, 0.705882, 0.901961, 1)
 material = SubResource("StandardMaterial3D_2gnp5")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_m6j17"]
+radius = 10.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_huixx"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_huixx"]
 
 [node name="Archer" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 50
 script = ExtResource("1_1caoe")
 metadata/_custom_type_script = ExtResource("1_obkgi")
 
@@ -29,14 +35,34 @@ mesh = SubResource("CapsuleMesh_7um0d")
 stream = ExtResource("3_huixx")
 
 [node name="ActivationArea" type="Area3D" parent="."]
+collision_layer = 8
 
 [node name="ActivationAreaShape" type="CollisionShape3D" parent="ActivationArea"]
 shape = SubResource("SphereShape3D_m6j17")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.14577e-06, 1.18074, -0.000815868)
-texture = ExtResource("4_02ebo")
-hframes = 13
-vframes = 8
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_huixx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="NormalTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="SpecialTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="SpecialCooldownTimer" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+collision_mask = 49
+
+[node name="SpecialActivationArea" type="Area3D" parent="."]
+
+[node name="SpecialActivationAreaShape" type="CollisionShape3D" parent="SpecialActivationArea"]
+shape = SubResource("SphereShape3D_huixx")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[connection signal="body_entered" from="ActivationArea" to="." method="_on_activation_area_body_entered"]

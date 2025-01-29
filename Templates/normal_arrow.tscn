@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1w615owhho4j"]
+
+[ext_resource type="Script" uid="uid://dt7apbty741tf" path="res://Templates/normal_arrow.gd" id="1_gbsjr"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y3s2d"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gbsjr"]
+
+[node name="Normal Arrow" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 49
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_gbsjr")
+
+[node name="Hitbox" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_y3s2d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_gbsjr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

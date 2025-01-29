@@ -32,6 +32,10 @@ window/size/window_height_override=1600
 
 project/assembly_name="fire_vs_ice"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/codeandweb.texturepacker/plugin.cfg")
+
 [input]
 
 MoveUp={

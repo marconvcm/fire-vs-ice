@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://fj550bpylsj3"
+path="res://.godot/imported/back.tpsheet-889e37b54e72da5118f0eca4892334f9.res"
+
+[deps]
+
+files=["res://Models/back.sprites/Untitled-20001.tres", "res://Models/back.sprites/Untitled-20002.tres", "res://Models/back.sprites/Untitled-20003.tres", "res://Models/back.sprites/Untitled-20004.tres", "res://Models/back.sprites/Untitled-20005.tres", "res://Models/back.sprites/Untitled-20006.tres", "res://Models/back.sprites/Untitled-20007.tres", "res://Models/back.sprites/Untitled-20008.tres", "res://Models/back.sprites/Untitled-20009.tres", "res://Models/back.sprites/Untitled-20010.tres", "res://Models/back.sprites/Untitled-20011.tres", "res://Models/back.sprites/Untitled-20012.tres", "res://Models/back.sprites/Untitled-20013.tres", "res://Models/back.sprites/Untitled-20014.tres", "res://Models/back.sprites/Untitled-20015.tres", "res://Models/back.sprites/Untitled-20016.tres"]
+
+source_file="res://Models/back.tpsheet"
+dest_files=["res://.godot/imported/back.tpsheet-889e37b54e72da5118f0eca4892334f9.res", "res://Models/back.sprites/Untitled-20001.tres", "res://Models/back.sprites/Untitled-20002.tres", "res://Models/back.sprites/Untitled-20003.tres", "res://Models/back.sprites/Untitled-20004.tres", "res://Models/back.sprites/Untitled-20005.tres", "res://Models/back.sprites/Untitled-20006.tres", "res://Models/back.sprites/Untitled-20007.tres", "res://Models/back.sprites/Untitled-20008.tres", "res://Models/back.sprites/Untitled-20009.tres", "res://Models/back.sprites/Untitled-20010.tres", "res://Models/back.sprites/Untitled-20011.tres", "res://Models/back.sprites/Untitled-20012.tres", "res://Models/back.sprites/Untitled-20013.tres", "res://Models/back.sprites/Untitled-20014.tres", "res://Models/back.sprites/Untitled-20015.tres", "res://Models/back.sprites/Untitled-20016.tres"]
+
+[params]
+

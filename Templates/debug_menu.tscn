@@ -70,10 +70,12 @@ layout_mode = 2
 metadata/_tab_index = 1
 
 [node name="Debug" type="Button" parent="PanelContainer/TabContainer/Level Select"]
+visible = false
 layout_mode = 2
 text = "Debug"
 
 [node name="Debug2" type="Button" parent="PanelContainer/TabContainer/Level Select"]
+visible = false
 layout_mode = 2
 text = "Debug2"
 

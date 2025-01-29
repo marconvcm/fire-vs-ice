@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://claa8pljhm2xb"]
+[gd_scene load_steps=76 format=3 uid="uid://claa8pljhm2xb"]
 
 [ext_resource type="ArrayMesh" uid="uid://bkvyku8plftnd" path="res://Models/Level1/map1 greyboxed_Cube_001.res" id="1_huetn"]
 [ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="1_j053h"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dyfkw4bd8l5bm" path="res://Templates/Player.tscn" id="10_i8qcd"]
 [ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="11_1vx5w"]
 [ext_resource type="PackedScene" uid="uid://dh1txm4isvu0e" path="res://Templates/mimic.tscn" id="11_754k8"]
+[ext_resource type="PackedScene" uid="uid://bro1yudoqydnp" path="res://Templates/archer.tscn" id="13_qtd18"]
 
 [sub_resource type="Environment" id="Environment_754k8"]
 ambient_light_source = 2
@@ -952,7 +953,7 @@ collision_mask = 15
 shape = SubResource("ConcavePolygonShape3D_mp4s7")
 
 [node name="Mount" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2501, 48.5085, 14.741)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2501, 9.89838, 14.741)
 
 [node name="Gimbal" type="Node3D" parent="Mount"]
 
@@ -977,3 +978,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.361, 4.19998, -16.6079)
 [node name="Mimic" parent="." instance=ExtResource("11_754k8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.3533, 0.997378, -10.2588)
 speed = 10.0
+
+[node name="Archer" parent="." instance=ExtResource("13_qtd18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.002, 1.07271, -61.8657)

@@ -23,7 +23,6 @@ var dashlength=5
 var dashwidth=2
 var dashspeed=5*speed
 var dashstartpoint=null
-@onready var dashraycast=$DashRaycast
 @onready var dashdurationtimer=$DashDurationTimer
 @onready var dashcooldowntimer=$DashCooldownTimer
 var dash_rage_area=preload("dash_damage_area.tscn")
@@ -39,7 +38,6 @@ func _ready():
     heat.value_empty.connect(die)
     lobtimer.timeout.connect(maxLobChargeReached)
     dashdurationtimer.timeout.connect(dashend)
-    animator.play("Idle")
     
 func get_move_axis() -> Vector3:
     return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)
@@ -53,6 +51,20 @@ func _process(delta: float) -> void:
     if PlayerInput.is_pause_just_pressed():
         get_tree().paused=true
         
+    var animationdirection=get_aim_axis()
+    if animationdirection==Vector3.ZERO:
+        animationdirection=get_move_axis()
+    if abs(animationdirection.z)>=abs(animationdirection.x):
+        if animationdirection.z>0:
+            animator.play("Right Idle")
+        else:
+            animator.play("Left Idle")
+    else:
+        if animationdirection.x>0:
+            animator.play("Back Idle")
+        elif animationdirection.x!=0:
+            animator.play("Front Idle")
+            
     if raging and !PlayerInput.is_rage_pressed():
         rage_end()
     if PlayerInput.is_rage_pressed() and !raging and if_enough_heat(rage_cost):
@@ -132,10 +144,10 @@ func rage_end()->void:
     var area=$RageAoEArea
     area.get_child(1).visible=false
 
-func if_enough_heat(damage:int)->bool:
+func if_enough_heat(damage:float)->bool:
     return (heat.value>damage)
     
-func lose_heat(damage:int)->void:
+func lose_heat(damage:float)->void:
     heat.deplete(damage)
 
 func die()->void:
@@ -160,7 +172,6 @@ func dashstart():
             current_dash_rage_area.rotation=Vector3(0, asin(facing.x),0)
         else:
             current_dash_rage_area.rotation=Vector3(0, PI-asin(facing.x),0)
-        print(asin(facing.x))
         add_sibling(current_dash_rage_area)
     
 func dashend():
@@ -171,3 +182,6 @@ func dashend():
 
 func is_dashing()->bool:
     return dashstartpoint!=null
+
+func takeDamage(damage: float)->void:
+    lose_heat(damage)

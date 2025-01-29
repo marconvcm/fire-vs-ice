@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://70fvor7r5b5j" path="res://Templates/mimic.gd" id="1_6u7i7"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_kioik"]
 [ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_hbyha"]
-[ext_resource type="Texture2D" uid="uid://bnbvecseayv04" path="res://Models/example_sprite_sheet.png" id="4_m85ol"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6u7i7"]
 
@@ -14,6 +13,8 @@ radius = 5.0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6u7i7"]
 radius = 10.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hbyha"]
 
 [node name="Mimic" type="CharacterBody3D"]
 collision_layer = 4
@@ -53,11 +54,10 @@ one_shot = true
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-pixel_size = 0.111
+pixel_size = 0.003
 billboard = 1
-texture = ExtResource("4_m85ol")
-hframes = 13
-vframes = 8
+texture = SubResource("CompressedTexture2D_hbyha")
+hframes = 16
 
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]
