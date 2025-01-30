@@ -58,5 +58,7 @@ billboard = 1
 texture = SubResource("CompressedTexture2D_hbyha")
 hframes = 16
 
+[node name="ShotTimer" type="Timer" parent="."]
+
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]
