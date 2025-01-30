@@ -2,11 +2,14 @@ class_name axe_giant extends EnemyBase
 
 var state:int=0
 var attacks_per_special=2
+var attack_index=0
 var target=null
 var attackdamage=100
 var attackrange=4
 var specialdamage=300
 var target_position=null
+var is_player_in_range=false
+var attacking:bool=false#true when enemy is mid-animation
 @onready var home_position=self.global_position
 @onready var navi = $NavigationAgent3D
 #var shockwave=preload("res://Templates/mimic_projectile.tscn")replace with actual shockwave
@@ -26,7 +29,14 @@ func _process(_delta):
         0:#if currently hiding
             pass
         1:
-            if target!=null:
+            if is_player_in_range==true and $AttackCooldown.is_stopped():
+                attacking=true
+                if attack_index==attacks_per_special:
+                    special_attack()
+                else:
+                    normal_attack()
+                    
+            if !attacking and target!=null:
                 set_movement_target(target.global_position)
         2:
             if is_target_visible():
@@ -48,12 +58,13 @@ func _physics_process(_delta):
 
 func _on_activation_area_body_shape_entered(_body_rid, collidingbody, _body_shape_index, local_shape_index):
     match state:
-        0: #if hiding, only activate at lower radius
+        0: #if not currently active, only activate at lower radius
             if local_shape_index==0:
                 target=collidingbody
                 state_transition(1)
-        1: #if already chasing, no need to care about collision
-            pass
+        1: #will need to attack once AttackQueue is entered
+            if local_shape_index==2:
+                is_player_in_range=true
         _: #otherwise start chasing
             target=collidingbody
             state_transition(1)#start chasing
@@ -64,6 +75,8 @@ func _on_activation_area_body_shape_exited(_body_rid, _body, _body_shape_index, 
         1: #if already chasing, stop chasing when escaping larger radius
             if local_shape_index==1:#if deactivation shape area exited
                 state_transition(2)
+            elif local_shape_index==2:#if player leaves attack range
+                is_player_in_range=false
         _:
             pass
 
@@ -89,7 +102,13 @@ func giveup():
     state_transition(3)
     
 func normal_attack():
-    pass
+    print("Attack")
+    $AttackCooldown.start()
+    attacking=false
+    attack_index+=1
     
 func special_attack():
-    pass
+    print("Big Attack")
+    $AttackCooldown.start()
+    attacking=false
+    attack_index=0

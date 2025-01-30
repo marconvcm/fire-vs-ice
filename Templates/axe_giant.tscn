@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://beic6p1mg7on6"]
+[gd_scene load_steps=12 format=3 uid="uid://beic6p1mg7on6"]
 
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_jpd86"]
 [ext_resource type="Script" uid="uid://cuddt8mnhvs3t" path="res://Templates/axe_giant.gd" id="1_n7ple"]
+[ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_juj8c"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n7ple"]
 radius = 1.0
@@ -23,9 +24,14 @@ radius = 10.0
 [sub_resource type="SphereShape3D" id="SphereShape3D_juj8c"]
 radius = 20.0
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_xyiw7"]
+radius = 6.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_n7ple"]
 
 [node name="AxeGiant" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 48
 script = ExtResource("1_n7ple")
 metadata/_custom_type_script = ExtResource("1_jpd86")
 
@@ -36,8 +42,11 @@ shape = SubResource("CapsuleShape3D_n7ple")
 mesh = SubResource("CapsuleMesh_xyiw7")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_juj8c")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 2.0
+target_desired_distance = 2.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
@@ -45,10 +54,13 @@ mesh = SubResource("CapsuleMesh_xyiw7")
 sprite_frames = SubResource("SpriteFrames_n7ple")
 
 [node name="AttackCooldown" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
 
 [node name="GiveUpTimer" type="Timer" parent="."]
 
 [node name="ActivationArea" type="Area3D" parent="."]
+collision_layer = 8
 
 [node name="Activation" type="CollisionShape3D" parent="ActivationArea"]
 shape = SubResource("SphereShape3D_n7ple")
@@ -56,7 +68,17 @@ shape = SubResource("SphereShape3D_n7ple")
 [node name="Deactivation" type="CollisionShape3D" parent="ActivationArea"]
 shape = SubResource("SphereShape3D_juj8c")
 
+[node name="AttackQueue" type="CollisionShape3D" parent="ActivationArea"]
+shape = SubResource("SphereShape3D_xyiw7")
+
 [node name="WeaponHitBox" type="StaticBody3D" parent="."]
+collision_layer = 4
+collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WeaponHitBox"]
 shape = SubResource("BoxShape3D_n7ple")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+
+[connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]

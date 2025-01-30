@@ -141,8 +141,7 @@ func rage_damage(damage:float)->void:
             
 func rage_end()->void:
     raging=false
-    var area=$RageAoEArea
-    area.get_child(1).visible=false
+    rage_area.get_child(1).visible=false
 
 func if_enough_heat(damage:float)->bool:
     return (heat.value>damage)

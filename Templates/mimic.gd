@@ -3,8 +3,6 @@ class_name mimic extends EnemyBase
 #Mimic can be deactivated if the player leaves the deactivation range and is out of the mimic's line of sight
 var state:int=0
 var target=null
-var contactdamage=50
-var explodedamage=200
 var target_position=null
 @onready var home_position=self.global_position
 @onready var navi = $NavigationAgent3D
