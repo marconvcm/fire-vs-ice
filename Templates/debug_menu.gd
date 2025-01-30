@@ -15,6 +15,7 @@ func _process(_delta):
             unpause()
         else:
             self.visible=true
+            $"PanelContainer/TabContainer/Basic Options/Reset Button".grab_focus()
     pass
 
 

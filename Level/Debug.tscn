@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://0wecm0reukno"]
 
-[ext_resource type="Script" path="res://Templates/World.gd" id="1_dhj0i"]
+[ext_resource type="Script" path="res://Templates/Debug.gd" id="1_pk561"]
 [ext_resource type="PackedScene" uid="uid://dyfkw4bd8l5bm" path="res://Templates/Player.tscn" id="1_r0n2a"]
-[ext_resource type="Script" path="res://Common/Plugins/DebugPlugin.gd" id="2_pk561"]
+[ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="2_pk561"]
 [ext_resource type="PackedScene" uid="uid://752xbach55lb" path="res://Templates/DebugPanel.tscn" id="3_vr62s"]
 [ext_resource type="PackedScene" uid="uid://t03w0dfijfat" path="res://Templates/HUD.tscn" id="4_wjrnp"]
-[ext_resource type="Script" path="res://Templates/GimbalCamera.gd" id="6_a57uu"]
+[ext_resource type="Script" uid="uid://dyqkscel6ddgv" path="res://Templates/GimbalCamera.gd" id="6_a57uu"]
 [ext_resource type="PackedScene" uid="uid://cdn1uix62n76q" path="res://Templates/enemy_base.tscn" id="7_dhj0i"]
 [ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="8_pk561"]
 
@@ -26,7 +26,7 @@ albedo_color = Color(0.428876, 0.356655, 0.999984, 1)
 albedo_color = Color(0.366595, 0.366595, 0.366595, 1)
 
 [node name="World" type="Node3D"]
-script = ExtResource("1_dhj0i")
+script = ExtResource("1_pk561")
 
 [node name="DebugPlugin" type="Node" parent="." node_paths=PackedStringArray("world", "panel")]
 script = ExtResource("2_pk561")

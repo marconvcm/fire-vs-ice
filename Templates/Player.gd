@@ -154,6 +154,7 @@ func die()->void:
     $GameOver.visible=true
     #probably put a death animation and some other things here
     get_tree().paused=true
+    $"GameOver/VBoxContainer/Retry Button".grab_focus()
 
 func maxLobChargeReached():
     max_lob_charged=true
