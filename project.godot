@@ -139,6 +139,7 @@ Dash={
 3d_physics/layer_4="Enemy Projectile"
 3d_physics/layer_5="Environment Static"
 3d_physics/layer_6="Environment Breakable"
+3d_physics/layer_7="Mimic Repulsion"
 
 [rendering]
 

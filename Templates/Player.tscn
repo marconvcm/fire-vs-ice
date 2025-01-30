@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://dyfkw4bd8l5bm"]
+[gd_scene load_steps=69 format=3 uid="uid://dyfkw4bd8l5bm"]
 
 [ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
 [ext_resource type="Script" uid="uid://b5srtuqsudr8u" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
@@ -508,6 +508,9 @@ _data = {
 &"Right Idle": SubResource("Animation_1pftl")
 }
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_qy2v6"]
+radius = 4.0
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]
 collision_mask = 52
 script = ExtResource("1_b24bn")
@@ -586,3 +589,10 @@ libraries = {
 &"": SubResource("AnimationLibrary_fjdfr")
 }
 playback_auto_capture = false
+
+[node name="MimicRepeller" type="StaticBody3D" parent="."]
+collision_layer = 64
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MimicRepeller"]
+shape = SubResource("SphereShape3D_qy2v6")
