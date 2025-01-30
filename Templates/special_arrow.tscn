@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://oisbdglpx41g"]
+
+[ext_resource type="Script" path="res://Templates/special_arrow.gd" id="1_sqijs"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y3s2d"]
+radius = 0.3
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gbsjr"]
+radius = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_sqijs"]
+radius = 1.0
+height = 2.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qdyvl"]
+radius = 1.0
+
+[node name="Special Arrow" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 49
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_sqijs")
+
+[node name="DirectHitbox" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_y3s2d")
+
+[node name="Direct Image" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_gbsjr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+
+[node name="SplashDamageArea" type="Area3D" parent="."]
+
+[node name="AoE Image" type="MeshInstance3D" parent="SplashDamageArea"]
+visible = false
+mesh = SubResource("SphereMesh_sqijs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SplashDamageArea"]
+shape = SubResource("SphereShape3D_qdyvl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

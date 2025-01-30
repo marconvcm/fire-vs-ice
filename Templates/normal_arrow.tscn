@@ -3,8 +3,12 @@
 [ext_resource type="Script" uid="uid://dt7apbty741tf" path="res://Templates/normal_arrow.gd" id="1_gbsjr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y3s2d"]
+radius = 0.1
+height = 1.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_gbsjr"]
+radius = 0.1
+height = 1.0
 
 [node name="Normal Arrow" type="RigidBody3D"]
 collision_layer = 8
@@ -23,7 +27,5 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 mesh = SubResource("CapsuleMesh_gbsjr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-
-[node name="RayCast3D" type="RayCast3D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

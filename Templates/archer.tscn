@@ -51,9 +51,7 @@ one_shot = true
 
 [node name="SpecialTimer" type="Timer" parent="."]
 wait_time = 2.0
-
-[node name="SpecialCooldownTimer" type="Timer" parent="."]
-wait_time = 10.0
+one_shot = true
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
 collision_mask = 49
@@ -62,7 +60,5 @@ collision_mask = 49
 
 [node name="SpecialActivationAreaShape" type="CollisionShape3D" parent="SpecialActivationArea"]
 shape = SubResource("SphereShape3D_huixx")
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [connection signal="body_entered" from="ActivationArea" to="." method="_on_activation_area_body_entered"]
