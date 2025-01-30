@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://beic6p1mg7on6"]
+[gd_scene load_steps=10 format=3 uid="uid://beic6p1mg7on6"]
 
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_jpd86"]
 [ext_resource type="Script" uid="uid://cuddt8mnhvs3t" path="res://Templates/axe_giant.gd" id="1_n7ple"]
@@ -16,6 +16,14 @@ radius = 1.0
 height = 4.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n7ple"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_n7ple"]
+radius = 10.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_juj8c"]
+radius = 20.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n7ple"]
 
 [node name="AxeGiant" type="CharacterBody3D"]
 script = ExtResource("1_n7ple")
@@ -37,3 +45,18 @@ mesh = SubResource("CapsuleMesh_xyiw7")
 sprite_frames = SubResource("SpriteFrames_n7ple")
 
 [node name="AttackCooldown" type="Timer" parent="."]
+
+[node name="GiveUpTimer" type="Timer" parent="."]
+
+[node name="ActivationArea" type="Area3D" parent="."]
+
+[node name="Activation" type="CollisionShape3D" parent="ActivationArea"]
+shape = SubResource("SphereShape3D_n7ple")
+
+[node name="Deactivation" type="CollisionShape3D" parent="ActivationArea"]
+shape = SubResource("SphereShape3D_juj8c")
+
+[node name="WeaponHitBox" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WeaponHitBox"]
+shape = SubResource("BoxShape3D_n7ple")

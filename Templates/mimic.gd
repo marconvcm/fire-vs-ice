@@ -15,7 +15,7 @@ func _ready():
     $GiveUpTimer.timeout.connect(giveup)
     navi.velocity_computed.connect(Callable(_on_velocity_computed))
     health=5
-    speed=2
+    speed=30
     $ShotTimer.timeout.connect(shoot)
 
 func _process(_delta):
