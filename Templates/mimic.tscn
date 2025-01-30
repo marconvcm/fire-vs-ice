@@ -27,7 +27,6 @@ metadata/_custom_type_script = ExtResource("1_kioik")
 shape = SubResource("CapsuleShape3D_6u7i7")
 
 [node name="Body" type="MeshInstance3D" parent="."]
-visible = false
 mesh = SubResource("CapsuleMesh_hbyha")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
@@ -59,6 +58,7 @@ texture = SubResource("CompressedTexture2D_hbyha")
 hframes = 16
 
 [node name="ShotTimer" type="Timer" parent="."]
+wait_time = 0.3
 
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]
