@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://capta7vb4wpt0"
+path="res://.godot/imported/golem step4.mp3-1af5c8b59979277ce5165ad904d7be19.mp3str"
+
+[deps]
+
+source_file="res://Resources/SFX/golem step4.mp3"
+dest_files=["res://.godot/imported/golem step4.mp3-1af5c8b59979277ce5165ad904d7be19.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
