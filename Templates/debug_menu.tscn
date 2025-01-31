@@ -77,9 +77,13 @@ text = "Debug"
 layout_mode = 2
 text = "Debug2"
 
-[node name="Level1" type="Button" parent="PanelContainer/TabContainer/Level Select"]
+[node name="Level1Prototype" type="Button" parent="PanelContainer/TabContainer/Level Select"]
 layout_mode = 2
-text = "Level 1 (Greybox)"
+text = "Level 1 (Prototype)"
+
+[node name="Level1Final" type="Button" parent="PanelContainer/TabContainer/Level Select"]
+layout_mode = 2
+text = "Level 1 (Final)"
 
 [connection signal="pressed" from="PanelContainer/TabContainer/Basic Options/Reset Button" to="." method="_on_reset_button_pressed"]
 [connection signal="value_changed" from="PanelContainer/TabContainer/Basic Options/Master Volume Slider" to="." method="_on_master_volume_slider_value_changed"]
@@ -88,4 +92,5 @@ text = "Level 1 (Greybox)"
 [connection signal="pressed" from="PanelContainer/TabContainer/Basic Options/Main Menu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Debug" to="." method="_on_debug_pressed"]
 [connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Debug2" to="." method="_on_debug_2_pressed"]
-[connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Level1Prototype" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="PanelContainer/TabContainer/Level Select/Level1Final" to="." method="_on_level_1_final_pressed"]

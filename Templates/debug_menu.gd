@@ -62,3 +62,8 @@ func _on_main_menu_pressed():
 func unpause():
     PlayerPrefsAndData.writePrefs()
     get_tree().paused=false
+
+
+func _on_level_1_final_pressed():
+    unpause()
+    get_tree().change_scene_to_file("res://Level/level_1_final.tscn")
