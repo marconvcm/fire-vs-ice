@@ -35,117 +35,94 @@ import_script/path=""
 _subresources={
 "nodes": {
 "PATH:Cube": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_008": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_009": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_010": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_011": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_012": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_013": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_014": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_015": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_016": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_017": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_018": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_019": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_020": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_021": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cube_022": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
@@ -155,952 +132,762 @@ _subresources={
 "physics/mask": 15
 },
 "PATH:Cylinder_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_008": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_009": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_010": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_011": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_012": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_013": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_014": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_015": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_016": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_017": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_018": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_019": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_020": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_021": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_022": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_023": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_024": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_025": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_026": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_027": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_028": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_029": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_030": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_031": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_032": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_033": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_034": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_035": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_036": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_037": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_038": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Cylinder_039": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Fish": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Landscape": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Leaves Plane": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ParticleEmitter_Inside": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_008": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_009": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_010": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_011": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_012": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_013": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_014": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_015": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_016": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_017": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_018": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_019": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_020": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_021": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_022": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_023": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_024": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_025": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_026": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_027": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_028": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_029": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_030": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_031": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_032": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_033": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_034": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_035": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_036": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_037": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_038": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_039": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_040": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_041": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_042": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_043": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_044": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_045": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_046": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Sphere_047": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Splat": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Splat_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Splat_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_008": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_009": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_010": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_011": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_012": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_013": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_014": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_015": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_016": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_017": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_018": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_019": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_020": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 28_021": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 30": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 30_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:Wooden bridge pack asset 40": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:fire cauldron": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:fire cauldron2": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground1_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground2": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground2_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground3": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground3_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:ground3_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp2": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp3": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp4": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp5": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp6": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp7": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp8": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:lamp9": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain1_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_008": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain2_009": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_006": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_007": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_008": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_009": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_010": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:mountain3_011": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 2": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 2_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 2_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 2_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 2_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 3": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 3_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 3_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 3_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 3_004": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 3_005": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 4": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 4_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 4_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock 4_003": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock_001": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 },
 "PATH:rock_002": {
-"generate/physics": true,
 "physics/layer": 16,
 "physics/mask": 15
 }

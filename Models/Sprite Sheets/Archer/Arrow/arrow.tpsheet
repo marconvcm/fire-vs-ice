@@ -1,0 +1,273 @@
+{
+	"textures": [
+		{
+			"image": "side attack.png",
+			"size": {
+				"w": 7470,
+				"h": 3516
+			},
+			"sprites": [
+				{
+					"filename": "side attack0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0002.png",
+					"region": {
+						"x": 1245,
+						"y": 0,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0003.png",
+					"region": {
+						"x": 2490,
+						"y": 0,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0004.png",
+					"region": {
+						"x": 3735,
+						"y": 0,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0005.png",
+					"region": {
+						"x": 4980,
+						"y": 0,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0006.png",
+					"region": {
+						"x": 6225,
+						"y": 0,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0007.png",
+					"region": {
+						"x": 0,
+						"y": 1172,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0008.png",
+					"region": {
+						"x": 1245,
+						"y": 1172,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0009.png",
+					"region": {
+						"x": 2490,
+						"y": 1172,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0010.png",
+					"region": {
+						"x": 3735,
+						"y": 1172,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0011.png",
+					"region": {
+						"x": 4980,
+						"y": 1172,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0012.png",
+					"region": {
+						"x": 6225,
+						"y": 1172,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0013.png",
+					"region": {
+						"x": 0,
+						"y": 2344,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0014.png",
+					"region": {
+						"x": 1245,
+						"y": 2344,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0015.png",
+					"region": {
+						"x": 2490,
+						"y": 2344,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0016.png",
+					"region": {
+						"x": 3735,
+						"y": 2344,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "side attack0017.png",
+					"region": {
+						"x": 4980,
+						"y": 2344,
+						"w": 1245,
+						"h": 1172
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:5170679a5b19512ae31c555634c1d89a:6c9b2b3e39e4dcaa607664797deb4a6e:8be0226839f330f73080a4bcf6328f5c$"
+	}
+}
