@@ -9,7 +9,8 @@ var shots_between_specials=2
 var shot_index=0
 @onready var normaltimer=$NormalTimer
 @onready var specialtimer=$SpecialTimer
-
+var normal_arrow_sound=preload("res://Resources/SFX/Bowpull.mp3")
+var special_arrow_sound=preload("res://Resources/SFX/big_bow.mp3")
 
 func _ready():
     specialtimer.timeout.connect(fire_special_arrow)

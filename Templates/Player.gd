@@ -28,6 +28,9 @@ var dashstartpoint=null
 var dash_rage_area=preload("dash_damage_area.tscn")
 var current_dash_rage_area=null
 @onready var animator=$AnimationPlayer
+var attacksound1=preload("res://Resources/SFX/MC_FireBall.mp3")
+var attacksound2=preload("res://Resources/SFX/MC_FireLaser.mp3")
+var attacksound3=preload("res://Resources/SFX/MC_altAttack.mp3")
 
 func _ready():
     heat.set_max_value(maxheat)
@@ -38,6 +41,7 @@ func _ready():
     heat.value_empty.connect(die)
     lobtimer.timeout.connect(maxLobChargeReached)
     dashdurationtimer.timeout.connect(dashend)
+    $IdleSoundPlayer.play()
     
 func get_move_axis() -> Vector3:
     return PlayerInput.get_axis().normalized().rotated(Vector3.UP, camera_rotation.y)

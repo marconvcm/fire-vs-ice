@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://biqxnbo28vyd2"]
+
+[ext_resource type="AudioStream" uid="uid://bwc7uyeptgnu2" path="res://Resources/SFX/golem step1.mp3" id="1_gfmdw"]
+[ext_resource type="AudioStream" uid="uid://t43bb5gnprrp" path="res://Resources/SFX/golem step2.mp3" id="2_g00vq"]
+[ext_resource type="AudioStream" uid="uid://cecmwbpu6rvf5" path="res://Resources/SFX/golem step3.mp3" id="3_euf7h"]
+[ext_resource type="AudioStream" uid="uid://capta7vb4wpt0" path="res://Resources/SFX/golem step4.mp3" id="4_ki27v"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_clcto"]
+streams_count = 4
+stream_0/stream = ExtResource("1_gfmdw")
+stream_1/stream = ExtResource("2_g00vq")
+stream_2/stream = ExtResource("3_euf7h")
+stream_3/stream = ExtResource("4_ki27v")
+
+[node name="GiantStepSoundRandomizer" type="AudioStreamPlayer3D"]
+stream = SubResource("AudioStreamRandomizer_clcto")
+bus = &"SFX"

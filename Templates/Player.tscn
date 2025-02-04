@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://dyfkw4bd8l5bm"]
+[gd_scene load_steps=70 format=3 uid="uid://dyfkw4bd8l5bm"]
 
 [ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
 [ext_resource type="Script" uid="uid://b5srtuqsudr8u" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
@@ -52,6 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://cccj6cp6yu5xe" path="res://Models/Sprite Sheets/MC/side.sprites/side0014.tres" id="50_apipt"]
 [ext_resource type="Texture2D" uid="uid://biqancm2utp16" path="res://Models/Sprite Sheets/MC/side.sprites/side0015.tres" id="51_tjd8c"]
 [ext_resource type="Texture2D" uid="uid://b117lmewujjxo" path="res://Models/Sprite Sheets/MC/side.sprites/side0016.tres" id="52_agomi"]
+[ext_resource type="AudioStream" uid="uid://tudhaxec5nwh" path="res://Resources/SFX/MC_FireIdle.mp3" id="53_c4nt8"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iat6b"]
 points = PackedVector3Array(0.267016, 0.766948, -0.1164, -0.291458, -0.761872, -0.0276713, -0.291252, -0.761336, 0.0307681, 0.268404, -0.800496, -0.0873515, 0.0595203, 0.725185, 0.291707, -0.142914, 0.751361, -0.258503, 0.176354, -0.757722, 0.234724, 0.0307677, -0.761328, -0.291249, -0.260518, 0.78619, 0.118015, -0.142848, -0.722061, 0.261502, 0.266301, 0.764882, 0.119199, -0.119879, -0.971825, 0.0318498, 0.145392, 0.748031, -0.257351, 0.0923368, 0.96888, 0.0923368, -0.196733, -0.708295, -0.22508, -0.286001, 0.718859, -0.0846668, -0.142848, 0.722061, 0.261502, 0.291707, -0.725185, 0.0595203, -0.0287456, 0.972175, -0.119923, 0.198947, -0.676966, -0.224046, -0.0565014, -0.726422, 0.292202, 0.0923368, -0.96888, 0.0923368, -0.0585673, -0.932875, -0.178936, -0.248347, -0.638684, 0.16812, 0.0307681, 0.761336, -0.291252, 0.225451, 0.671658, 0.1974, -0.148495, 0.930441, 0.121583, -0.0846668, -0.718859, -0.286001, 0.292202, 0.726422, -0.0565014, -0.207688, 0.896906, -0.0880939, 0.121583, -0.930441, -0.148495, -0.0878682, -0.894648, 0.210278)
@@ -597,3 +598,8 @@ collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MimicRepeller"]
 shape = SubResource("SphereShape3D_qy2v6")
+
+[node name="IdleSoundPlayer" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("53_c4nt8")
+autoplay = true
+bus = &"SFX"

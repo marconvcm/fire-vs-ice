@@ -1,17 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://dkag48566au5g"]
+[gd_scene load_steps=5 format=3 uid="uid://dkag48566au5g"]
 
 [ext_resource type="AudioStream" uid="uid://cmg1o0hc8qw41" path="res://Resources/music/pirate_menu.mp3" id="1_0c0bw"]
-[ext_resource type="AudioStream" path="res://Resources/pirate_gameplay.mp3" id="1_pirpl"]
-[ext_resource type="Script" path="res://music_player.gd" id="2_rfxee"]
+[ext_resource type="Script" uid="uid://bh02hofjfi7pi" path="res://music_player.gd" id="2_rfxee"]
 [ext_resource type="AudioStream" uid="uid://kx8a4k0v2egm" path="res://Resources/music/pirate_exploration.mp3" id="3_m8ir1"]
-[ext_resource type="AudioStream" path="res://Resources/pirate_finalboss.mp3" id="4_vcvvi"]
 
 [sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_lu11v"]
 stream_count = 4
 stream_0 = ExtResource("1_0c0bw")
-stream_1 = ExtResource("1_pirpl")
 stream_2 = ExtResource("3_m8ir1")
-stream_3 = ExtResource("4_vcvvi")
 
 [node name="MusicPlayer" type="AudioStreamPlayer"]
 process_mode = 3

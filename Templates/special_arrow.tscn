@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://oisbdglpx41g"]
+[gd_scene load_steps=7 format=3 uid="uid://oisbdglpx41g"]
 
-[ext_resource type="Script" path="res://Templates/special_arrow.gd" id="1_sqijs"]
+[ext_resource type="Script" uid="uid://4b6mrx0bad2r" path="res://Templates/special_arrow.gd" id="1_sqijs"]
+[ext_resource type="AudioStream" uid="uid://drkel27v55lbc" path="res://Resources/SFX/bigarroe.mp3" id="2_qdyvl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y3s2d"]
 radius = 0.3
@@ -43,5 +44,10 @@ mesh = SubResource("SphereMesh_sqijs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SplashDamageArea"]
 shape = SubResource("SphereShape3D_qdyvl")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_qdyvl")
+bus = &"SFX"
+doppler_tracking = 2
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -17,6 +17,7 @@ var projectilespeed=40
 #states: 0=hiding, 1=activated/chasing, 2=looking for player, 3=returning to hiding spot
 var weaponhealth=5
 var weapondestroyed:bool=false
+var attacksound=preload("res://Resources/SFX/golem smash.mp3")
 
 func _ready():
     $GiveUpTimer.timeout.connect(giveup)

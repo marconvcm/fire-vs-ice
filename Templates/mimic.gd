@@ -8,6 +8,9 @@ var target_position=null
 @onready var navi = $NavigationAgent3D
 var mimicprojectile=preload("res://Templates/mimic_projectile.tscn")
 var projectilespeed=40
+var activationsound=preload("res://Resources/SFX/laugh.mp3")
+var movesound=preload("res://Resources/SFX/roll.mp3")
+var attacksound=preload("res://Resources/SFX/vomit.mp3")
 #states: 0=hiding, 1=activated/chasing, 2=looking for player, 3=returning to hiding spot
 func _ready():
     $GiveUpTimer.timeout.connect(giveup)

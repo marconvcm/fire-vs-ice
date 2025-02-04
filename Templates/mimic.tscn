@@ -31,6 +31,7 @@ mesh = SubResource("CapsuleMesh_hbyha")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("3_hbyha")
+bus = &"SFX"
 
 [node name="ActivationArea" type="Area3D" parent="."]
 collision_layer = 8

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1w615owhho4j"]
+[gd_scene load_steps=5 format=3 uid="uid://b1w615owhho4j"]
 
 [ext_resource type="Script" uid="uid://dt7apbty741tf" path="res://Templates/normal_arrow.gd" id="1_gbsjr"]
+[ext_resource type="AudioStream" uid="uid://dai6uca486hu6" path="res://Resources/SFX/arrow.mp3" id="2_y3s2d"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y3s2d"]
 radius = 0.1
@@ -27,5 +28,11 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 mesh = SubResource("CapsuleMesh_gbsjr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_y3s2d")
+autoplay = true
+bus = &"SFX"
+doppler_tracking = 2
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
