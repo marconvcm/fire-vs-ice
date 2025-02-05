@@ -1,5 +1,6 @@
 class_name burnable extends MeshInstance3D
 @export var heatvalue:float = 100
+@onready var hitbox=self.get_child(0)
 
 func burn(touching:bool)->float:
     play_burning_animation()
@@ -10,7 +11,9 @@ func play_burning_animation():
     pass
     
 func restore():
-    pass
+    self.visible=true
+    hitbox.set_collision_layer_value(6,true)
     
 func disable():
-    pass
+    self.visible=false
+    hitbox.set_collision_layer_value(6,false)
