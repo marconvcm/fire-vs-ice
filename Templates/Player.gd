@@ -153,6 +153,9 @@ func if_enough_heat(damage:float)->bool:
 func lose_heat(damage:float)->void:
     heat.deplete(damage)
 
+func gain_heat(damage:float)->void:
+    heat.recharge(damage)
+
 func die()->void:
     $GameOver.visible=true
     #probably put a death animation and some other things here
@@ -189,3 +192,10 @@ func is_dashing()->bool:
 
 func takeDamage(damage: float)->void:
     lose_heat(damage)
+
+
+func _on_burn_and_collect_area_body_entered(body):
+    var bodyobject=body.get_parent()
+    if bodyobject is burnable:
+        gain_heat(bodyobject.burn(true))
+    pass 

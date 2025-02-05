@@ -103,6 +103,7 @@ bus = &"SFX"
 doppler_tracking = 2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
 sprite_frames = SubResource("SpriteFrames_mack2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://dyfkw4bd8l5bm"]
+[gd_scene load_steps=71 format=3 uid="uid://dyfkw4bd8l5bm"]
 
 [ext_resource type="Script" uid="uid://dj32ptonqt6hg" path="res://Templates/Player.gd" id="1_b24bn"]
 [ext_resource type="Script" uid="uid://b5srtuqsudr8u" path="res://Common/Plugins/ActiveValuePlugin.gd" id="2_tltr5"]
@@ -512,6 +512,9 @@ _data = {
 [sub_resource type="SphereShape3D" id="SphereShape3D_qy2v6"]
 radius = 4.0
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_c4nt8"]
+radius = 0.55
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]
 collision_mask = 52
 safe_margin = 0.01
@@ -603,3 +606,12 @@ shape = SubResource("SphereShape3D_qy2v6")
 stream = ExtResource("53_c4nt8")
 autoplay = true
 bus = &"SFX"
+
+[node name="BurnAndCollectArea" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 32
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BurnAndCollectArea"]
+shape = SubResource("CylinderShape3D_c4nt8")
+
+[connection signal="body_entered" from="BurnAndCollectArea" to="." method="_on_burn_and_collect_area_body_entered"]
