@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://claa8pljhm2xb"]
+[gd_scene load_steps=80 format=3 uid="uid://claa8pljhm2xb"]
 
 [ext_resource type="ArrayMesh" uid="uid://bkvyku8plftnd" path="res://Models/Level1/map1 greyboxed_Cube_001.res" id="1_huetn"]
 [ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="1_j053h"]
@@ -12,10 +12,9 @@
 [ext_resource type="Script" uid="uid://dyqkscel6ddgv" path="res://Templates/GimbalCamera.gd" id="9_c5vci"]
 [ext_resource type="PackedScene" uid="uid://dyfkw4bd8l5bm" path="res://Templates/Player.tscn" id="10_i8qcd"]
 [ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="11_1vx5w"]
-[ext_resource type="PackedScene" uid="uid://dh1txm4isvu0e" path="res://Templates/mimic.tscn" id="11_754k8"]
 [ext_resource type="PackedScene" uid="uid://bro1yudoqydnp" path="res://Templates/archer.tscn" id="13_qtd18"]
+[ext_resource type="PackedScene" uid="uid://cj87b4q2onuov" path="res://Templates/burnable_test.tscn" id="15_e470l"]
 [ext_resource type="Script" uid="uid://cb7j1wo5vvq8s" path="res://Level/kill_plane.gd" id="15_r6te5"]
-[ext_resource type="PackedScene" uid="uid://beic6p1mg7on6" path="res://Templates/axe_giant.tscn" id="16_e470l"]
 
 [sub_resource type="Environment" id="Environment_754k8"]
 ambient_light_source = 2
@@ -984,42 +983,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.361, 4.19998, -16.6079)
 
 [node name="DebugMenu" parent="." instance=ExtResource("11_1vx5w")]
 
-[node name="Mimic" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.3699, 0.997378, -10.3608)
-speed = 10.0
-
 [node name="Archer" parent="." instance=ExtResource("13_qtd18")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.002, 1.07271, -61.8657)
-
-[node name="Mimic2" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.644, 1, -4.123)
-
-[node name="Mimic3" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.353, 1, -19.425)
-
-[node name="Mimic4" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.688, 1, -15.22)
-
-[node name="Mimic5" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.496, 1, -46.801)
-
-[node name="Mimic6" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.472, 1, -30.274)
-
-[node name="Mimic7" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.851, 1, -11.509)
-
-[node name="Mimic8" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.747, 1, -38.766)
-
-[node name="Mimic9" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.518, 1, -57.96)
-
-[node name="Mimic10" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.107, 1, -43.648)
-
-[node name="Mimic12" parent="." instance=ExtResource("11_754k8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.196, 1, -90.652)
 
 [node name="WorldBoundaries" type="StaticBody3D" parent="."]
 collision_layer = 16
@@ -1054,7 +1019,7 @@ script = ExtResource("15_r6te5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14.1959, 0)
 shape = SubResource("WorldBoundaryShape3D_e470l")
 
-[node name="AxeGiant" parent="." instance=ExtResource("16_e470l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4956, 2.5681, -54.6101)
+[node name="Cylinder_008" parent="." instance=ExtResource("15_e470l")]
+transform = Transform3D(0.145, 0, 0, 0, 0.145, 0, 0, 0, 0.145, 26.8104, 1.34164, -47.4806)
 
 [connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]

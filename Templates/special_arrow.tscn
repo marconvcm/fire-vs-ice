@@ -47,6 +47,7 @@ shape = SubResource("SphereShape3D_qdyvl")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("2_qdyvl")
+autoplay = true
 bus = &"SFX"
 doppler_tracking = 2
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://btpurhbo681hg"
+path="res://.godot/imported/arrow.tpsheet-a03a497af95f0de900a154e6b43e5682.res"
+
+[deps]
+
+files=["res://Models/S/arrow.sprites/arrow0001.tres", "res://Models/S/arrow.sprites/arrow0002.tres", "res://Models/S/arrow.sprites/arrow0003.tres", "res://Models/S/arrow.sprites/arrow0004.tres", "res://Models/S/arrow.sprites/arrow0005.tres", "res://Models/S/arrow.sprites/arrow0006.tres", "res://Models/S/arrow.sprites/arrow0007.tres", "res://Models/S/arrow.sprites/arrow0008.tres", "res://Models/S/arrow.sprites/arrow0009.tres", "res://Models/S/arrow.sprites/arrow0010.tres", "res://Models/S/arrow.sprites/arrow0011.tres", "res://Models/S/arrow.sprites/arrow0012.tres"]
+
+source_file="res://Models/S/arrow.tpsheet"
+dest_files=["res://.godot/imported/arrow.tpsheet-a03a497af95f0de900a154e6b43e5682.res", "res://Models/S/arrow.sprites/arrow0001.tres", "res://Models/S/arrow.sprites/arrow0002.tres", "res://Models/S/arrow.sprites/arrow0003.tres", "res://Models/S/arrow.sprites/arrow0004.tres", "res://Models/S/arrow.sprites/arrow0005.tres", "res://Models/S/arrow.sprites/arrow0006.tres", "res://Models/S/arrow.sprites/arrow0007.tres", "res://Models/S/arrow.sprites/arrow0008.tres", "res://Models/S/arrow.sprites/arrow0009.tres", "res://Models/S/arrow.sprites/arrow0010.tres", "res://Models/S/arrow.sprites/arrow0011.tres", "res://Models/S/arrow.sprites/arrow0012.tres"]
+
+[params]
+

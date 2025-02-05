@@ -1,7 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1w615owhho4j"]
+[gd_scene load_steps=20 format=3 uid="uid://b1w615owhho4j"]
 
 [ext_resource type="Script" uid="uid://dt7apbty741tf" path="res://Templates/normal_arrow.gd" id="1_gbsjr"]
 [ext_resource type="AudioStream" uid="uid://dai6uca486hu6" path="res://Resources/SFX/arrow.mp3" id="2_y3s2d"]
+[ext_resource type="Texture2D" uid="uid://dr72sb5k0as8v" path="res://Models/S/arrow.sprites/arrow0001.tres" id="3_dnfts"]
+[ext_resource type="Texture2D" uid="uid://bcyd8k0mqnjsc" path="res://Models/S/arrow.sprites/arrow0002.tres" id="4_qfgvb"]
+[ext_resource type="Texture2D" uid="uid://dblxs8i1ygpyt" path="res://Models/S/arrow.sprites/arrow0003.tres" id="5_i62ik"]
+[ext_resource type="Texture2D" uid="uid://biaokxwl7bdkp" path="res://Models/S/arrow.sprites/arrow0004.tres" id="6_n4iyc"]
+[ext_resource type="Texture2D" uid="uid://bkq7bi0a15xxx" path="res://Models/S/arrow.sprites/arrow0005.tres" id="7_0uv73"]
+[ext_resource type="Texture2D" uid="uid://d2htth1yj7v1t" path="res://Models/S/arrow.sprites/arrow0006.tres" id="8_4x7qy"]
+[ext_resource type="Texture2D" uid="uid://p0d3dsuf7sk" path="res://Models/S/arrow.sprites/arrow0007.tres" id="9_rsbf0"]
+[ext_resource type="Texture2D" uid="uid://b2fpj5kpt8cv5" path="res://Models/S/arrow.sprites/arrow0008.tres" id="10_haxks"]
+[ext_resource type="Texture2D" uid="uid://bnovtv721lnt3" path="res://Models/S/arrow.sprites/arrow0009.tres" id="11_y8ybr"]
+[ext_resource type="Texture2D" uid="uid://cjc0x4cb2uxaq" path="res://Models/S/arrow.sprites/arrow0010.tres" id="12_m82gt"]
+[ext_resource type="Texture2D" uid="uid://cyickmel0e6ld" path="res://Models/S/arrow.sprites/arrow0011.tres" id="13_qyg5k"]
+[ext_resource type="Texture2D" uid="uid://b5y1c8l315oov" path="res://Models/S/arrow.sprites/arrow0012.tres" id="14_84sa4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y3s2d"]
 radius = 0.1
@@ -10,6 +22,58 @@ height = 1.0
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_gbsjr"]
 radius = 0.1
 height = 1.0
+
+[sub_resource type="Animation" id="Animation_130e5"]
+resource_name = "Fly"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_anf3r"]
+_data = {
+&"Fly": SubResource("Animation_130e5")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mack2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_dnfts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qfgvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i62ik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n4iyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0uv73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4x7qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rsbf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_haxks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_y8ybr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_m82gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qyg5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_84sa4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Normal Arrow" type="RigidBody3D"]
 collision_layer = 8
@@ -28,11 +92,17 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 mesh = SubResource("CapsuleMesh_gbsjr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_anf3r")
+}
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("2_y3s2d")
 autoplay = true
 bus = &"SFX"
 doppler_tracking = 2
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mack2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

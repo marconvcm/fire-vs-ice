@@ -1,0 +1,198 @@
+{
+	"textures": [
+		{
+			"image": "arrow.png",
+			"size": {
+				"w": 3792,
+				"h": 2895
+			},
+			"sprites": [
+				{
+					"filename": "arrow0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0002.png",
+					"region": {
+						"x": 948,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0003.png",
+					"region": {
+						"x": 1896,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0004.png",
+					"region": {
+						"x": 2844,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0005.png",
+					"region": {
+						"x": 0,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0006.png",
+					"region": {
+						"x": 948,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0007.png",
+					"region": {
+						"x": 1896,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0008.png",
+					"region": {
+						"x": 2844,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0009.png",
+					"region": {
+						"x": 0,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0010.png",
+					"region": {
+						"x": 948,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0011.png",
+					"region": {
+						"x": 1896,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow0012.png",
+					"region": {
+						"x": 2844,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e1430ad4be5369efdae4b7e6419e206d:3cd941fc869c6b52149180e835a262da:7ab85dd0d34bc114f91348060c1edfba$"
+	}
+}
