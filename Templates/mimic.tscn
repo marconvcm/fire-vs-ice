@@ -1,8 +1,53 @@
-[gd_scene load_steps=9 format=3 uid="uid://dh1txm4isvu0e"]
+[gd_scene load_steps=54 format=3 uid="uid://dh1txm4isvu0e"]
 
 [ext_resource type="Script" uid="uid://70fvor7r5b5j" path="res://Templates/mimic.gd" id="1_6u7i7"]
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_kioik"]
 [ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_hbyha"]
+[ext_resource type="Texture2D" uid="uid://cd6a4toofyde3" path="res://Sprites/Minions/Minions.sprites/Minions Down/Minions Down0001.tres" id="4_solgq"]
+[ext_resource type="Texture2D" uid="uid://b6mmkk4mvdgah" path="res://Sprites/Minions/Minions.sprites/Minions Down/Minions Down0002.tres" id="5_yogmt"]
+[ext_resource type="Texture2D" uid="uid://ciuq2cr1uenj5" path="res://Sprites/Minions/Minions.sprites/Minions Down/Minions Down0003.tres" id="6_opfe2"]
+[ext_resource type="Texture2D" uid="uid://bbr4s05tqsjst" path="res://Sprites/Minions/Minions.sprites/Minions Down/Minions Down0004.tres" id="7_wcemy"]
+[ext_resource type="Texture2D" uid="uid://dh5rnfmrsqrrx" path="res://Sprites/Minions/Minions.sprites/Minions Down/Minions Down0005.tres" id="8_c3q77"]
+[ext_resource type="Texture2D" uid="uid://bx3a43lkjg5q0" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0001.tres" id="9_sf0je"]
+[ext_resource type="Texture2D" uid="uid://cmuy8cg13gbgb" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0002.tres" id="10_1ylfi"]
+[ext_resource type="Texture2D" uid="uid://cly2w8guxs8ek" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0003.tres" id="11_ayrql"]
+[ext_resource type="Texture2D" uid="uid://bbvnixa6m6iaa" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0004.tres" id="12_pgw4c"]
+[ext_resource type="Texture2D" uid="uid://4h3wqhg34vc1" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0005.tres" id="13_mu81y"]
+[ext_resource type="Texture2D" uid="uid://b4vwg6tfgt87d" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0006.tres" id="14_iraxx"]
+[ext_resource type="Texture2D" uid="uid://th753g1cptsb" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0007.tres" id="15_nmppg"]
+[ext_resource type="Texture2D" uid="uid://bxwcbj8xl54mw" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0008.tres" id="16_a5ntj"]
+[ext_resource type="Texture2D" uid="uid://c3sw85yyy8eh6" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0009.tres" id="17_vm0wu"]
+[ext_resource type="Texture2D" uid="uid://dk3yxs65lgsef" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0010.tres" id="18_qhi2i"]
+[ext_resource type="Texture2D" uid="uid://bj0a7ad3dvq3n" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0011.tres" id="19_tjy0t"]
+[ext_resource type="Texture2D" uid="uid://we4o6n0pnofg" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0012.tres" id="20_aw4vj"]
+[ext_resource type="Texture2D" uid="uid://dedem76o2fcdh" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0013.tres" id="21_pj1sr"]
+[ext_resource type="Texture2D" uid="uid://dmmhvx6kv6kr7" path="res://Sprites/Minions/Minions.sprites/Minions front attack/Minions Attack Front0014.tres" id="22_vf478"]
+[ext_resource type="Texture2D" uid="uid://elbk5mqn5lla" path="res://Sprites/Minions/Minions.sprites/Minions Right/Minions Right0001.tres" id="23_5g5gw"]
+[ext_resource type="Texture2D" uid="uid://wwlsgjevdout" path="res://Sprites/Minions/Minions.sprites/Minions Right/Minions Right0002.tres" id="24_75gkp"]
+[ext_resource type="Texture2D" uid="uid://djk5dx2nedcku" path="res://Sprites/Minions/Minions.sprites/Minions Right/Minions Right0003.tres" id="25_siik8"]
+[ext_resource type="Texture2D" uid="uid://3de5jbq248fk" path="res://Sprites/Minions/Minions.sprites/Minions Right/Minions Right0004.tres" id="26_mxovp"]
+[ext_resource type="Texture2D" uid="uid://c8kxce1fdp553" path="res://Sprites/Minions/Minions.sprites/Minions Right/Minions Right0005.tres" id="27_gkr5t"]
+[ext_resource type="Texture2D" uid="uid://bwqjgcqkirdw2" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0001.tres" id="28_l3dhl"]
+[ext_resource type="Texture2D" uid="uid://cpjf8106cjk0l" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0002.tres" id="29_pn3w3"]
+[ext_resource type="Texture2D" uid="uid://boitsxg1wbrtu" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0003.tres" id="30_g276m"]
+[ext_resource type="Texture2D" uid="uid://bb6cnivygh68a" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0004.tres" id="31_6u2bb"]
+[ext_resource type="Texture2D" uid="uid://br4ic70a2ho7j" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0005.tres" id="32_vto1p"]
+[ext_resource type="Texture2D" uid="uid://dx2vyyblff7ex" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0006.tres" id="33_0imfj"]
+[ext_resource type="Texture2D" uid="uid://niju644ln8q2" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0007.tres" id="34_llcqm"]
+[ext_resource type="Texture2D" uid="uid://djo7gdkoopafa" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0008.tres" id="35_ldmqb"]
+[ext_resource type="Texture2D" uid="uid://b2fmmqa3wxyod" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0009.tres" id="36_5vsuj"]
+[ext_resource type="Texture2D" uid="uid://p8rxji8nitfh" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0010.tres" id="37_ilpky"]
+[ext_resource type="Texture2D" uid="uid://t4dvwwl722m2" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0011.tres" id="38_if0ul"]
+[ext_resource type="Texture2D" uid="uid://bli8ncqkb2emv" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0012.tres" id="39_ujifn"]
+[ext_resource type="Texture2D" uid="uid://dt8gtsxfa2not" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0013.tres" id="40_8s4ev"]
+[ext_resource type="Texture2D" uid="uid://vb7dlfwkbxx3" path="res://Sprites/Minions/Minions.sprites/Mnions Attack Right/Minions Attack Right0014.tres" id="41_vg7qe"]
+[ext_resource type="Texture2D" uid="uid://bcewn58thwvin" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0001.tres" id="42_njods"]
+[ext_resource type="Texture2D" uid="uid://ccpwc4v02hlgp" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0002.tres" id="43_pvv6w"]
+[ext_resource type="Texture2D" uid="uid://d3wxgw5qyxei1" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0003.tres" id="44_eslp7"]
+[ext_resource type="Texture2D" uid="uid://bvyhsimt850iw" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0004.tres" id="45_uekc4"]
+[ext_resource type="Texture2D" uid="uid://cnhu7os7tdn7s" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0005.tres" id="46_ctuwa"]
+[ext_resource type="Texture2D" uid="uid://fwbs1wc847j4" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0006.tres" id="47_qyhba"]
+[ext_resource type="Texture2D" uid="uid://pgx2uwk5wxi3" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0007.tres" id="48_wo4n1"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6u7i7"]
 
@@ -14,7 +59,168 @@ radius = 5.0
 [sub_resource type="SphereShape3D" id="SphereShape3D_6u7i7"]
 radius = 10.0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hbyha"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_pceoj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_solgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yogmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_opfe2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wcemy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_c3q77")
+}],
+"loop": true,
+"name": &"Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_sf0je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1ylfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ayrql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pgw4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mu81y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_iraxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nmppg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a5ntj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vm0wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qhi2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_tjy0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_aw4vj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pj1sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vf478")
+}],
+"loop": true,
+"name": &"Front Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_5g5gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_75gkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_siik8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mxovp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gkr5t")
+}],
+"loop": true,
+"name": &"Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_l3dhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_pn3w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_g276m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6u2bb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_vto1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0imfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_llcqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ldmqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_5vsuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ilpky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_if0ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ujifn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_8s4ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_vg7qe")
+}],
+"loop": true,
+"name": &"Right Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_njods")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_pvv6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_eslp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_uekc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ctuwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_qyhba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_wo4n1")
+}],
+"loop": true,
+"name": &"Snowball",
+"speed": 5.0
+}]
 
 [node name="Mimic" type="CharacterBody3D"]
 collision_layer = 4
@@ -52,14 +258,13 @@ one_shot = true
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 target_desired_distance = 5.0
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-pixel_size = 0.003
-billboard = 1
-texture = SubResource("CompressedTexture2D_hbyha")
-hframes = 16
-
 [node name="ShotTimer" type="Timer" parent="."]
 wait_time = 0.3
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pceoj")
+animation = &"Right"
+frame_progress = 0.557769
 
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]

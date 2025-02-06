@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bj0a7ad3dvq3n"]
+
+[ext_resource type="Texture2D" uid="uid://cgp1x0w52frhj" path="res://Sprites/Minions/Minions.png" id="1_w5lcf"]
+
+[resource]
+atlas = ExtResource("1_w5lcf")
+region = Rect2(6480, 683, 1080, 683)

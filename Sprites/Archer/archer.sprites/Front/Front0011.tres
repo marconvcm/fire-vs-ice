@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bje6u18dgivph"]
+
+[ext_resource type="Texture2D" uid="uid://wibe0vhoujg7" path="res://Sprites/Archer/archer.png" id="1_ny25r"]
+
+[resource]
+atlas = ExtResource("1_ny25r")
+region = Rect2(5688, 3860, 845, 705)

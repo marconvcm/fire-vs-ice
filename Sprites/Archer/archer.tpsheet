@@ -1,0 +1,1278 @@
+{
+	"textures": [
+		{
+			"image": "archer.png",
+			"size": {
+				"w": 9480,
+				"h": 8685
+			},
+			"sprites": [
+				{
+					"filename": "arrow/arrow0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0002.png",
+					"region": {
+						"x": 948,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0003.png",
+					"region": {
+						"x": 1896,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0004.png",
+					"region": {
+						"x": 2844,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0005.png",
+					"region": {
+						"x": 3792,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0006.png",
+					"region": {
+						"x": 4740,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0007.png",
+					"region": {
+						"x": 5688,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0008.png",
+					"region": {
+						"x": 6636,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0009.png",
+					"region": {
+						"x": 7584,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0010.png",
+					"region": {
+						"x": 8532,
+						"y": 0,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0011.png",
+					"region": {
+						"x": 0,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "arrow/arrow0012.png",
+					"region": {
+						"x": 948,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0001.png",
+					"region": {
+						"x": 1896,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0002.png",
+					"region": {
+						"x": 2844,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0003.png",
+					"region": {
+						"x": 3792,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0004.png",
+					"region": {
+						"x": 4740,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0005.png",
+					"region": {
+						"x": 5688,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0006.png",
+					"region": {
+						"x": 6636,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0007.png",
+					"region": {
+						"x": 7584,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0008.png",
+					"region": {
+						"x": 8532,
+						"y": 965,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0009.png",
+					"region": {
+						"x": 0,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0010.png",
+					"region": {
+						"x": 948,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0011.png",
+					"region": {
+						"x": 1896,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Back/Back0012.png",
+					"region": {
+						"x": 2844,
+						"y": 1930,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0001.png",
+					"region": {
+						"x": 3792,
+						"y": 1930,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0002.png",
+					"region": {
+						"x": 4740,
+						"y": 1930,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0003.png",
+					"region": {
+						"x": 5688,
+						"y": 1930,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0004.png",
+					"region": {
+						"x": 6636,
+						"y": 1930,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0005.png",
+					"region": {
+						"x": 7584,
+						"y": 1930,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0006.png",
+					"region": {
+						"x": 8532,
+						"y": 1930,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0007.png",
+					"region": {
+						"x": 0,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0008.png",
+					"region": {
+						"x": 948,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0009.png",
+					"region": {
+						"x": 1896,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0010.png",
+					"region": {
+						"x": 2844,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0011.png",
+					"region": {
+						"x": 3792,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front Shooting/Front Shooting0012.png",
+					"region": {
+						"x": 4740,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0001.png",
+					"region": {
+						"x": 5688,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0002.png",
+					"region": {
+						"x": 6636,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0003.png",
+					"region": {
+						"x": 7584,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0004.png",
+					"region": {
+						"x": 8532,
+						"y": 2895,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0005.png",
+					"region": {
+						"x": 0,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0006.png",
+					"region": {
+						"x": 948,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0007.png",
+					"region": {
+						"x": 1896,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0008.png",
+					"region": {
+						"x": 2844,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0009.png",
+					"region": {
+						"x": 3792,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0010.png",
+					"region": {
+						"x": 4740,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0011.png",
+					"region": {
+						"x": 5688,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Front/Front0012.png",
+					"region": {
+						"x": 6636,
+						"y": 3860,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0001.png",
+					"region": {
+						"x": 7584,
+						"y": 3860,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0002.png",
+					"region": {
+						"x": 8532,
+						"y": 3860,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0003.png",
+					"region": {
+						"x": 0,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0004.png",
+					"region": {
+						"x": 948,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0005.png",
+					"region": {
+						"x": 1896,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0006.png",
+					"region": {
+						"x": 2844,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0007.png",
+					"region": {
+						"x": 3792,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0008.png",
+					"region": {
+						"x": 4740,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0009.png",
+					"region": {
+						"x": 5688,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0010.png",
+					"region": {
+						"x": 6636,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0011.png",
+					"region": {
+						"x": 7584,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Shooting Back/Shooting Back0012.png",
+					"region": {
+						"x": 8532,
+						"y": 4825,
+						"w": 948,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0001.png",
+					"region": {
+						"x": 0,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0002.png",
+					"region": {
+						"x": 948,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0003.png",
+					"region": {
+						"x": 1896,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0004.png",
+					"region": {
+						"x": 2844,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0005.png",
+					"region": {
+						"x": 3792,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0006.png",
+					"region": {
+						"x": 4740,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0007.png",
+					"region": {
+						"x": 5688,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0008.png",
+					"region": {
+						"x": 6636,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0009.png",
+					"region": {
+						"x": 7584,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0010.png",
+					"region": {
+						"x": 8532,
+						"y": 5790,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0011.png",
+					"region": {
+						"x": 0,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Qaurter Standing/Side Qaurter0012.png",
+					"region": {
+						"x": 948,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0001.png",
+					"region": {
+						"x": 1896,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0002.png",
+					"region": {
+						"x": 2844,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0003.png",
+					"region": {
+						"x": 3792,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0004.png",
+					"region": {
+						"x": 4740,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0005.png",
+					"region": {
+						"x": 5688,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0006.png",
+					"region": {
+						"x": 6636,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0007.png",
+					"region": {
+						"x": 7584,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0008.png",
+					"region": {
+						"x": 8532,
+						"y": 6755,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0009.png",
+					"region": {
+						"x": 0,
+						"y": 7720,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0010.png",
+					"region": {
+						"x": 948,
+						"y": 7720,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0011.png",
+					"region": {
+						"x": 1896,
+						"y": 7720,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Side Quarter Shooting/Side Quarter0012.png",
+					"region": {
+						"x": 2844,
+						"y": 7720,
+						"w": 845,
+						"h": 705
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:6f61254f1b5c92b415387a6d87e97056:cad4b3b0383d434f6fe63e26c167b74b:b9ee578489459ff7364c93d543192585$"
+	}
+}

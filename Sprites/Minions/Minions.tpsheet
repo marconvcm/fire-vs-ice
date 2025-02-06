@@ -1,0 +1,693 @@
+{
+	"textures": [
+		{
+			"image": "Minions.png",
+			"size": {
+				"w": 9720,
+				"h": 3415
+			},
+			"sprites": [
+				{
+					"filename": "Minions Down/Minions Down0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1059,
+						"h": 618
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Down/Minions Down0002.png",
+					"region": {
+						"x": 1080,
+						"y": 0,
+						"w": 1059,
+						"h": 618
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Down/Minions Down0003.png",
+					"region": {
+						"x": 2160,
+						"y": 0,
+						"w": 1059,
+						"h": 618
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Down/Minions Down0004.png",
+					"region": {
+						"x": 3240,
+						"y": 0,
+						"w": 1059,
+						"h": 618
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Down/Minions Down0005.png",
+					"region": {
+						"x": 4320,
+						"y": 0,
+						"w": 1059,
+						"h": 618
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0001.png",
+					"region": {
+						"x": 5400,
+						"y": 0,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0002.png",
+					"region": {
+						"x": 6480,
+						"y": 0,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0003.png",
+					"region": {
+						"x": 7560,
+						"y": 0,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0004.png",
+					"region": {
+						"x": 8640,
+						"y": 0,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0005.png",
+					"region": {
+						"x": 0,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0006.png",
+					"region": {
+						"x": 1080,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0007.png",
+					"region": {
+						"x": 2160,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0008.png",
+					"region": {
+						"x": 3240,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0009.png",
+					"region": {
+						"x": 4320,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0010.png",
+					"region": {
+						"x": 5400,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0011.png",
+					"region": {
+						"x": 6480,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0012.png",
+					"region": {
+						"x": 7560,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0013.png",
+					"region": {
+						"x": 8640,
+						"y": 683,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions front attack/Minions Attack Front0014.png",
+					"region": {
+						"x": 0,
+						"y": 1366,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Right/Minions Right0001.png",
+					"region": {
+						"x": 1080,
+						"y": 1366,
+						"w": 828,
+						"h": 603
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Right/Minions Right0002.png",
+					"region": {
+						"x": 2160,
+						"y": 1366,
+						"w": 828,
+						"h": 603
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Right/Minions Right0003.png",
+					"region": {
+						"x": 3240,
+						"y": 1366,
+						"w": 828,
+						"h": 603
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Right/Minions Right0004.png",
+					"region": {
+						"x": 4320,
+						"y": 1366,
+						"w": 828,
+						"h": 603
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Minions Right/Minions Right0005.png",
+					"region": {
+						"x": 5400,
+						"y": 1366,
+						"w": 828,
+						"h": 603
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0001.png",
+					"region": {
+						"x": 6480,
+						"y": 1366,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0002.png",
+					"region": {
+						"x": 7560,
+						"y": 1366,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0003.png",
+					"region": {
+						"x": 8640,
+						"y": 1366,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0004.png",
+					"region": {
+						"x": 0,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0005.png",
+					"region": {
+						"x": 1080,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0006.png",
+					"region": {
+						"x": 2160,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0007.png",
+					"region": {
+						"x": 3240,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0008.png",
+					"region": {
+						"x": 4320,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0009.png",
+					"region": {
+						"x": 5400,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0010.png",
+					"region": {
+						"x": 6480,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0011.png",
+					"region": {
+						"x": 7560,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0012.png",
+					"region": {
+						"x": 8640,
+						"y": 2049,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0013.png",
+					"region": {
+						"x": 0,
+						"y": 2732,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Mnions Attack Right/Minions Attack Right0014.png",
+					"region": {
+						"x": 1080,
+						"y": 2732,
+						"w": 1080,
+						"h": 683
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0001.png",
+					"region": {
+						"x": 2160,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0002.png",
+					"region": {
+						"x": 3240,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0003.png",
+					"region": {
+						"x": 4320,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0004.png",
+					"region": {
+						"x": 5400,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0005.png",
+					"region": {
+						"x": 6480,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0006.png",
+					"region": {
+						"x": 7560,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Snowball/Snowball0007.png",
+					"region": {
+						"x": 8640,
+						"y": 2732,
+						"w": 69,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:542bc582e27d935b0a2e0e6385d14002:9817f47e0a7df8c9b6c5563033be710f:b6feef55ad20fb674acb53cb774120a2$"
+	}
+}
