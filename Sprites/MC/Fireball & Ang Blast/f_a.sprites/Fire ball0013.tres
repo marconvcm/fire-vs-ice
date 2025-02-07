@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://k5hafjn1vx6o"]
+
+[ext_resource type="Texture2D" uid="uid://b2ok0m8i0u68b" path="res://Sprites/MC/Fireball & Ang Blast/f_a.png" id="1_tad31"]
+
+[resource]
+atlas = ExtResource("1_tad31")
+region = Rect2(3982, 2392, 1556, 1196)

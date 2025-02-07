@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://ucur8k8pvssr"]
+
+[ext_resource type="Texture2D" uid="uid://c6pdjp1xc2t42" path="res://Sprites/MC/Side & Side Attack/s_sa.png" id="1_bjon8"]
+
+[resource]
+atlas = ExtResource("1_bjon8")
+region = Rect2(6416, 5980, 1604, 1196)

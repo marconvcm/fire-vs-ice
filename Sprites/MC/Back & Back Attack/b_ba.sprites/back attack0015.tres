@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b17hmdyv5q6ex"]
+
+[ext_resource type="Texture2D" uid="uid://dmbh6g62608ok" path="res://Sprites/MC/Back & Back Attack/b_ba.png" id="1_x3as1"]
+
+[resource]
+atlas = ExtResource("1_x3as1")
+region = Rect2(6416, 2392, 1379, 1196)

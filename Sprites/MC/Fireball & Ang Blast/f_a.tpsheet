@@ -1,0 +1,558 @@
+{
+	"textures": [
+		{
+			"image": "f_a.png",
+			"size": {
+				"w": 9955,
+				"h": 9568
+			},
+			"sprites": [
+				{
+					"filename": "Fire ball0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0002.png",
+					"region": {
+						"x": 1991,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0003.png",
+					"region": {
+						"x": 3982,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0004.png",
+					"region": {
+						"x": 5973,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0005.png",
+					"region": {
+						"x": 7964,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0006.png",
+					"region": {
+						"x": 0,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0007.png",
+					"region": {
+						"x": 1991,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0008.png",
+					"region": {
+						"x": 3982,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0009.png",
+					"region": {
+						"x": 5973,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0010.png",
+					"region": {
+						"x": 7964,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0011.png",
+					"region": {
+						"x": 0,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0012.png",
+					"region": {
+						"x": 1991,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0013.png",
+					"region": {
+						"x": 3982,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0014.png",
+					"region": {
+						"x": 5973,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0015.png",
+					"region": {
+						"x": 7964,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0016.png",
+					"region": {
+						"x": 0,
+						"y": 3588,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fire ball0017.png",
+					"region": {
+						"x": 1991,
+						"y": 3588,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10001.png",
+					"region": {
+						"x": 3982,
+						"y": 3588,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10002.png",
+					"region": {
+						"x": 5973,
+						"y": 3588,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10003.png",
+					"region": {
+						"x": 7964,
+						"y": 3588,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10004.png",
+					"region": {
+						"x": 0,
+						"y": 4784,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10005.png",
+					"region": {
+						"x": 1991,
+						"y": 4784,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10006.png",
+					"region": {
+						"x": 3982,
+						"y": 4784,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10007.png",
+					"region": {
+						"x": 5973,
+						"y": 4784,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10008.png",
+					"region": {
+						"x": 7964,
+						"y": 4784,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10009.png",
+					"region": {
+						"x": 0,
+						"y": 5980,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10010.png",
+					"region": {
+						"x": 1991,
+						"y": 5980,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10011.png",
+					"region": {
+						"x": 3982,
+						"y": 5980,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10012.png",
+					"region": {
+						"x": 5973,
+						"y": 5980,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10013.png",
+					"region": {
+						"x": 7964,
+						"y": 5980,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10014.png",
+					"region": {
+						"x": 0,
+						"y": 7176,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10015.png",
+					"region": {
+						"x": 1991,
+						"y": 7176,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10016.png",
+					"region": {
+						"x": 3982,
+						"y": 7176,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10017.png",
+					"region": {
+						"x": 5973,
+						"y": 7176,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10018.png",
+					"region": {
+						"x": 7964,
+						"y": 7176,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-10019.png",
+					"region": {
+						"x": 0,
+						"y": 8372,
+						"w": 1991,
+						"h": 887
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:9d46115119b9b3780496e2d599b8d7b7:711f1de15e60e5639608cc24992a1e21:300d0097b74cdb2e9e3e6f9b0477dfdc$"
+	}
+}

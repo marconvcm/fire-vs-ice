@@ -1,0 +1,513 @@
+{
+	"textures": [
+		{
+			"image": "b_ba.png",
+			"size": {
+				"w": 8020,
+				"h": 8372
+			},
+			"sprites": [
+				{
+					"filename": "back attack0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0002.png",
+					"region": {
+						"x": 1604,
+						"y": 0,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0003.png",
+					"region": {
+						"x": 3208,
+						"y": 0,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0004.png",
+					"region": {
+						"x": 4812,
+						"y": 0,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0005.png",
+					"region": {
+						"x": 6416,
+						"y": 0,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0006.png",
+					"region": {
+						"x": 0,
+						"y": 1196,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0007.png",
+					"region": {
+						"x": 1604,
+						"y": 1196,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0008.png",
+					"region": {
+						"x": 3208,
+						"y": 1196,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0009.png",
+					"region": {
+						"x": 4812,
+						"y": 1196,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0010.png",
+					"region": {
+						"x": 6416,
+						"y": 1196,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0011.png",
+					"region": {
+						"x": 0,
+						"y": 2392,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0012.png",
+					"region": {
+						"x": 1604,
+						"y": 2392,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0013.png",
+					"region": {
+						"x": 3208,
+						"y": 2392,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0014.png",
+					"region": {
+						"x": 4812,
+						"y": 2392,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0015.png",
+					"region": {
+						"x": 6416,
+						"y": 2392,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0016.png",
+					"region": {
+						"x": 0,
+						"y": 3588,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back attack0017.png",
+					"region": {
+						"x": 1604,
+						"y": 3588,
+						"w": 1379,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20001.png",
+					"region": {
+						"x": 3208,
+						"y": 3588,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20002.png",
+					"region": {
+						"x": 4812,
+						"y": 3588,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20003.png",
+					"region": {
+						"x": 6416,
+						"y": 3588,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20004.png",
+					"region": {
+						"x": 0,
+						"y": 4784,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20005.png",
+					"region": {
+						"x": 1604,
+						"y": 4784,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20006.png",
+					"region": {
+						"x": 3208,
+						"y": 4784,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20007.png",
+					"region": {
+						"x": 4812,
+						"y": 4784,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20008.png",
+					"region": {
+						"x": 6416,
+						"y": 4784,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20009.png",
+					"region": {
+						"x": 0,
+						"y": 5980,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20010.png",
+					"region": {
+						"x": 1604,
+						"y": 5980,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20011.png",
+					"region": {
+						"x": 3208,
+						"y": 5980,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20012.png",
+					"region": {
+						"x": 4812,
+						"y": 5980,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20013.png",
+					"region": {
+						"x": 6416,
+						"y": 5980,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20014.png",
+					"region": {
+						"x": 0,
+						"y": 7176,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20015.png",
+					"region": {
+						"x": 1604,
+						"y": 7176,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-20016.png",
+					"region": {
+						"x": 3208,
+						"y": 7176,
+						"w": 1604,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:61dbebfa3c47cbed97bc13fc1770f31c:c49296ac278ef2760f10aeaabd69029b:92c45d18442421ce5e74ebd490fa5964$"
+	}
+}

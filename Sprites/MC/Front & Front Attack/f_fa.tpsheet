@@ -1,0 +1,513 @@
+{
+	"textures": [
+		{
+			"image": "f_fa.png",
+			"size": {
+				"w": 9600,
+				"h": 8372
+			},
+			"sprites": [
+				{
+					"filename": "front attack0001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0002.png",
+					"region": {
+						"x": 1920,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0003.png",
+					"region": {
+						"x": 3840,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0004.png",
+					"region": {
+						"x": 5760,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0005.png",
+					"region": {
+						"x": 7680,
+						"y": 0,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0006.png",
+					"region": {
+						"x": 0,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0007.png",
+					"region": {
+						"x": 1920,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0008.png",
+					"region": {
+						"x": 3840,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0009.png",
+					"region": {
+						"x": 5760,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0010.png",
+					"region": {
+						"x": 7680,
+						"y": 1196,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0011.png",
+					"region": {
+						"x": 0,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0012.png",
+					"region": {
+						"x": 1920,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0013.png",
+					"region": {
+						"x": 3840,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0014.png",
+					"region": {
+						"x": 5760,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0015.png",
+					"region": {
+						"x": 7680,
+						"y": 2392,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0016.png",
+					"region": {
+						"x": 0,
+						"y": 3588,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front attack0017.png",
+					"region": {
+						"x": 1920,
+						"y": 3588,
+						"w": 1556,
+						"h": 1196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0001.png",
+					"region": {
+						"x": 3840,
+						"y": 3588,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0002.png",
+					"region": {
+						"x": 5760,
+						"y": 3588,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0003.png",
+					"region": {
+						"x": 7680,
+						"y": 3588,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0004.png",
+					"region": {
+						"x": 0,
+						"y": 4784,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0005.png",
+					"region": {
+						"x": 1920,
+						"y": 4784,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0006.png",
+					"region": {
+						"x": 3840,
+						"y": 4784,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0007.png",
+					"region": {
+						"x": 5760,
+						"y": 4784,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0008.png",
+					"region": {
+						"x": 7680,
+						"y": 4784,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0009.png",
+					"region": {
+						"x": 0,
+						"y": 5980,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0010.png",
+					"region": {
+						"x": 1920,
+						"y": 5980,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0011.png",
+					"region": {
+						"x": 3840,
+						"y": 5980,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0012.png",
+					"region": {
+						"x": 5760,
+						"y": 5980,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0013.png",
+					"region": {
+						"x": 7680,
+						"y": 5980,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0014.png",
+					"region": {
+						"x": 0,
+						"y": 7176,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0015.png",
+					"region": {
+						"x": 1920,
+						"y": 7176,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled-2.jpg0016.png",
+					"region": {
+						"x": 3840,
+						"y": 7176,
+						"w": 1920,
+						"h": 1080
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:92375b539933e013a80eaa6172094f83:c6224dab287ac75b1ee3962d26208535:fd8de83f9bce775eaf184edfbe1199d3$"
+	}
+}
