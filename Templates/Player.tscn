@@ -105,8 +105,8 @@
 [ext_resource type="Texture2D" uid="uid://dodopvnbh85qb" path="res://Sprites/MC/Side & Side Attack/s_sa.sprites/side attack0016.tres" id="86_uvgal"]
 [ext_resource type="Texture2D" uid="uid://bhx7rtdp3es7x" path="res://Sprites/MC/Side & Side Attack/s_sa.sprites/side attack0017.tres" id="87_t4sk6"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iat6b"]
-points = PackedVector3Array(0.267016, 0.766948, -0.1164, -0.291458, -0.761872, -0.0276713, -0.291252, -0.761336, 0.0307681, 0.268404, -0.800496, -0.0873515, 0.0595203, 0.725185, 0.291707, -0.142914, 0.751361, -0.258503, 0.176354, -0.757722, 0.234724, 0.0307677, -0.761328, -0.291249, -0.260518, 0.78619, 0.118015, -0.142848, -0.722061, 0.261502, 0.266301, 0.764882, 0.119199, -0.119879, -0.971825, 0.0318498, 0.145392, 0.748031, -0.257351, 0.0923368, 0.96888, 0.0923368, -0.196733, -0.708295, -0.22508, -0.286001, 0.718859, -0.0846668, -0.142848, 0.722061, 0.261502, 0.291707, -0.725185, 0.0595203, -0.0287456, 0.972175, -0.119923, 0.198947, -0.676966, -0.224046, -0.0565014, -0.726422, 0.292202, 0.0923368, -0.96888, 0.0923368, -0.0585673, -0.932875, -0.178936, -0.248347, -0.638684, 0.16812, 0.0307681, 0.761336, -0.291252, 0.225451, 0.671658, 0.1974, -0.148495, 0.930441, 0.121583, -0.0846668, -0.718859, -0.286001, 0.292202, 0.726422, -0.0565014, -0.207688, 0.896906, -0.0880939, 0.121583, -0.930441, -0.148495, -0.0878682, -0.894648, 0.210278)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wbngj"]
+height = 3.093
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g31r6"]
 albedo_color = Color(0.313726, 0.827451, 0.25098, 1)
@@ -1587,8 +1587,8 @@ script = ExtResource("2_tltr5")
 metadata/_custom_type_script = ExtResource("2_tltr5")
 
 [node name="Shape" type="CollisionShape3D" parent="."]
-transform = Transform3D(1.67468, 0, 0, 0, 1.59463, 0, 0, 0, 1, 0, -0.100125, 0)
-shape = SubResource("ConvexPolygonShape3D_iat6b")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.100125, 0)
+shape = SubResource("CapsuleShape3D_wbngj")
 
 [node name="Root" type="Node3D" parent="."]
 
