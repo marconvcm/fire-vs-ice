@@ -191,12 +191,114 @@ animations = [{
 "name": &"Back Attack",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wbngj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_g5ip7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mli30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jlb4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_avpan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8s7lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1a2i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_isblb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vt3ux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_oe1cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_b3d6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cgja5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mb1db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cx0uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_48oc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yae4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8monl")
+}],
 "loop": true,
 "name": &"Back Attack Hold",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wbngj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_g5ip7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mli30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jlb4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_avpan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8s7lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1a2i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_isblb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vt3ux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_oe1cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_b3d6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cgja5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mb1db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cx0uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_48oc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yae4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8monl")
+}],
 "loop": true,
 "name": &"Back Attack Release",
 "speed": 5.0
@@ -310,12 +412,114 @@ animations = [{
 "name": &"Front Attack",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_0obp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_cdari")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_m5ief")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_arag5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_waj5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_vblyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_jxmjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_b8i0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_d3vj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_n7agu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_dydi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_vwix0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_pnmup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_m0cwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_oo7mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_c7pty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_7trj4")
+}],
 "loop": true,
 "name": &"Front Attack Hold",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_0obp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_cdari")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_m5ief")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_arag5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_waj5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_vblyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_jxmjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_b8i0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_d3vj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_n7agu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_dydi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_vwix0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_pnmup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_m0cwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_oo7mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_c7pty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_7trj4")
+}],
 "loop": true,
 "name": &"Front Attack Release",
 "speed": 5.0
@@ -429,12 +633,114 @@ animations = [{
 "name": &"Right Attack",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_8chaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_mdwab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ugt6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_imeor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_q6spa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_votrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_5jvig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ppw0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_pjmqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_v6drx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_oq7x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_konti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ga58o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_ffs1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_qryt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_uvgal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_t4sk6")
+}],
 "loop": true,
 "name": &"Right Attack Hold",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_8chaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_mdwab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ugt6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_imeor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_q6spa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_votrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_5jvig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ppw0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_pjmqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_v6drx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_oq7x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_konti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ga58o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_ffs1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_qryt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_uvgal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_t4sk6")
+}],
 "loop": true,
 "name": &"Right Attack Release",
 "speed": 5.0
@@ -751,39 +1057,495 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id="Animation_yeee2"]
 resource_name = "Back Attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(393, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Back Attack", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_i546l"]
 resource_name = "Front Attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(305, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Front Attack", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_dqqgg"]
 resource_name = "Left Attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-430, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Right Attack", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_4y834"]
 resource_name = "Right Attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(430, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Right Attack", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_1o00q"]
 resource_name = "Front Attack Hold"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(305, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Front Attack Hold", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_jcucs"]
 resource_name = "Back Attack Hold"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(393, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Back Attack Hold", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_tapxb"]
 resource_name = "Left Attack Hold"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-430, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Right Attack Hold", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_3vfhi"]
 resource_name = "Right Attack Hold"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(430, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Right Attack Hold", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_1pd1f"]
 resource_name = "Front Attack Release"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(305, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Front Attack Release", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_c1xdf"]
 resource_name = "Back Attack Release"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(393, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Back Attack Release", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_obrjc"]
 resource_name = "Left Attack Release"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-430, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Right Attack Release", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_t0sai"]
 resource_name = "Right Attack Release"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite3D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(430, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite3D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite3D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Right Attack Release", 1.0, false],
+"method": &"play"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fjdfr"]
 _data = {
@@ -825,7 +1587,7 @@ script = ExtResource("2_tltr5")
 metadata/_custom_type_script = ExtResource("2_tltr5")
 
 [node name="Shape" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.100125, 0)
+transform = Transform3D(1.67468, 0, 0, 0, 1.59463, 0, 0, 0, 1, 0, -0.100125, 0)
 shape = SubResource("ConvexPolygonShape3D_iat6b")
 
 [node name="Root" type="Node3D" parent="."]
