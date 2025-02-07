@@ -15,4 +15,8 @@ func _process(delta):
     for body in self.get_overlapping_bodies():
         if body.has_method("takeDamage"):
             body.takeDamage(damage_per_second*delta)
+        else:
+            var bodyobject=body.get_parent()
+            if bodyobject is burnable:
+                bodyobject.burn(false)
     

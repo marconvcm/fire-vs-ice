@@ -5,7 +5,10 @@ class_name burnable extends MeshInstance3D
 func burn(touching:bool)->float:
     play_burning_animation()
     disable()
-    return heatvalue
+    if touching: 
+        return heatvalue
+    else:
+        return 0#might let it reduce heat loss over time or something
     
 func play_burning_animation():
     pass

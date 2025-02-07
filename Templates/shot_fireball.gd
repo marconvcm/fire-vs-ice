@@ -8,4 +8,8 @@ func fire( facing:Vector3, speed:float ) -> void:
 func _on_body_entered(body):
     if body.has_method("takeDamage"):
         body.takeDamage(damage);
+    else:
+        var bodyobject=body.get_parent()
+        if bodyobject is burnable:
+            bodyobject.burn(false)
     self.queue_free()

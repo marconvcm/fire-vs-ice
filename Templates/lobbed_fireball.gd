@@ -12,12 +12,20 @@ func fire( facing:Vector3, speed:float ) -> void:
 func _on_body_entered(body):
     if body.has_method("takeDamage"):
         body.takeDamage(directdamage);
+    else:
+        var bodyobject=body.get_parent()
+        if bodyobject is burnable:
+            bodyobject.burn(false)
     $"SplashDamageArea/AoE Image".visible=true
     $"Direct Image".visible=false
     self.freeze=true
     for splashedbody in $SplashDamageArea.get_overlapping_bodies():
         if splashedbody!=body and splashedbody.has_method("takeDamage"):
             splashedbody.takeDamage(splashdamage)
+        else:
+            var bodyobject=splashedbody.get_parent()
+            if bodyobject is burnable:
+                bodyobject.burn(false)
     await get_tree().create_timer(0.5).timeout
     self.queue_free()
 

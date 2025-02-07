@@ -165,6 +165,10 @@ func rage_damage(damage:float)->void:
     for target_body in rage_area.get_overlapping_bodies():
         if target_body.has_method("takeDamage"):
             target_body.takeDamage(damage)
+        else:
+            var bodyobject=target_body.get_parent()
+            if bodyobject is burnable:
+                bodyobject.burn(false)
             
 func rage_end()->void:
     raging=false
