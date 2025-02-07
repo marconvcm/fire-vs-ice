@@ -59,8 +59,14 @@ func is_lob_released() -> bool:
 func is_shoot_pressed() -> bool:
     return self.is_action_pressed("Shoot")
 
+func is_shoot_just_pressed() -> bool:
+    return self.is_action_just_pressed("Shoot")
+
 func is_shoot_released() -> bool:
     return self.is_action_released("Shoot")
+
+func is_shoot_just_released() -> bool:
+    return self.is_action_just_pressed("Shoot")
 
 func is_dash_just_pressed() -> bool:
     return self.is_action_just_pressed("Dash")

@@ -31,6 +31,7 @@ var current_dash_rage_area=null
 var attacksound1=preload("res://Resources/SFX/MC_FireBall.mp3")
 var attacksound2=preload("res://Resources/SFX/MC_FireLaser.mp3")
 var attacksound3=preload("res://Resources/SFX/MC_altAttack.mp3")
+var shooting:bool=false
 
 func _ready():
     heat.set_max_value(maxheat)
@@ -60,14 +61,26 @@ func _process(delta: float) -> void:
         animationdirection=PlayerInput.get_axis().normalized()
     if abs(animationdirection.z)>=abs(animationdirection.x):
         if animationdirection.z>0:
-            animator.play("Front Idle")
+            if shooting:
+                animator.play("Front Attack")
+            else:
+                animator.play("Front Idle")
         else:
-            animator.play("Back Idle")
+            if shooting:
+                animator.play("Back Attack")
+            else:
+                animator.play("Back Idle")
     else:
         if animationdirection.x>0:
-            animator.play("Right Idle")
+            if shooting:
+                animator.play("Right Attack")
+            else:
+                animator.play("Right Idle")
         elif animationdirection.x!=0:
-            animator.play("Left Idle")
+            if shooting:
+                animator.play("Left Attack")
+            else:
+                animator.play("Left Idle")
             
     if raging and !PlayerInput.is_rage_pressed():
         rage_end()
@@ -95,11 +108,15 @@ func _process(delta: float) -> void:
         lose_heat(lobbing_cost)
         lob_fireball(strength)
         
-    if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
-        lose_heat(shooting_cost)
-        shoot_fireball()
-        shoottimer.start()
-
+    #if PlayerInput.is_shoot_pressed() and shoottimer.is_stopped() and if_enough_heat(shooting_cost):
+        #lose_heat(shooting_cost)
+        #shoot_fireball()
+        #shoottimer.start()
+    if PlayerInput.is_shoot_pressed():
+        shooting=true
+    if PlayerInput.is_shoot_released():
+        shooting=false
+    
 func _physics_process(delta):
     if is_dashing():
         var gravity_strength=get_gravity_strength()
@@ -131,6 +148,12 @@ func shoot_fireball()->void:
         fireballInst.damage*=2
     add_sibling(fireballInst)
     
+    
+func shoot_fireball_from_animator()->void:
+    lose_heat(shooting_cost)
+    shoot_fireball()
+    pass    
+
 func rage_start()->void:
     raging=true
     lose_heat(rage_cost)
