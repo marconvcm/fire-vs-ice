@@ -6,19 +6,26 @@ var target=null
 var target_position=null
 @onready var home_position=self.global_position
 @onready var navi = $NavigationAgent3D
+@onready var animator=$AnimationPlayer
 var mimicprojectile=preload("res://Templates/mimic_projectile.tscn")
 var projectilespeed=40
 var activationsound=preload("res://Resources/SFX/laugh.mp3")
 var movesound=preload("res://Resources/SFX/roll.mp3")
 var attacksound=preload("res://Resources/SFX/vomit.mp3")
 #states: 0=hiding, 1=activated/chasing, 2=looking for player, 3=returning to hiding spot
+var animation_test_loop=["Attack Down", "Attack Left", "Attack Up", "Attack Right", "Roll Down", "Roll Left", "Roll Up", "Roll Right"]
+var animation_test_index=0
 func _ready():
     $GiveUpTimer.timeout.connect(giveup)
     navi.velocity_computed.connect(Callable(_on_velocity_computed))
     health=5
     speed=30
     $ShotTimer.timeout.connect(shoot)
-
+    $AnimationTestTimer.timeout.connect(animationtest)
+    
+func animationtest():
+    animator.play(animation_test_loop[animation_test_index])
+    animation_test_index=(animation_test_index+1)%8
 func _process(_delta):
     match state:
         0:#if currently hiding
