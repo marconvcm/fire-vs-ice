@@ -264,7 +264,7 @@ wait_time = 0.3
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pceoj")
 animation = &"Right"
-frame_progress = 0.557769
+frame_progress = 0.0544967
 
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]

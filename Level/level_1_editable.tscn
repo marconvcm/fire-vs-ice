@@ -984,7 +984,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.361, 4.19998, -16.6079)
 [node name="DebugMenu" parent="." instance=ExtResource("11_1vx5w")]
 
 [node name="Archer" parent="." instance=ExtResource("13_qtd18")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.002, 1.07271, -61.8657)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.002, 2.82697, -61.8657)
 
 [node name="WorldBoundaries" type="StaticBody3D" parent="."]
 collision_layer = 16

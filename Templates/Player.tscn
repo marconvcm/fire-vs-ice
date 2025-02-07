@@ -582,12 +582,13 @@ mesh = SubResource("SphereMesh_88hry")
 visible = false
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.38283e-05, 0.0103908, 0.00119305)
 offset = Vector2(500, 0)
 pixel_size = 0.004
 billboard = 1
 sprite_frames = SubResource("SpriteFrames_7s72l")
 animation = &"Back Idle"
-frame_progress = 0.986107
+frame_progress = 0.365761
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

@@ -9,11 +9,21 @@ var shots_between_specials=2
 var shot_index=0
 @onready var normaltimer=$NormalTimer
 @onready var specialtimer=$SpecialTimer
+@onready var animator=$AnimationPlayer
 var normal_arrow_sound=preload("res://Resources/SFX/Bowpull.mp3")
 var special_arrow_sound=preload("res://Resources/SFX/big_bow.mp3")
-
+var animation_test_loop=["Front Idle", "Front Shoot", "Right Idle", "Right Shoot", "Back Idle", "Back Shoot", "Left Idle", "Left Shoot"]
+var animation_test_index=0
 func _ready():
     specialtimer.timeout.connect(fire_special_arrow)
+    animator.play("Front Idle")
+    $AnimationTestTimer.timeout.connect(animationtest)
+    
+func animationtest():
+    animator.play(animation_test_loop[animation_test_index])
+    animation_test_index=(animation_test_index+1)%8
+        
+    
 
 func is_target_visible()->bool:
     $RayCast3D.target_position=target.global_position-self.global_position
