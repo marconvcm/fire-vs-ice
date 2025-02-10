@@ -3,25 +3,27 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1dj44v43lkr3"
-path="res://.godot/imported/Grass_Height3.png-f470471787ff64daa29b0b397ad8bceb.ctex"
+path.s3tc="res://.godot/imported/Grass_Height3.png-f470471787ff64daa29b0b397ad8bceb.s3tc.ctex"
+path.etc2="res://.godot/imported/Grass_Height3.png-f470471787ff64daa29b0b397ad8bceb.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Models/textures/Grass_Height3.png"
-dest_files=["res://.godot/imported/Grass_Height3.png-f470471787ff64daa29b0b397ad8bceb.ctex"]
+dest_files=["res://.godot/imported/Grass_Height3.png-f470471787ff64daa29b0b397ad8bceb.s3tc.ctex", "res://.godot/imported/Grass_Height3.png-f470471787ff64daa29b0b397ad8bceb.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -31,4 +33,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
