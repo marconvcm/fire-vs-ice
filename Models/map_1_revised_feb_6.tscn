@@ -1,230 +1,389 @@
-[gd_scene load_steps=80 format=3 uid="uid://c4i7y08pp4kae"]
+[gd_scene load_steps=136 format=3 uid="uid://c4i7y08pp4kae"]
 
 [ext_resource type="PackedScene" uid="uid://loqjj5mcy1v8" path="res://Models/map1 revised Feb6.blend" id="1_qolof"]
-[ext_resource type="Texture2D" uid="uid://dlspsmtkbw72q" path="res://Models/textures/mountain1.png" id="2_86k30"]
-[ext_resource type="Texture2D" uid="uid://de2eolpwd6nkd" path="res://Models/textures/mountains_2.png" id="3_6qqf2"]
-[ext_resource type="Texture2D" uid="uid://bqv16kwmov5wi" path="res://Models/textures/mountains3.png" id="4_w4wu5"]
-[ext_resource type="Texture2D" uid="uid://cme62p02aixtj" path="res://Models/textures/wooden_bridge.png" id="5_20trh"]
-[ext_resource type="Texture2D" uid="uid://bq2qrnoa6b3xs" path="res://Models/textures/ground.png" id="6_sk26s"]
-[ext_resource type="Texture2D" uid="uid://sjt6j1vqbodc" path="res://Models/textures/ground2.png" id="7_pqhmt"]
-[ext_resource type="Texture2D" uid="uid://bqt7pg20w4ql1" path="res://Models/textures/ground3.png" id="8_b3to7"]
-[ext_resource type="Texture2D" uid="uid://be0hwil5vgteq" path="res://Models/textures/Leave_alpha_2 copy.png" id="9_p6wb4"]
-[ext_resource type="Texture2D" uid="uid://5713t736peh2" path="res://Models/textures/snow.png" id="10_dq5r7"]
+[ext_resource type="Texture2D" uid="uid://b5l2tny4af0at" path="res://Models/textures/baked_textures/mountains1_baked.png" id="2_sk26s"]
+[ext_resource type="Texture2D" uid="uid://c00b66vdgxuo" path="res://Models/textures/baked_textures/mountains2_baked_textures.png" id="3_pqhmt"]
+[ext_resource type="Texture2D" uid="uid://sb8etwpqw462" path="res://Models/textures/baked_textures/mountains3_baked.png" id="4_b3to7"]
+[ext_resource type="Texture2D" uid="uid://tcj3bro2d80a" path="res://Models/textures/baked_textures/bridge1_baked.png" id="5_p6wb4"]
+[ext_resource type="Texture2D" uid="uid://c10jj35dyrmoj" path="res://Models/textures/baked_textures/rock1_baked.png" id="6_dq5r7"]
+[ext_resource type="Texture2D" uid="uid://b6kfv6xakql15" path="res://Models/textures/baked_textures/rock4_baked.png" id="7_ht6ig"]
+[ext_resource type="Texture2D" uid="uid://mxkvstlv1gs5" path="res://Models/textures/baked_textures/ground1_baked.png" id="8_ih1df"]
+[ext_resource type="Texture2D" uid="uid://cbi8qaoxh1xyu" path="res://Models/textures/baked_textures/ground2_baked.png" id="9_311nc"]
+[ext_resource type="Texture2D" uid="uid://nnk4uorcck8u" path="res://Models/textures/baked_textures/ground3_baked.png" id="10_t4fkl"]
+[ext_resource type="Texture2D" uid="uid://dwfj4phkad6or" path="res://Models/textures/baked_textures/leaves_baked.png" id="11_6uhjn"]
+[ext_resource type="Texture2D" uid="uid://0cwlid3xy48c" path="res://Models/textures/baked_textures/bush_leaves_baked.png" id="12_7bb0m"]
+[ext_resource type="Texture2D" uid="uid://c37ll6li2twx6" path="res://Models/textures/baked_textures/snow_bridges.png" id="13_fs1fs"]
+[ext_resource type="Texture2D" uid="uid://d1b4cxyuc1cr7" path="res://Models/textures/baked_textures/fire_cauldron_baked.png" id="14_n8sp4"]
+[ext_resource type="Texture2D" uid="uid://02hj8vbwncq5" path="res://Models/textures/baked_textures/lamp_posts_baked.png" id="15_nflc0"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ht6ig"]
-albedo_texture = ExtResource("2_86k30")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pugwe"]
+albedo_texture = ExtResource("2_sk26s")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ih1df"]
-albedo_texture = ExtResource("3_6qqf2")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6pe2"]
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_311nc"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4fkl"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uhjn"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7bb0m"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fs1fs"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8sp4"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nflc0"]
-albedo_texture = ExtResource("2_86k30")
+albedo_texture = ExtResource("2_sk26s")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_soubx"]
-albedo_texture = ExtResource("2_86k30")
+albedo_texture = ExtResource("2_sk26s")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_62rty"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1akq8"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5mwn"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k160h"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d54d8"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgupi"]
-albedo_texture = ExtResource("2_86k30")
+albedo_texture = ExtResource("2_sk26s")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lpcjs"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mfgu"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0qep"]
-albedo_texture = ExtResource("2_86k30")
+albedo_texture = ExtResource("2_sk26s")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rujqg"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_du0p2"]
-albedo_texture = ExtResource("2_86k30")
+albedo_texture = ExtResource("2_sk26s")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ofj7y"]
-albedo_texture = ExtResource("2_86k30")
+albedo_texture = ExtResource("2_sk26s")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l2fr5"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mveqi"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvam6"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ssp3"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp8n2"]
-albedo_texture = ExtResource("4_w4wu5")
+albedo_texture = ExtResource("4_b3to7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcsho"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lyvuy"]
-albedo_texture = ExtResource("3_6qqf2")
+albedo_texture = ExtResource("3_pqhmt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsekb"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dw3w"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mnou3"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ohfug"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mt2k8"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1mvq"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wf0gf"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63toj"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2s3qv"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dppgt"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7jri3"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ftky"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lkf7"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_028dp"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_83qv6"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bxhq7"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grdeb"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1gng"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n0t4j"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gav3j"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtpij"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sx0hm"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eo432"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pn64n"]
-albedo_texture = ExtResource("5_20trh")
+albedo_texture = ExtResource("5_p6wb4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l31ht"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72qcr"]
+albedo_texture = ExtResource("7_ht6ig")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0g3su"]
+albedo_texture = ExtResource("5_p6wb4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kgpvc"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6idi2"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tofid"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pxnmy"]
+albedo_texture = ExtResource("7_ht6ig")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv3bi"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_170jj"]
+albedo_texture = ExtResource("7_ht6ig")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5hqw"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l71b6"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dqw0u"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p0ktb"]
+albedo_texture = ExtResource("7_ht6ig")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1r5xk"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_re1sp"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_042gt"]
+albedo_texture = ExtResource("6_dq5r7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01ltg"]
+albedo_texture = ExtResource("6_dq5r7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gc3be"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wam8y"]
-albedo_texture = ExtResource("7_pqhmt")
+albedo_texture = ExtResource("9_311nc")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bkxj1"]
-albedo_texture = ExtResource("8_b3to7")
+albedo_texture = ExtResource("10_t4fkl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ic7s"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r8v1t"]
-albedo_texture = ExtResource("7_pqhmt")
+albedo_texture = ExtResource("9_311nc")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v58qf"]
-albedo_texture = ExtResource("8_b3to7")
+albedo_texture = ExtResource("10_t4fkl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xurne"]
-albedo_texture = ExtResource("8_b3to7")
+albedo_texture = ExtResource("10_t4fkl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nyddy"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2mbsv"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vsur4"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eny6v"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjgji"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s5ein"]
-albedo_texture = ExtResource("6_sk26s")
+albedo_texture = ExtResource("8_ih1df")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ql6hf"]
-albedo_texture = ExtResource("9_p6wb4")
+transparency = 1
+albedo_texture = ExtResource("11_6uhjn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ylxf"]
+albedo_texture = ExtResource("12_7bb0m")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pim8p"]
+albedo_texture = ExtResource("12_7bb0m")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8c133"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tc7dl"]
+albedo_texture = ExtResource("14_n8sp4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yflbx"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ex3fh"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1sfsj"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pgp20"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5q8nb"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6kmm"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pw558"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yu8nk"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5sh3"]
+albedo_texture = ExtResource("15_nflc0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cpxx8"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6mu31"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0lomh"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egl60"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03kbj"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ts1ya"]
+albedo_texture = ExtResource("13_fs1fs")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tqpam"]
-albedo_texture = ExtResource("10_dq5r7")
+albedo_texture = ExtResource("13_fs1fs")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_una4c"]
-albedo_texture = ExtResource("10_dq5r7")
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qid3j"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kr1w1"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtrkd"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lckyj"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5b7dk"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pgtol"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fkij8"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7aign"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tevru"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_stxtt"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kqfb5"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_etu23"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ec5v"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sm162"]
+albedo_texture = ExtResource("13_fs1fs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wuufa"]
+albedo_texture = ExtResource("13_fs1fs")
 
 [node name="map1 revised Feb6" instance=ExtResource("1_qolof")]
 
 [node name="mountain1" parent="." index="2"]
-surface_material_override/0 = SubResource("StandardMaterial3D_ht6ig")
+surface_material_override/0 = SubResource("StandardMaterial3D_pugwe")
 
 [node name="mountain2" parent="." index="3"]
-surface_material_override/0 = SubResource("StandardMaterial3D_ih1df")
+surface_material_override/0 = SubResource("StandardMaterial3D_c6pe2")
 
 [node name="mountain3" parent="." index="4"]
 surface_material_override/0 = SubResource("StandardMaterial3D_311nc")
@@ -379,6 +538,57 @@ surface_material_override/0 = SubResource("StandardMaterial3D_eo432")
 [node name="Wooden bridge pack asset 28_021" parent="." index="54"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pn64n")
 
+[node name="rock" parent="." index="55"]
+surface_material_override/0 = SubResource("StandardMaterial3D_l31ht")
+
+[node name="rock 4" parent="." index="58"]
+surface_material_override/0 = SubResource("StandardMaterial3D_72qcr")
+
+[node name="Wooden bridge pack asset 40" parent="." index="59"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0g3su")
+
+[node name="rock_001" parent="." index="60"]
+surface_material_override/0 = SubResource("StandardMaterial3D_kgpvc")
+
+[node name="rock 2_001" parent="." index="61"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6idi2")
+
+[node name="rock 3_001" parent="." index="62"]
+surface_material_override/0 = SubResource("StandardMaterial3D_tofid")
+
+[node name="rock 4_001" parent="." index="63"]
+surface_material_override/0 = SubResource("StandardMaterial3D_pxnmy")
+
+[node name="rock 3_002" parent="." index="64"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dv3bi")
+
+[node name="rock 4_002" parent="." index="65"]
+surface_material_override/0 = SubResource("StandardMaterial3D_170jj")
+
+[node name="rock_002" parent="." index="66"]
+surface_material_override/0 = SubResource("StandardMaterial3D_v5hqw")
+
+[node name="rock 2_002" parent="." index="67"]
+surface_material_override/0 = SubResource("StandardMaterial3D_l71b6")
+
+[node name="rock 3_003" parent="." index="68"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dqw0u")
+
+[node name="rock 4_003" parent="." index="69"]
+surface_material_override/0 = SubResource("StandardMaterial3D_p0ktb")
+
+[node name="rock 2_003" parent="." index="70"]
+surface_material_override/0 = SubResource("StandardMaterial3D_1r5xk")
+
+[node name="rock 3_004" parent="." index="71"]
+surface_material_override/0 = SubResource("StandardMaterial3D_re1sp")
+
+[node name="rock 3_005" parent="." index="72"]
+surface_material_override/0 = SubResource("StandardMaterial3D_042gt")
+
+[node name="rock 2_004" parent="." index="73"]
+surface_material_override/0 = SubResource("StandardMaterial3D_01ltg")
+
 [node name="ground1" parent="." index="74"]
 surface_material_override/0 = SubResource("StandardMaterial3D_gc3be")
 
@@ -422,8 +632,110 @@ surface_material_override/0 = SubResource("StandardMaterial3D_s5ein")
 [node name="Leaves Plane" parent="." index="87"]
 surface_material_override/0 = SubResource("StandardMaterial3D_ql6hf")
 
+[node name="Sphere" parent="." index="88"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5ylxf")
+
+[node name="Sphere_005" parent="." index="93"]
+surface_material_override/0 = SubResource("StandardMaterial3D_pim8p")
+
+[node name="fire cauldron" parent="." index="349"]
+surface_material_override/0 = SubResource("StandardMaterial3D_8c133")
+
+[node name="fire cauldron2" parent="." index="350"]
+surface_material_override/0 = SubResource("StandardMaterial3D_tc7dl")
+
+[node name="lamp4" parent="." index="351"]
+surface_material_override/0 = SubResource("StandardMaterial3D_yflbx")
+
+[node name="lamp" parent="." index="352"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ex3fh")
+
+[node name="lamp2" parent="." index="353"]
+surface_material_override/0 = SubResource("StandardMaterial3D_1sfsj")
+
+[node name="lamp3" parent="." index="354"]
+surface_material_override/0 = SubResource("StandardMaterial3D_pgp20")
+
+[node name="lamp5" parent="." index="355"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5q8nb")
+
+[node name="lamp6" parent="." index="356"]
+surface_material_override/0 = SubResource("StandardMaterial3D_o6kmm")
+
+[node name="lamp7" parent="." index="357"]
+surface_material_override/0 = SubResource("StandardMaterial3D_pw558")
+
+[node name="lamp8" parent="." index="358"]
+surface_material_override/0 = SubResource("StandardMaterial3D_yu8nk")
+
+[node name="lamp9" parent="." index="359"]
+surface_material_override/0 = SubResource("StandardMaterial3D_n5sh3")
+
+[node name="Cube" parent="." index="360"]
+surface_material_override/0 = SubResource("StandardMaterial3D_cpxx8")
+
+[node name="Cube_001" parent="." index="361"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6mu31")
+
+[node name="Cube_002" parent="." index="362"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0lomh")
+
+[node name="Cube_003" parent="." index="363"]
+surface_material_override/0 = SubResource("StandardMaterial3D_egl60")
+
+[node name="Cube_004" parent="." index="364"]
+surface_material_override/0 = SubResource("StandardMaterial3D_03kbj")
+
+[node name="Cube_005" parent="." index="365"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ts1ya")
+
 [node name="Cube_006" parent="." index="366"]
 surface_material_override/0 = SubResource("StandardMaterial3D_tqpam")
 
 [node name="Cube_007" parent="." index="367"]
 surface_material_override/0 = SubResource("StandardMaterial3D_una4c")
+
+[node name="Cube_008" parent="." index="368"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qid3j")
+
+[node name="Cube_009" parent="." index="369"]
+surface_material_override/0 = SubResource("StandardMaterial3D_kr1w1")
+
+[node name="Cube_010" parent="." index="370"]
+surface_material_override/0 = SubResource("StandardMaterial3D_vtrkd")
+
+[node name="Cube_011" parent="." index="371"]
+surface_material_override/0 = SubResource("StandardMaterial3D_lckyj")
+
+[node name="Cube_012" parent="." index="372"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5b7dk")
+
+[node name="Cube_013" parent="." index="373"]
+surface_material_override/0 = SubResource("StandardMaterial3D_pgtol")
+
+[node name="Cube_014" parent="." index="374"]
+surface_material_override/0 = SubResource("StandardMaterial3D_fkij8")
+
+[node name="Cube_015" parent="." index="375"]
+surface_material_override/0 = SubResource("StandardMaterial3D_7aign")
+
+[node name="Cube_016" parent="." index="376"]
+surface_material_override/0 = SubResource("StandardMaterial3D_tevru")
+
+[node name="Cube_017" parent="." index="377"]
+surface_material_override/0 = SubResource("StandardMaterial3D_stxtt")
+
+[node name="Cube_018" parent="." index="378"]
+surface_material_override/0 = SubResource("StandardMaterial3D_kqfb5")
+
+[node name="Cube_019" parent="." index="379"]
+surface_material_override/0 = SubResource("StandardMaterial3D_etu23")
+
+[node name="Cube_020" parent="." index="380"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6ec5v")
+
+[node name="Cube_021" parent="." index="381"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sm162")
+
+[node name="Cube_022" parent="." index="382"]
+surface_material_override/0 = SubResource("StandardMaterial3D_wuufa")
