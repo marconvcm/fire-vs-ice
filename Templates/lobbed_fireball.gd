@@ -7,6 +7,7 @@ var maxsplashradius=10
 func fire( facing:Vector3, speed:float ) -> void:
     facing=facing.normalized();
     self.linear_velocity+=(speed/sqrt(2))*(facing+Vector3(0,1,0));
+    $"Direct Image".play()
 
 
 func _on_body_entered(body):
@@ -34,8 +35,7 @@ func set_strength(thisstrength:float):
     print($DirectHitHitbox.shape.radius)
     $DirectHitHitbox.shape.radius=maxdirectradius*strength
     print($DirectHitHitbox.shape.radius)
-    $"Direct Image".mesh.radius=maxdirectradius*strength
-    $"Direct Image".mesh.height=2*maxdirectradius*strength
+    $"Direct Image".pixel_size=0.015*maxdirectradius*strength
     $SplashDamageArea/CollisionShape3D.shape.radius=maxsplashradius*strength
     $"SplashDamageArea/AoE Image".mesh.radius=maxsplashradius*strength
     $"SplashDamageArea/AoE Image".mesh.height=2*maxsplashradius*strength

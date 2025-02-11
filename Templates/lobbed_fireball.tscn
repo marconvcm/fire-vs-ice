@@ -1,20 +1,86 @@
-[gd_scene load_steps=8 format=3 uid="uid://cvbpsnkebnbr0"]
+[gd_scene load_steps=24 format=3 uid="uid://cvbpsnkebnbr0"]
 
 [ext_resource type="Script" uid="uid://bwifcyupwd6qp" path="res://Templates/lobbed_fireball.gd" id="1_8kgip"]
+[ext_resource type="Texture2D" uid="uid://dupg8hico11qr" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0001.tres" id="2_1bu6p"]
+[ext_resource type="Texture2D" uid="uid://b7of1lebws8rb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0002.tres" id="3_ulg5f"]
+[ext_resource type="Texture2D" uid="uid://dbhn1kd2wdfrh" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0003.tres" id="4_q1cn2"]
+[ext_resource type="Texture2D" uid="uid://c6bek02hg1e7v" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0004.tres" id="5_qcwhd"]
+[ext_resource type="Texture2D" uid="uid://bso427awoaksp" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0005.tres" id="6_iqeks"]
+[ext_resource type="Texture2D" uid="uid://dq5wos08bg35s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0006.tres" id="7_muybo"]
+[ext_resource type="Texture2D" uid="uid://i53svi16nf6" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0007.tres" id="8_xk3ud"]
+[ext_resource type="Texture2D" uid="uid://c2x07crvqfg8s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0008.tres" id="9_b4suv"]
+[ext_resource type="Texture2D" uid="uid://f07dsyhqbxny" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0009.tres" id="10_t0h6p"]
+[ext_resource type="Texture2D" uid="uid://cpfk8wpkuq441" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0010.tres" id="11_uihsu"]
+[ext_resource type="Texture2D" uid="uid://trer7a5tyyr0" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0011.tres" id="12_fllvh"]
+[ext_resource type="Texture2D" uid="uid://byawpwbe51syq" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0012.tres" id="13_j7gcn"]
+[ext_resource type="Texture2D" uid="uid://k5hafjn1vx6o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0013.tres" id="14_romsg"]
+[ext_resource type="Texture2D" uid="uid://ca3b4s8oymc5o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0014.tres" id="15_3ue6t"]
+[ext_resource type="Texture2D" uid="uid://b7y57ii8b8qmy" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0015.tres" id="16_3df7b"]
+[ext_resource type="Texture2D" uid="uid://dkx4x6c8tfisb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0016.tres" id="17_n1ah6"]
+[ext_resource type="Texture2D" uid="uid://beqj1y5dukgh1" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0017.tres" id="18_no28m"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_t54ii"]
 resource_local_to_scene = true
 radius = 1.0
 
-[sub_resource type="SphereMesh" id="SphereMesh_8kgip"]
-resource_local_to_scene = true
-radius = 1.0
-height = 2.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kgip"]
-albedo_color = Color(1, 0, 0, 1)
-emission = Color(1, 0, 0, 1)
-emission_energy_multiplier = 1263.42
+[sub_resource type="SpriteFrames" id="SpriteFrames_w0yf2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1bu6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ulg5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q1cn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qcwhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iqeks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_muybo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xk3ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b4suv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_t0h6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_uihsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fllvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_j7gcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_romsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3ue6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3df7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_n1ah6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_no28m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_8kgip"]
 resource_local_to_scene = true
@@ -40,9 +106,12 @@ script = ExtResource("1_8kgip")
 [node name="DirectHitHitbox" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_t54ii")
 
-[node name="Direct Image" type="MeshInstance3D" parent="."]
-mesh = SubResource("SphereMesh_8kgip")
-surface_material_override/0 = SubResource("StandardMaterial3D_8kgip")
+[node name="Direct Image" type="AnimatedSprite3D" parent="."]
+offset = Vector2(187, -77)
+pixel_size = 0.015
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_w0yf2")
+frame_progress = 0.326386
 
 [node name="SplashDamageArea" type="Area3D" parent="."]
 collision_layer = 2
