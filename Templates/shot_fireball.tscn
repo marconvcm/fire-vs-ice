@@ -1,6 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2ysc24f3ok0i"]
+[gd_scene load_steps=23 format=3 uid="uid://c2ysc24f3ok0i"]
 
 [ext_resource type="Script" uid="uid://ccylwg1a3ay8b" path="res://Templates/shot_fireball.gd" id="1_5e2h8"]
+[ext_resource type="Texture2D" uid="uid://dupg8hico11qr" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0001.tres" id="2_evy44"]
+[ext_resource type="Texture2D" uid="uid://b7of1lebws8rb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0002.tres" id="3_ni6ir"]
+[ext_resource type="Texture2D" uid="uid://dbhn1kd2wdfrh" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0003.tres" id="4_rpof6"]
+[ext_resource type="Texture2D" uid="uid://c6bek02hg1e7v" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0004.tres" id="5_ls3dx"]
+[ext_resource type="Texture2D" uid="uid://bso427awoaksp" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0005.tres" id="6_2nn5t"]
+[ext_resource type="Texture2D" uid="uid://dq5wos08bg35s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0006.tres" id="7_7hqpk"]
+[ext_resource type="Texture2D" uid="uid://i53svi16nf6" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0007.tres" id="8_vlma8"]
+[ext_resource type="Texture2D" uid="uid://c2x07crvqfg8s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0008.tres" id="9_56x1w"]
+[ext_resource type="Texture2D" uid="uid://f07dsyhqbxny" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0009.tres" id="10_ukqm4"]
+[ext_resource type="Texture2D" uid="uid://cpfk8wpkuq441" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0010.tres" id="11_k11aj"]
+[ext_resource type="Texture2D" uid="uid://trer7a5tyyr0" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0011.tres" id="12_10ncy"]
+[ext_resource type="Texture2D" uid="uid://byawpwbe51syq" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0012.tres" id="13_t4r5v"]
+[ext_resource type="Texture2D" uid="uid://k5hafjn1vx6o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0013.tres" id="14_bhomt"]
+[ext_resource type="Texture2D" uid="uid://ca3b4s8oymc5o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0014.tres" id="15_0lgww"]
+[ext_resource type="Texture2D" uid="uid://b7y57ii8b8qmy" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0015.tres" id="16_b0jac"]
+[ext_resource type="Texture2D" uid="uid://dkx4x6c8tfisb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0016.tres" id="17_0erwh"]
+[ext_resource type="Texture2D" uid="uid://beqj1y5dukgh1" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0017.tres" id="18_rsvnc"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_47iq7"]
 radius = 0.1
@@ -12,6 +29,65 @@ albedo_color = Color(1, 0, 0, 0.858824)
 material = SubResource("StandardMaterial3D_5e2h8")
 radius = 0.1
 height = 0.2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p6xcw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_evy44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ni6ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rpof6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ls3dx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2nn5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7hqpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vlma8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_56x1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ukqm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k11aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_10ncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_t4r5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bhomt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0lgww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b0jac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_0erwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_rsvnc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="shot_fireball" type="RigidBody3D"]
 collision_layer = 2
@@ -26,6 +102,15 @@ script = ExtResource("1_5e2h8")
 shape = SubResource("SphereShape3D_47iq7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("SphereMesh_5e2h8")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.170673, 0)
+offset = Vector2(192, 0)
+pixel_size = 0.002
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_p6xcw")
+frame_progress = 0.73611
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

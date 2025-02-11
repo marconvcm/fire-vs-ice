@@ -5,6 +5,10 @@ func fire( facing:Vector3, speed:float ) -> void:
     self.linear_velocity+=speed*facing;
 
 
+func _ready():
+    $AnimatedSprite3D.play()
+    pass
+    
 func _on_body_entered(body):
     if body.has_method("takeDamage"):
         body.takeDamage(damage);
