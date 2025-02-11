@@ -1,12 +1,18 @@
-[gd_scene load_steps=136 format=3 uid="uid://c4i7y08pp4kae"]
+[gd_scene load_steps=143 format=3 uid="uid://c4i7y08pp4kae"]
 
 [ext_resource type="PackedScene" uid="uid://loqjj5mcy1v8" path="res://Models/map1 revised Feb6.blend" id="1_qolof"]
+[ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="2_p6wb4"]
 [ext_resource type="Texture2D" uid="uid://b5l2tny4af0at" path="res://Models/textures/baked_textures/mountains1_baked.png" id="2_sk26s"]
+[ext_resource type="PackedScene" uid="uid://752xbach55lb" path="res://Templates/DebugPanel.tscn" id="3_dq5r7"]
 [ext_resource type="Texture2D" uid="uid://c00b66vdgxuo" path="res://Models/textures/baked_textures/mountains2_baked_textures.png" id="3_pqhmt"]
 [ext_resource type="Texture2D" uid="uid://sb8etwpqw462" path="res://Models/textures/baked_textures/mountains3_baked.png" id="4_b3to7"]
+[ext_resource type="PackedScene" uid="uid://t03w0dfijfat" path="res://Templates/HUD.tscn" id="4_ht6ig"]
+[ext_resource type="Script" uid="uid://dyqkscel6ddgv" path="res://Templates/GimbalCamera.gd" id="5_ih1df"]
 [ext_resource type="Texture2D" uid="uid://tcj3bro2d80a" path="res://Models/textures/baked_textures/bridge1_baked.png" id="5_p6wb4"]
+[ext_resource type="PackedScene" uid="uid://dyfkw4bd8l5bm" path="res://Templates/Player.tscn" id="6_311nc"]
 [ext_resource type="Texture2D" uid="uid://c10jj35dyrmoj" path="res://Models/textures/baked_textures/rock1_baked.png" id="6_dq5r7"]
 [ext_resource type="Texture2D" uid="uid://b6kfv6xakql15" path="res://Models/textures/baked_textures/rock4_baked.png" id="7_ht6ig"]
+[ext_resource type="PackedScene" uid="uid://74nal8urs8o" path="res://Templates/debug_menu.tscn" id="7_t4fkl"]
 [ext_resource type="Texture2D" uid="uid://mxkvstlv1gs5" path="res://Models/textures/baked_textures/ground1_baked.png" id="8_ih1df"]
 [ext_resource type="Texture2D" uid="uid://cbi8qaoxh1xyu" path="res://Models/textures/baked_textures/ground2_baked.png" id="9_311nc"]
 [ext_resource type="Texture2D" uid="uid://nnk4uorcck8u" path="res://Models/textures/baked_textures/ground3_baked.png" id="10_t4fkl"]
@@ -15,6 +21,10 @@
 [ext_resource type="Texture2D" uid="uid://c37ll6li2twx6" path="res://Models/textures/baked_textures/snow_bridges.png" id="13_fs1fs"]
 [ext_resource type="Texture2D" uid="uid://d1b4cxyuc1cr7" path="res://Models/textures/baked_textures/fire_cauldron_baked.png" id="14_n8sp4"]
 [ext_resource type="Texture2D" uid="uid://02hj8vbwncq5" path="res://Models/textures/baked_textures/lamp_posts_baked.png" id="15_nflc0"]
+
+[sub_resource type="Environment" id="Environment_ih1df"]
+ambient_light_source = 2
+ambient_light_color = Color(0.723479, 0.893062, 0.995215, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pugwe"]
 albedo_texture = ExtResource("2_sk26s")
@@ -379,363 +389,405 @@ albedo_texture = ExtResource("13_fs1fs")
 
 [node name="map1 revised Feb6" instance=ExtResource("1_qolof")]
 
-[node name="mountain1" parent="." index="2"]
+[node name="DebugPlugin" type="Node" parent="." index="0" node_paths=PackedStringArray("world", "panel")]
+script = ExtResource("2_p6wb4")
+world = NodePath("..")
+panel = NodePath("../DebugPanel")
+metadata/_custom_type_script = ExtResource("2_p6wb4")
+
+[node name="DebugPanel" parent="." index="1" instance=ExtResource("3_dq5r7")]
+scale = Vector2(2, 2)
+
+[node name="HUD" parent="." index="2" node_paths=PackedStringArray("player") instance=ExtResource("4_ht6ig")]
+player = NodePath("../Player")
+
+[node name="Environment" type="WorldEnvironment" parent="." index="3"]
+environment = SubResource("Environment_ih1df")
+
+[node name="Global" type="DirectionalLight3D" parent="." index="4"]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 38.503, 0)
+shadow_enabled = true
+
+[node name="Mount" type="Node3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2501, 9.89838, 14.741)
+
+[node name="Gimbal" type="Node3D" parent="Mount" index="0"]
+
+[node name="Camera" type="Camera3D" parent="Mount/Gimbal" index="0" node_paths=PackedStringArray("target", "gimbal")]
+transform = Transform3D(-1, -7.24768e-08, 4.88862e-08, 0, 0.559193, 0.829038, -8.74228e-08, 0.829038, -0.559193, 0, 0, 0)
+v_offset = 1.5
+doppler_tracking = 2
+current = true
+fov = 20.0
+script = ExtResource("5_ih1df")
+sensitivity = 0.05
+target = NodePath("../../../Player")
+gimbal = NodePath("..")
+moving_fov = 30.0
+idle_fov = 25.0
+
+[node name="Player" parent="." index="6" instance=ExtResource("6_311nc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 302.059, 1.89111, 694.445)
+
+[node name="DebugMenu" parent="." index="7" instance=ExtResource("7_t4fkl")]
+
+[node name="mountain1" parent="." index="10"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pugwe")
 
-[node name="mountain2" parent="." index="3"]
+[node name="mountain2" parent="." index="11"]
 surface_material_override/0 = SubResource("StandardMaterial3D_c6pe2")
 
-[node name="mountain3" parent="." index="4"]
+[node name="mountain3" parent="." index="12"]
 surface_material_override/0 = SubResource("StandardMaterial3D_311nc")
 
-[node name="mountain3_001" parent="." index="5"]
+[node name="mountain3_001" parent="." index="13"]
 surface_material_override/0 = SubResource("StandardMaterial3D_t4fkl")
 
-[node name="mountain3_002" parent="." index="6"]
+[node name="mountain3_002" parent="." index="14"]
 surface_material_override/0 = SubResource("StandardMaterial3D_6uhjn")
 
-[node name="mountain3_003" parent="." index="7"]
+[node name="mountain3_003" parent="." index="15"]
 surface_material_override/0 = SubResource("StandardMaterial3D_7bb0m")
 
-[node name="mountain2_001" parent="." index="8"]
+[node name="mountain2_001" parent="." index="16"]
 surface_material_override/0 = SubResource("StandardMaterial3D_fs1fs")
 
-[node name="mountain2_002" parent="." index="9"]
+[node name="mountain2_002" parent="." index="17"]
 surface_material_override/0 = SubResource("StandardMaterial3D_n8sp4")
 
-[node name="mountain1_001" parent="." index="10"]
+[node name="mountain1_001" parent="." index="18"]
 surface_material_override/0 = SubResource("StandardMaterial3D_nflc0")
 
-[node name="mountain1_002" parent="." index="11"]
+[node name="mountain1_002" parent="." index="19"]
 surface_material_override/0 = SubResource("StandardMaterial3D_soubx")
 
-[node name="mountain2_003" parent="." index="12"]
+[node name="mountain2_003" parent="." index="20"]
 surface_material_override/0 = SubResource("StandardMaterial3D_62rty")
 
-[node name="mountain3_004" parent="." index="13"]
+[node name="mountain3_004" parent="." index="21"]
 surface_material_override/0 = SubResource("StandardMaterial3D_1akq8")
 
-[node name="mountain3_005" parent="." index="14"]
+[node name="mountain3_005" parent="." index="22"]
 surface_material_override/0 = SubResource("StandardMaterial3D_c5mwn")
 
-[node name="mountain3_006" parent="." index="15"]
+[node name="mountain3_006" parent="." index="23"]
 surface_material_override/0 = SubResource("StandardMaterial3D_k160h")
 
-[node name="mountain2_004" parent="." index="16"]
+[node name="mountain2_004" parent="." index="24"]
 surface_material_override/0 = SubResource("StandardMaterial3D_d54d8")
 
-[node name="mountain1_003" parent="." index="17"]
+[node name="mountain1_003" parent="." index="25"]
 surface_material_override/0 = SubResource("StandardMaterial3D_bgupi")
 
-[node name="mountain3_007" parent="." index="18"]
+[node name="mountain3_007" parent="." index="26"]
 surface_material_override/0 = SubResource("StandardMaterial3D_lpcjs")
 
-[node name="mountain2_005" parent="." index="19"]
+[node name="mountain2_005" parent="." index="27"]
 surface_material_override/0 = SubResource("StandardMaterial3D_1mfgu")
 
-[node name="mountain1_004" parent="." index="20"]
+[node name="mountain1_004" parent="." index="28"]
 surface_material_override/0 = SubResource("StandardMaterial3D_o0qep")
 
-[node name="mountain3_008" parent="." index="21"]
+[node name="mountain3_008" parent="." index="29"]
 surface_material_override/0 = SubResource("StandardMaterial3D_rujqg")
 
-[node name="mountain1_005" parent="." index="22"]
+[node name="mountain1_005" parent="." index="30"]
 surface_material_override/0 = SubResource("StandardMaterial3D_du0p2")
 
-[node name="mountain1_006" parent="." index="23"]
+[node name="mountain1_006" parent="." index="31"]
 surface_material_override/0 = SubResource("StandardMaterial3D_ofj7y")
 
-[node name="mountain2_006" parent="." index="24"]
+[node name="mountain2_006" parent="." index="32"]
 surface_material_override/0 = SubResource("StandardMaterial3D_l2fr5")
 
-[node name="mountain3_009" parent="." index="25"]
+[node name="mountain3_009" parent="." index="33"]
 surface_material_override/0 = SubResource("StandardMaterial3D_mveqi")
 
-[node name="mountain3_010" parent="." index="26"]
+[node name="mountain3_010" parent="." index="34"]
 surface_material_override/0 = SubResource("StandardMaterial3D_fvam6")
 
-[node name="mountain2_007" parent="." index="27"]
+[node name="mountain2_007" parent="." index="35"]
 surface_material_override/0 = SubResource("StandardMaterial3D_3ssp3")
 
-[node name="mountain3_011" parent="." index="28"]
+[node name="mountain3_011" parent="." index="36"]
 surface_material_override/0 = SubResource("StandardMaterial3D_kp8n2")
 
-[node name="mountain2_008" parent="." index="29"]
+[node name="mountain2_008" parent="." index="37"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pcsho")
 
-[node name="mountain2_009" parent="." index="30"]
+[node name="mountain2_009" parent="." index="38"]
 surface_material_override/0 = SubResource("StandardMaterial3D_lyvuy")
 
-[node name="Wooden bridge pack asset 30" parent="." index="31"]
+[node name="Wooden bridge pack asset 30" parent="." index="39"]
 surface_material_override/0 = SubResource("StandardMaterial3D_qsekb")
 
-[node name="Wooden bridge pack asset 28" parent="." index="32"]
+[node name="Wooden bridge pack asset 28" parent="." index="40"]
 surface_material_override/0 = SubResource("StandardMaterial3D_2dw3w")
 
-[node name="Wooden bridge pack asset 28_001" parent="." index="33"]
+[node name="Wooden bridge pack asset 28_001" parent="." index="41"]
 surface_material_override/0 = SubResource("StandardMaterial3D_mnou3")
 
-[node name="Wooden bridge pack asset 28_002" parent="." index="34"]
+[node name="Wooden bridge pack asset 28_002" parent="." index="42"]
 surface_material_override/0 = SubResource("StandardMaterial3D_ohfug")
 
-[node name="Wooden bridge pack asset 28_003" parent="." index="35"]
+[node name="Wooden bridge pack asset 28_003" parent="." index="43"]
 surface_material_override/0 = SubResource("StandardMaterial3D_mt2k8")
 
-[node name="Wooden bridge pack asset 28_004" parent="." index="36"]
+[node name="Wooden bridge pack asset 28_004" parent="." index="44"]
 surface_material_override/0 = SubResource("StandardMaterial3D_b1mvq")
 
-[node name="Wooden bridge pack asset 28_005" parent="." index="37"]
+[node name="Wooden bridge pack asset 28_005" parent="." index="45"]
 surface_material_override/0 = SubResource("StandardMaterial3D_wf0gf")
 
-[node name="Wooden bridge pack asset 28_006" parent="." index="38"]
+[node name="Wooden bridge pack asset 28_006" parent="." index="46"]
 surface_material_override/0 = SubResource("StandardMaterial3D_63toj")
 
-[node name="Wooden bridge pack asset 28_007" parent="." index="39"]
+[node name="Wooden bridge pack asset 28_007" parent="." index="47"]
 surface_material_override/0 = SubResource("StandardMaterial3D_2s3qv")
 
-[node name="Wooden bridge pack asset 30_001" parent="." index="40"]
+[node name="Wooden bridge pack asset 30_001" parent="." index="48"]
 surface_material_override/0 = SubResource("StandardMaterial3D_dppgt")
 
-[node name="Wooden bridge pack asset 28_008" parent="." index="41"]
+[node name="Wooden bridge pack asset 28_008" parent="." index="49"]
 surface_material_override/0 = SubResource("StandardMaterial3D_7jri3")
 
-[node name="Wooden bridge pack asset 28_009" parent="." index="42"]
+[node name="Wooden bridge pack asset 28_009" parent="." index="50"]
 surface_material_override/0 = SubResource("StandardMaterial3D_0ftky")
 
-[node name="Wooden bridge pack asset 28_010" parent="." index="43"]
+[node name="Wooden bridge pack asset 28_010" parent="." index="51"]
 surface_material_override/0 = SubResource("StandardMaterial3D_3lkf7")
 
-[node name="Wooden bridge pack asset 28_011" parent="." index="44"]
+[node name="Wooden bridge pack asset 28_011" parent="." index="52"]
 surface_material_override/0 = SubResource("StandardMaterial3D_028dp")
 
-[node name="Wooden bridge pack asset 28_012" parent="." index="45"]
+[node name="Wooden bridge pack asset 28_012" parent="." index="53"]
 surface_material_override/0 = SubResource("StandardMaterial3D_83qv6")
 
-[node name="Wooden bridge pack asset 28_013" parent="." index="46"]
+[node name="Wooden bridge pack asset 28_013" parent="." index="54"]
 surface_material_override/0 = SubResource("StandardMaterial3D_bxhq7")
 
-[node name="Wooden bridge pack asset 28_014" parent="." index="47"]
+[node name="Wooden bridge pack asset 28_014" parent="." index="55"]
 surface_material_override/0 = SubResource("StandardMaterial3D_grdeb")
 
-[node name="Wooden bridge pack asset 28_015" parent="." index="48"]
+[node name="Wooden bridge pack asset 28_015" parent="." index="56"]
 surface_material_override/0 = SubResource("StandardMaterial3D_h1gng")
 
-[node name="Wooden bridge pack asset 28_016" parent="." index="49"]
+[node name="Wooden bridge pack asset 28_016" parent="." index="57"]
 surface_material_override/0 = SubResource("StandardMaterial3D_n0t4j")
 
-[node name="Wooden bridge pack asset 28_017" parent="." index="50"]
+[node name="Wooden bridge pack asset 28_017" parent="." index="58"]
 surface_material_override/0 = SubResource("StandardMaterial3D_gav3j")
 
-[node name="Wooden bridge pack asset 28_018" parent="." index="51"]
+[node name="Wooden bridge pack asset 28_018" parent="." index="59"]
 surface_material_override/0 = SubResource("StandardMaterial3D_vtpij")
 
-[node name="Wooden bridge pack asset 28_019" parent="." index="52"]
+[node name="Wooden bridge pack asset 28_019" parent="." index="60"]
 surface_material_override/0 = SubResource("StandardMaterial3D_sx0hm")
 
-[node name="Wooden bridge pack asset 28_020" parent="." index="53"]
+[node name="Wooden bridge pack asset 28_020" parent="." index="61"]
 surface_material_override/0 = SubResource("StandardMaterial3D_eo432")
 
-[node name="Wooden bridge pack asset 28_021" parent="." index="54"]
+[node name="Wooden bridge pack asset 28_021" parent="." index="62"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pn64n")
 
-[node name="rock" parent="." index="55"]
+[node name="rock" parent="." index="63"]
 surface_material_override/0 = SubResource("StandardMaterial3D_l31ht")
 
-[node name="rock 4" parent="." index="58"]
+[node name="rock 4" parent="." index="66"]
 surface_material_override/0 = SubResource("StandardMaterial3D_72qcr")
 
-[node name="Wooden bridge pack asset 40" parent="." index="59"]
+[node name="Wooden bridge pack asset 40" parent="." index="67"]
 surface_material_override/0 = SubResource("StandardMaterial3D_0g3su")
 
-[node name="rock_001" parent="." index="60"]
+[node name="rock_001" parent="." index="68"]
 surface_material_override/0 = SubResource("StandardMaterial3D_kgpvc")
 
-[node name="rock 2_001" parent="." index="61"]
+[node name="rock 2_001" parent="." index="69"]
 surface_material_override/0 = SubResource("StandardMaterial3D_6idi2")
 
-[node name="rock 3_001" parent="." index="62"]
+[node name="rock 3_001" parent="." index="70"]
 surface_material_override/0 = SubResource("StandardMaterial3D_tofid")
 
-[node name="rock 4_001" parent="." index="63"]
+[node name="rock 4_001" parent="." index="71"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pxnmy")
 
-[node name="rock 3_002" parent="." index="64"]
+[node name="rock 3_002" parent="." index="72"]
 surface_material_override/0 = SubResource("StandardMaterial3D_dv3bi")
 
-[node name="rock 4_002" parent="." index="65"]
+[node name="rock 4_002" parent="." index="73"]
 surface_material_override/0 = SubResource("StandardMaterial3D_170jj")
 
-[node name="rock_002" parent="." index="66"]
+[node name="rock_002" parent="." index="74"]
 surface_material_override/0 = SubResource("StandardMaterial3D_v5hqw")
 
-[node name="rock 2_002" parent="." index="67"]
+[node name="rock 2_002" parent="." index="75"]
 surface_material_override/0 = SubResource("StandardMaterial3D_l71b6")
 
-[node name="rock 3_003" parent="." index="68"]
+[node name="rock 3_003" parent="." index="76"]
 surface_material_override/0 = SubResource("StandardMaterial3D_dqw0u")
 
-[node name="rock 4_003" parent="." index="69"]
+[node name="rock 4_003" parent="." index="77"]
 surface_material_override/0 = SubResource("StandardMaterial3D_p0ktb")
 
-[node name="rock 2_003" parent="." index="70"]
+[node name="rock 2_003" parent="." index="78"]
 surface_material_override/0 = SubResource("StandardMaterial3D_1r5xk")
 
-[node name="rock 3_004" parent="." index="71"]
+[node name="rock 3_004" parent="." index="79"]
 surface_material_override/0 = SubResource("StandardMaterial3D_re1sp")
 
-[node name="rock 3_005" parent="." index="72"]
+[node name="rock 3_005" parent="." index="80"]
 surface_material_override/0 = SubResource("StandardMaterial3D_042gt")
 
-[node name="rock 2_004" parent="." index="73"]
+[node name="rock 2_004" parent="." index="81"]
 surface_material_override/0 = SubResource("StandardMaterial3D_01ltg")
 
-[node name="ground1" parent="." index="74"]
+[node name="ground1" parent="." index="82"]
 surface_material_override/0 = SubResource("StandardMaterial3D_gc3be")
 
-[node name="ground2" parent="." index="75"]
+[node name="ground2" parent="." index="83"]
 surface_material_override/0 = SubResource("StandardMaterial3D_wam8y")
 
-[node name="ground3" parent="." index="76"]
+[node name="ground3" parent="." index="84"]
 surface_material_override/0 = SubResource("StandardMaterial3D_bkxj1")
 
-[node name="ground1_001" parent="." index="77"]
+[node name="ground1_001" parent="." index="85"]
 surface_material_override/0 = SubResource("StandardMaterial3D_7ic7s")
 
-[node name="ground2_001" parent="." index="78"]
+[node name="ground2_001" parent="." index="86"]
 surface_material_override/0 = SubResource("StandardMaterial3D_r8v1t")
 
-[node name="ground3_001" parent="." index="79"]
+[node name="ground3_001" parent="." index="87"]
 transform = Transform3D(6.80934, 0, 0, 0, 0.28837, 0, 0, 0, 6.80934, 310.353, -3.45344, 710.557)
 surface_material_override/0 = SubResource("StandardMaterial3D_v58qf")
 
-[node name="ground3_002" parent="." index="80"]
+[node name="ground3_002" parent="." index="88"]
 surface_material_override/0 = SubResource("StandardMaterial3D_xurne")
 
-[node name="ground1_002" parent="." index="81"]
+[node name="ground1_002" parent="." index="89"]
 surface_material_override/0 = SubResource("StandardMaterial3D_nyddy")
 
-[node name="ground1_003" parent="." index="82"]
+[node name="ground1_003" parent="." index="90"]
 surface_material_override/0 = SubResource("StandardMaterial3D_2mbsv")
 
-[node name="ground1_004" parent="." index="83"]
+[node name="ground1_004" parent="." index="91"]
 surface_material_override/0 = SubResource("StandardMaterial3D_vsur4")
 
-[node name="ground1_005" parent="." index="84"]
+[node name="ground1_005" parent="." index="92"]
 surface_material_override/0 = SubResource("StandardMaterial3D_eny6v")
 
-[node name="ground1_006" parent="." index="85"]
+[node name="ground1_006" parent="." index="93"]
 surface_material_override/0 = SubResource("StandardMaterial3D_vjgji")
 
-[node name="ground1_007" parent="." index="86"]
+[node name="ground1_007" parent="." index="94"]
 surface_material_override/0 = SubResource("StandardMaterial3D_s5ein")
 
-[node name="Leaves Plane" parent="." index="87"]
+[node name="Leaves Plane" parent="." index="95"]
 surface_material_override/0 = SubResource("StandardMaterial3D_ql6hf")
 
-[node name="Sphere" parent="." index="88"]
+[node name="Sphere" parent="." index="96"]
 surface_material_override/0 = SubResource("StandardMaterial3D_5ylxf")
 
-[node name="Sphere_005" parent="." index="93"]
+[node name="Sphere_005" parent="." index="101"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pim8p")
 
-[node name="fire cauldron" parent="." index="349"]
+[node name="fire cauldron" parent="." index="357"]
 surface_material_override/0 = SubResource("StandardMaterial3D_8c133")
 
-[node name="fire cauldron2" parent="." index="350"]
+[node name="fire cauldron2" parent="." index="358"]
 surface_material_override/0 = SubResource("StandardMaterial3D_tc7dl")
 
-[node name="lamp4" parent="." index="351"]
+[node name="lamp4" parent="." index="359"]
 surface_material_override/0 = SubResource("StandardMaterial3D_yflbx")
 
-[node name="lamp" parent="." index="352"]
+[node name="lamp" parent="." index="360"]
 surface_material_override/0 = SubResource("StandardMaterial3D_ex3fh")
 
-[node name="lamp2" parent="." index="353"]
+[node name="lamp2" parent="." index="361"]
 surface_material_override/0 = SubResource("StandardMaterial3D_1sfsj")
 
-[node name="lamp3" parent="." index="354"]
+[node name="lamp3" parent="." index="362"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pgp20")
 
-[node name="lamp5" parent="." index="355"]
+[node name="lamp5" parent="." index="363"]
 surface_material_override/0 = SubResource("StandardMaterial3D_5q8nb")
 
-[node name="lamp6" parent="." index="356"]
+[node name="lamp6" parent="." index="364"]
 surface_material_override/0 = SubResource("StandardMaterial3D_o6kmm")
 
-[node name="lamp7" parent="." index="357"]
+[node name="lamp7" parent="." index="365"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pw558")
 
-[node name="lamp8" parent="." index="358"]
+[node name="lamp8" parent="." index="366"]
 surface_material_override/0 = SubResource("StandardMaterial3D_yu8nk")
 
-[node name="lamp9" parent="." index="359"]
+[node name="lamp9" parent="." index="367"]
 surface_material_override/0 = SubResource("StandardMaterial3D_n5sh3")
 
-[node name="Cube" parent="." index="360"]
+[node name="Cube" parent="." index="368"]
 surface_material_override/0 = SubResource("StandardMaterial3D_cpxx8")
 
-[node name="Cube_001" parent="." index="361"]
+[node name="Cube_001" parent="." index="369"]
 surface_material_override/0 = SubResource("StandardMaterial3D_6mu31")
 
-[node name="Cube_002" parent="." index="362"]
+[node name="Cube_002" parent="." index="370"]
 surface_material_override/0 = SubResource("StandardMaterial3D_0lomh")
 
-[node name="Cube_003" parent="." index="363"]
+[node name="Cube_003" parent="." index="371"]
 surface_material_override/0 = SubResource("StandardMaterial3D_egl60")
 
-[node name="Cube_004" parent="." index="364"]
+[node name="Cube_004" parent="." index="372"]
 surface_material_override/0 = SubResource("StandardMaterial3D_03kbj")
 
-[node name="Cube_005" parent="." index="365"]
+[node name="Cube_005" parent="." index="373"]
 surface_material_override/0 = SubResource("StandardMaterial3D_ts1ya")
 
-[node name="Cube_006" parent="." index="366"]
+[node name="Cube_006" parent="." index="374"]
 surface_material_override/0 = SubResource("StandardMaterial3D_tqpam")
 
-[node name="Cube_007" parent="." index="367"]
+[node name="Cube_007" parent="." index="375"]
 surface_material_override/0 = SubResource("StandardMaterial3D_una4c")
 
-[node name="Cube_008" parent="." index="368"]
+[node name="Cube_008" parent="." index="376"]
 surface_material_override/0 = SubResource("StandardMaterial3D_qid3j")
 
-[node name="Cube_009" parent="." index="369"]
+[node name="Cube_009" parent="." index="377"]
 surface_material_override/0 = SubResource("StandardMaterial3D_kr1w1")
 
-[node name="Cube_010" parent="." index="370"]
+[node name="Cube_010" parent="." index="378"]
 surface_material_override/0 = SubResource("StandardMaterial3D_vtrkd")
 
-[node name="Cube_011" parent="." index="371"]
+[node name="Cube_011" parent="." index="379"]
 surface_material_override/0 = SubResource("StandardMaterial3D_lckyj")
 
-[node name="Cube_012" parent="." index="372"]
+[node name="Cube_012" parent="." index="380"]
 surface_material_override/0 = SubResource("StandardMaterial3D_5b7dk")
 
-[node name="Cube_013" parent="." index="373"]
+[node name="Cube_013" parent="." index="381"]
 surface_material_override/0 = SubResource("StandardMaterial3D_pgtol")
 
-[node name="Cube_014" parent="." index="374"]
+[node name="Cube_014" parent="." index="382"]
 surface_material_override/0 = SubResource("StandardMaterial3D_fkij8")
 
-[node name="Cube_015" parent="." index="375"]
+[node name="Cube_015" parent="." index="383"]
 surface_material_override/0 = SubResource("StandardMaterial3D_7aign")
 
-[node name="Cube_016" parent="." index="376"]
+[node name="Cube_016" parent="." index="384"]
 surface_material_override/0 = SubResource("StandardMaterial3D_tevru")
 
-[node name="Cube_017" parent="." index="377"]
+[node name="Cube_017" parent="." index="385"]
 surface_material_override/0 = SubResource("StandardMaterial3D_stxtt")
 
-[node name="Cube_018" parent="." index="378"]
+[node name="Cube_018" parent="." index="386"]
 surface_material_override/0 = SubResource("StandardMaterial3D_kqfb5")
 
-[node name="Cube_019" parent="." index="379"]
+[node name="Cube_019" parent="." index="387"]
 surface_material_override/0 = SubResource("StandardMaterial3D_etu23")
 
-[node name="Cube_020" parent="." index="380"]
+[node name="Cube_020" parent="." index="388"]
 surface_material_override/0 = SubResource("StandardMaterial3D_6ec5v")
 
-[node name="Cube_021" parent="." index="381"]
+[node name="Cube_021" parent="." index="389"]
 surface_material_override/0 = SubResource("StandardMaterial3D_sm162")
 
-[node name="Cube_022" parent="." index="382"]
+[node name="Cube_022" parent="." index="390"]
 surface_material_override/0 = SubResource("StandardMaterial3D_wuufa")
