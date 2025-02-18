@@ -5,3 +5,7 @@ extends burnable
 func _ready():
     self
     $StaticBody3D/AnimatedSprite3D.set_animation(str(spriteindex))
+
+func restore():
+    #has it's own version to explicitly not make itself visible on restoration
+    hitbox.set_collision_layer_value(6,true)
