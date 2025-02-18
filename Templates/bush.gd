@@ -3,7 +3,6 @@ extends burnable
 #Note: this script should be attached to the sphere mesh that 
 
 func _ready():
-    self
     $StaticBody3D/AnimatedSprite3D.set_animation(str(spriteindex))
 
 func restore():

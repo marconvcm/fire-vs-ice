@@ -66,4 +66,4 @@ func unpause():
 
 func _on_level_1_final_pressed():
     unpause()
-    get_tree().change_scene_to_file("res://Models/map_1_revised_feb_6.tscn")#note: clean up file locations later
+    get_tree().change_scene_to_file("res://Level/map_1_revised_feb_6.tscn")#note: clean up file locations later
