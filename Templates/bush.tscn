@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://uhagdimmegpi"]
+
+[ext_resource type="Texture2D" uid="uid://b3nvm3yg5xvna" path="res://Models/textures/Tree Texture/Tree Texture/bush1.png" id="1_t80x2"]
+[ext_resource type="Texture2D" uid="uid://b2x0bma8eh1fh" path="res://Models/textures/Tree Texture/Tree Texture/bush 2.png" id="2_qaau0"]
+[ext_resource type="Texture2D" uid="uid://cqeh61vjlbgc8" path="res://Models/textures/Tree Texture/Tree Texture/bush 3.png" id="3_e40ve"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7t8d4"]
+radius = 10.4352
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lj8gr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t80x2")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qaau0")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_e40ve")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}]
+
+[node name="StaticBody3D" type="StaticBody3D"]
+collision_layer = 16
+collision_mask = 15
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_7t8d4")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0032177, 0.0303659, 0.0180683)
+pixel_size = 0.006
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_lj8gr")
+animation = &"3"

@@ -1702,6 +1702,7 @@ radius = 0.55
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("debug_root", "body")]
 collision_mask = 52
+floor_block_on_wall = false
 safe_margin = 0.01
 script = ExtResource("1_b24bn")
 debug = true
