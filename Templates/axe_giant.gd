@@ -12,6 +12,7 @@ var is_player_in_range=false
 var attacking:bool=false#true when enemy is mid-animation
 @onready var home_position=self.global_position
 @onready var navi = $NavigationAgent3D
+@onready var animator=$AnimationPlayer
 #var shockwave=preload("res://Templates/mimic_projectile.tscn")replace with actual shockwave
 var projectilespeed=40
 #states: 0=hiding, 1=activated/chasing, 2=looking for player, 3=returning to hiding spot
@@ -35,7 +36,7 @@ func _process(_delta):
                 if attack_index==attacks_per_special:
                     special_attack()
                 else:
-                    normal_attack()
+                    animator.play("Smash Right")
                     
             if !attacking and target!=null:
                 set_movement_target(target.global_position)
@@ -107,6 +108,7 @@ func normal_attack():
     $AttackCooldown.start()
     attacking=false
     attack_index+=1
+    #animator.stop()
     
 func special_attack():
     print("Big Attack")

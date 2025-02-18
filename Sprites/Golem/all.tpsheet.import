@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://djtnp6bs84ojh"
+path="res://.godot/imported/all.tpsheet-5e28702e739d626b54206bd0c721b66e.res"
+
+[deps]
+
+files=["res://Sprites/Golem/all.sprites/golemsideattack0001.tres", "res://Sprites/Golem/all.sprites/golemsideattack0002.tres", "res://Sprites/Golem/all.sprites/golemsideattack0003.tres", "res://Sprites/Golem/all.sprites/golemsideattack0004.tres"]
+
+source_file="res://Sprites/Golem/all.tpsheet"
+dest_files=["res://.godot/imported/all.tpsheet-5e28702e739d626b54206bd0c721b66e.res", "res://Sprites/Golem/all.sprites/golemsideattack0001.tres", "res://Sprites/Golem/all.sprites/golemsideattack0002.tres", "res://Sprites/Golem/all.sprites/golemsideattack0003.tres", "res://Sprites/Golem/all.sprites/golemsideattack0004.tres"]
+
+[params]
+

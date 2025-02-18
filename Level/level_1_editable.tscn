@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://claa8pljhm2xb"]
+[gd_scene load_steps=82 format=3 uid="uid://claa8pljhm2xb"]
 
 [ext_resource type="ArrayMesh" uid="uid://bkvyku8plftnd" path="res://Models/Level1/map1 greyboxed_Cube_001.res" id="1_huetn"]
 [ext_resource type="Script" uid="uid://du34fuht5bibj" path="res://Common/Plugins/DebugPlugin.gd" id="1_j053h"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cj87b4q2onuov" path="res://Templates/burnable_test.tscn" id="15_e470l"]
 [ext_resource type="Script" uid="uid://cb7j1wo5vvq8s" path="res://Level/kill_plane.gd" id="15_r6te5"]
 [ext_resource type="PackedScene" uid="uid://dh1txm4isvu0e" path="res://Templates/mimic.tscn" id="16_e470l"]
+[ext_resource type="PackedScene" uid="uid://beic6p1mg7on6" path="res://Templates/axe_giant.tscn" id="17_qnag7"]
 
 [sub_resource type="Environment" id="Environment_754k8"]
 ambient_light_source = 2
@@ -1025,5 +1026,8 @@ transform = Transform3D(0.145, 0, 0, 0, 0.145, 0, 0, 0, 0.145, 26.8104, 1.34164,
 
 [node name="Mimic" parent="." instance=ExtResource("16_e470l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7946, 1.45721, -61.8657)
+
+[node name="AxeGiant" parent="." instance=ExtResource("17_qnag7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6273, 1.99079, -53.0062)
 
 [connection signal="body_entered" from="KillPlane" to="." method="_on_kill_plane_body_entered"]
