@@ -17,11 +17,11 @@ var animation_test_index=0
 func _ready():
     specialtimer.timeout.connect(fire_special_arrow)
     animator.play("Front Idle")
-    $AnimationTestTimer.timeout.connect(animationtest)
+#    $AnimationTestTimer.timeout.connect(animationtest)
     
-func animationtest():
-    animator.play(animation_test_loop[animation_test_index])
-    animation_test_index=(animation_test_index+1)%8
+#func animationtest():
+#    animator.play(animation_test_loop[animation_test_index])
+#    animation_test_index=(animation_test_index+1)%8
         
     
 

@@ -15,7 +15,7 @@ func _ready():
     $MainMenuLayer/VBoxContainer/Play.grab_focus()
 
 func _on_play_pressed():
-    get_tree().change_scene_to_file("Level/level_1_editable.tscn")
+    get_tree().change_scene_to_file("res://Level/map_1_revised_feb_6.tscn")
 
 func _on_options_pressed():
     mainmenu.visible=false
