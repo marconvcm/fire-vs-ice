@@ -1,8 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://uhagdimmegpi"]
+[gd_scene load_steps=23 format=3 uid="uid://uhagdimmegpi"]
 
 [ext_resource type="Texture2D" uid="uid://b3nvm3yg5xvna" path="res://Models/textures/Tree Texture/Tree Texture/bush1.png" id="1_t80x2"]
 [ext_resource type="Texture2D" uid="uid://b2x0bma8eh1fh" path="res://Models/textures/Tree Texture/Tree Texture/bush 2.png" id="2_qaau0"]
 [ext_resource type="Texture2D" uid="uid://cqeh61vjlbgc8" path="res://Models/textures/Tree Texture/Tree Texture/bush 3.png" id="3_e40ve"]
+[ext_resource type="Texture2D" uid="uid://dupg8hico11qr" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0001.tres" id="4_ut0sj"]
+[ext_resource type="Texture2D" uid="uid://b7of1lebws8rb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0002.tres" id="5_24pka"]
+[ext_resource type="Texture2D" uid="uid://dbhn1kd2wdfrh" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0003.tres" id="6_5de3i"]
+[ext_resource type="Texture2D" uid="uid://c6bek02hg1e7v" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0004.tres" id="7_u6wpa"]
+[ext_resource type="Texture2D" uid="uid://bso427awoaksp" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0005.tres" id="8_m7mna"]
+[ext_resource type="Texture2D" uid="uid://dq5wos08bg35s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0006.tres" id="9_sf14e"]
+[ext_resource type="Texture2D" uid="uid://i53svi16nf6" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0007.tres" id="10_00v0y"]
+[ext_resource type="Texture2D" uid="uid://c2x07crvqfg8s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0008.tres" id="11_jyjoj"]
+[ext_resource type="Texture2D" uid="uid://f07dsyhqbxny" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0009.tres" id="12_6d5m5"]
+[ext_resource type="Texture2D" uid="uid://cpfk8wpkuq441" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0010.tres" id="13_00613"]
+[ext_resource type="Texture2D" uid="uid://trer7a5tyyr0" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0011.tres" id="14_e3vw7"]
+[ext_resource type="Texture2D" uid="uid://byawpwbe51syq" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0012.tres" id="15_141gb"]
+[ext_resource type="Texture2D" uid="uid://k5hafjn1vx6o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0013.tres" id="16_8yhd6"]
+[ext_resource type="Texture2D" uid="uid://ca3b4s8oymc5o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0014.tres" id="17_f3xkt"]
+[ext_resource type="Texture2D" uid="uid://b7y57ii8b8qmy" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0015.tres" id="18_lc6ii"]
+[ext_resource type="Texture2D" uid="uid://dkx4x6c8tfisb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0016.tres" id="19_ce82o"]
+[ext_resource type="Texture2D" uid="uid://beqj1y5dukgh1" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0017.tres" id="20_br8n4"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_7t8d4"]
 radius = 10.4352
@@ -32,6 +49,62 @@ animations = [{
 "loop": true,
 "name": &"3",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ut0sj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_24pka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5de3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u6wpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m7mna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sf14e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_00v0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jyjoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6d5m5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_00613")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_e3vw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_141gb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8yhd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_f3xkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lc6ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ce82o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_br8n4")
+}],
+"loop": true,
+"name": &"burning",
+"speed": 5.0
 }]
 
 [node name="StaticBody3D" type="StaticBody3D"]
@@ -46,4 +119,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0032177, 0.0303659, 0.0180
 pixel_size = 0.006
 billboard = 1
 sprite_frames = SubResource("SpriteFrames_lj8gr")
-animation = &"3"
+animation = &"burning"

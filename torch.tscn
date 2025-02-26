@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://r0o38q4yxqi7"]
+
+[ext_resource type="ArrayMesh" uid="uid://doo3iemtpibut" path="res://Models/SmallTorch.tres" id="1_72pgl"]
+[ext_resource type="PackedScene" uid="uid://c8g4iddjkie7g" path="res://Templates/smallfire_light.tscn" id="1_pa17o"]
+[ext_resource type="Script" uid="uid://cu50nc14c1cns" path="res://Templates/torch.gd" id="1_w3qnr"]
+[ext_resource type="Texture2D" uid="uid://02hj8vbwncq5" path="res://Models/textures/baked_textures/lamp_posts_baked.png" id="2_wfdi7"]
+[ext_resource type="Shape3D" uid="uid://dk45o3a772pkq" path="res://Resources/SmallTorchShape.tres" id="4_vkaj5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cfb3y"]
+transparency = 1
+albedo_texture = ExtResource("2_wfdi7")
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = ExtResource("1_72pgl")
+surface_material_override/0 = SubResource("StandardMaterial3D_cfb3y")
+script = ExtResource("1_w3qnr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_layer = 32
+collision_mask = 15
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = ExtResource("4_vkaj5")
+
+[node name="FireSprite" parent="StaticBody3D" instance=ExtResource("1_pa17o")]
+transform = Transform3D(10.595, 0, 0, 0, -4.63122e-07, 10.595, 0, -10.595, -4.63122e-07, -2.13753, -34.3948, -1632.56)
+visible = false
+frame_progress = 0.624279

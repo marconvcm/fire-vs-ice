@@ -1,0 +1,90 @@
+[gd_scene load_steps=19 format=3 uid="uid://c8g4iddjkie7g"]
+
+[ext_resource type="Texture2D" uid="uid://dupg8hico11qr" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0001.tres" id="1_m20xd"]
+[ext_resource type="Texture2D" uid="uid://b7of1lebws8rb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0002.tres" id="2_u7wld"]
+[ext_resource type="Texture2D" uid="uid://dbhn1kd2wdfrh" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0003.tres" id="3_d0oji"]
+[ext_resource type="Texture2D" uid="uid://c6bek02hg1e7v" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0004.tres" id="4_cc7cf"]
+[ext_resource type="Texture2D" uid="uid://bso427awoaksp" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0005.tres" id="5_tgmfq"]
+[ext_resource type="Texture2D" uid="uid://dq5wos08bg35s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0006.tres" id="6_qqsw5"]
+[ext_resource type="Texture2D" uid="uid://i53svi16nf6" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0007.tres" id="7_eng17"]
+[ext_resource type="Texture2D" uid="uid://c2x07crvqfg8s" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0008.tres" id="8_llrla"]
+[ext_resource type="Texture2D" uid="uid://f07dsyhqbxny" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0009.tres" id="9_qe4fe"]
+[ext_resource type="Texture2D" uid="uid://cpfk8wpkuq441" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0010.tres" id="10_dmpm1"]
+[ext_resource type="Texture2D" uid="uid://trer7a5tyyr0" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0011.tres" id="11_bvxp3"]
+[ext_resource type="Texture2D" uid="uid://byawpwbe51syq" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0012.tres" id="12_2ivsw"]
+[ext_resource type="Texture2D" uid="uid://k5hafjn1vx6o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0013.tres" id="13_brls8"]
+[ext_resource type="Texture2D" uid="uid://ca3b4s8oymc5o" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0014.tres" id="14_m8uxg"]
+[ext_resource type="Texture2D" uid="uid://b7y57ii8b8qmy" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0015.tres" id="15_hvrjk"]
+[ext_resource type="Texture2D" uid="uid://dkx4x6c8tfisb" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0016.tres" id="16_uhs3p"]
+[ext_resource type="Texture2D" uid="uid://beqj1y5dukgh1" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0017.tres" id="17_snr2n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r4byo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m20xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_u7wld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_d0oji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cc7cf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tgmfq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qqsw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_eng17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_llrla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qe4fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dmpm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bvxp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2ivsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_brls8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m8uxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hvrjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_uhs3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_snr2n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FireSprite" type="AnimatedSprite3D"]
+offset = Vector2(185.285, -76.31)
+pixel_size = 0.1
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_r4byo")
+autoplay = "default"
+frame_progress = 0.719969
+
+[node name="Firelight" type="OmniLight3D" parent="."]
+light_color = Color(1, 0.631373, 0.137255, 1)
+omni_range = 166.665
