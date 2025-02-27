@@ -816,7 +816,7 @@ _data = {
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_huixx"]
 
-[node name="Archer" type="CharacterBody3D"]
+[node name="Archer" type="CharacterBody3D" groups=["Enemies"]]
 collision_layer = 4
 collision_mask = 48
 script = ExtResource("1_1caoe")

@@ -3,12 +3,12 @@
 [ext_resource type="ArrayMesh" uid="uid://doo3iemtpibut" path="res://Models/SmallTorch.tres" id="1_72pgl"]
 [ext_resource type="PackedScene" uid="uid://c8g4iddjkie7g" path="res://Templates/smallfire_light.tscn" id="1_pa17o"]
 [ext_resource type="Script" uid="uid://cu50nc14c1cns" path="res://Templates/torch.gd" id="1_w3qnr"]
-[ext_resource type="Texture2D" uid="uid://02hj8vbwncq5" path="res://Models/textures/baked_textures/lamp_posts_baked.png" id="2_wfdi7"]
+[ext_resource type="Texture2D" uid="uid://d1b4cxyuc1cr7" path="res://Models/textures/baked_textures/fire_cauldron_baked.png" id="2_72pgl"]
 [ext_resource type="Shape3D" uid="uid://dk45o3a772pkq" path="res://Resources/SmallTorchShape.tres" id="4_vkaj5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cfb3y"]
 transparency = 1
-albedo_texture = ExtResource("2_wfdi7")
+albedo_texture = ExtResource("2_72pgl")
 
 [node name="MeshInstance3D" type="MeshInstance3D"]
 mesh = ExtResource("1_72pgl")

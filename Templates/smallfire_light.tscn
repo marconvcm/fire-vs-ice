@@ -87,4 +87,6 @@ frame_progress = 0.719969
 
 [node name="Firelight" type="OmniLight3D" parent="."]
 light_color = Color(1, 0.631373, 0.137255, 1)
-omni_range = 166.665
+light_energy = 1000.0
+omni_range = 50.0
+omni_attenuation = 2.0

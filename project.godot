@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 PlayerInput="*res://Common/InputManager.gd"
 MusicPlayer="*res://music_player.gd"
 PlayerPrefsAndData="*res://player_prefs_and_data.gd"
+GameManager="res://Templates/GameManager.tscn"
 
 [display]
 

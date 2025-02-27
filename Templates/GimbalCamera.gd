@@ -1,5 +1,5 @@
 class_name GimbalCamera extends Camera3D
-@export var debug:bool=true
+@export var debug:bool=false
 @export var sensitivity: float = 0.1
 @export var target: Node3D
 @export var gimbal: Node3D
