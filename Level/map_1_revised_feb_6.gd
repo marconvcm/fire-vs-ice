@@ -21,5 +21,7 @@ func checkifalllit():
         print("Torch lit, but not done yet!")
         return
     else:
+        get_tree().paused=true
+        $"Victory Screen".visible=true
         print("You did it!")
         pass#trigger victory
