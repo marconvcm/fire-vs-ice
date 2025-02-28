@@ -50,7 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://pgx2uwk5wxi3" path="res://Sprites/Minions/Minions.sprites/Snowball/Snowball0007.tres" id="48_wo4n1"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_solgq"]
-radius = 1.0
+radius = 1.12
 
 [sub_resource type="SphereMesh" id="SphereMesh_yogmt"]
 radius = 1.0

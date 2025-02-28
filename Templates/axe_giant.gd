@@ -28,7 +28,7 @@ func _ready():
 
 func _process(_delta):
     match state:
-        0:#if currently hiding
+        0:
             pass
         1:
             if is_player_in_range==true and $AttackCooldown.is_stopped():

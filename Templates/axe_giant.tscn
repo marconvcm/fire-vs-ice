@@ -1,25 +1,22 @@
-[gd_scene load_steps=20 format=3 uid="uid://beic6p1mg7on6"]
+[gd_scene load_steps=21 format=3 uid="uid://beic6p1mg7on6"]
 
 [ext_resource type="Script" uid="uid://cix2exfjv8lm" path="res://enemy_base.gd" id="1_jpd86"]
 [ext_resource type="Script" uid="uid://cuddt8mnhvs3t" path="res://Templates/axe_giant.gd" id="1_n7ple"]
+[ext_resource type="Script" uid="uid://ba5iiynnu8rxw" path="res://Templates/attack_hitbox.gd" id="3_8arau"]
 [ext_resource type="AudioStream" uid="uid://dbqv5n8qon1a6" path="res://Resources/explosion-91872.mp3" id="3_juj8c"]
 [ext_resource type="Texture2D" uid="uid://i264m45tt15t" path="res://Sprites/Golem/all.sprites/golemsideattack0001.tres" id="3_k2548"]
 [ext_resource type="Texture2D" uid="uid://rulw76smkpqn" path="res://Sprites/Golem/all.sprites/golemsideattack0002.tres" id="4_c0l1t"]
 [ext_resource type="PackedScene" uid="uid://biqxnbo28vyd2" path="res://Templates/giant_step_sound_randomizer.tscn" id="4_xyiw7"]
 [ext_resource type="Texture2D" uid="uid://b6i76f8083m3n" path="res://Sprites/Golem/all.sprites/golemsideattack0003.tres" id="5_8arau"]
 [ext_resource type="Texture2D" uid="uid://ph5uvhserqew" path="res://Sprites/Golem/all.sprites/golemsideattack0004.tres" id="6_mshab"]
+[ext_resource type="Texture2D" uid="uid://2wycw0jdwuy" path="res://Models/textures/LiterallyJustOnePixelofLightBlue.png" id="9_c0l1t"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_c0l1t"]
+radius = 1.12
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n7ple"]
-radius = 1.0
-height = 4.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_juj8c"]
-albedo_color = Color(0, 0.32549, 0.788235, 1)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_xyiw7"]
-material = SubResource("StandardMaterial3D_juj8c")
-radius = 1.0
-height = 4.0
+radius = 3.3547
+height = 9.24611
 
 [sub_resource type="Animation" id="Animation_c0l1t"]
 length = 0.001
@@ -82,10 +79,10 @@ tracks/0/path = NodePath("AnimatedSprite3D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3]
+"values": [0, 1, 2, 3, 0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -173,7 +170,9 @@ radius = 20.0
 [sub_resource type="SphereShape3D" id="SphereShape3D_xyiw7"]
 radius = 6.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_n7ple"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8arau"]
+radius = 1.76126
+height = 5.56413
 
 [node name="AxeGiant" type="CharacterBody3D" groups=["Enemies"]]
 collision_layer = 4
@@ -181,11 +180,18 @@ collision_mask = 48
 script = ExtResource("1_n7ple")
 metadata/_custom_type_script = ExtResource("1_jpd86")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("CapsuleShape3D_n7ple")
+[node name="NavigationHitbox" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.87358, 0)
+shape = SubResource("SphereShape3D_c0l1t")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_xyiw7")
+[node name="AttackHitbox" type="StaticBody3D" parent="."]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("3_8arau")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackHitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0260525, 2.11128, 0)
+shape = SubResource("CapsuleShape3D_n7ple")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_desired_distance = 2.0
@@ -199,6 +205,7 @@ libraries = {
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.768832, 2.75183, 0)
 pixel_size = 0.003
+billboard = 1
 sprite_frames = SubResource("SpriteFrames_n7ple")
 animation = &"Side Smash"
 
@@ -220,13 +227,6 @@ shape = SubResource("SphereShape3D_juj8c")
 [node name="AttackQueue" type="CollisionShape3D" parent="ActivationArea"]
 shape = SubResource("SphereShape3D_xyiw7")
 
-[node name="WeaponHitBox" type="StaticBody3D" parent="."]
-collision_layer = 4
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WeaponHitBox"]
-shape = SubResource("BoxShape3D_n7ple")
-
 [node name="RayCast3D" type="RayCast3D" parent="."]
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
@@ -234,6 +234,21 @@ stream = ExtResource("3_juj8c")
 bus = &"SFX"
 
 [node name="GiantStepSoundRandomizer" parent="." instance=ExtResource("4_xyiw7")]
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 33
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.369, 1.436, 0)
+shape = SubResource("CapsuleShape3D_8arau")
+
+[node name="Decal" type="Decal" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.35699, 0.771619, 998.993)
+size = Vector3(3.60522, 6.92982, 2)
+texture_albedo = ExtResource("9_c0l1t")
+upper_fade = 4.66758e-05
+lower_fade = 9.33514e-05
 
 [connection signal="body_shape_entered" from="ActivationArea" to="." method="_on_activation_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="ActivationArea" to="." method="_on_activation_area_body_shape_exited"]
