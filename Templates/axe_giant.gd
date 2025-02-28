@@ -53,7 +53,7 @@ func _process(_delta):
             pass
 
 func _physics_process(_delta):
-    if (target!=null and (!state==0)) or state==3:
+    if (target!=null and (!state==0) and !attacking) or state==3:
         var next_path_position: Vector3 = navi.get_next_path_position()
         var new_velocity: Vector3 = global_position.direction_to(next_path_position)*speed+get_gravity_strength()
         _on_velocity_computed(new_velocity)

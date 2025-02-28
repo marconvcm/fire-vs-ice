@@ -4,3 +4,4 @@ extends burnable
 
 func _ready():
     $AnimatedSprite3D.set_animation(str(spriteindex))
+    heatvalue=500

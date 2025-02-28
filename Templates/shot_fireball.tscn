@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c2ysc24f3ok0i"]
+[gd_scene load_steps=21 format=3 uid="uid://c2ysc24f3ok0i"]
 
 [ext_resource type="Script" uid="uid://ccylwg1a3ay8b" path="res://Templates/shot_fireball.gd" id="1_5e2h8"]
 [ext_resource type="Texture2D" uid="uid://dupg8hico11qr" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0001.tres" id="2_evy44"]
@@ -20,15 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://beqj1y5dukgh1" path="res://Sprites/MC/Fireball & Ang Blast/f_a.sprites/Fire ball0017.tres" id="18_rsvnc"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_47iq7"]
-radius = 0.1
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5e2h8"]
-albedo_color = Color(1, 0, 0, 0.858824)
-
-[sub_resource type="SphereMesh" id="SphereMesh_5e2h8"]
-material = SubResource("StandardMaterial3D_5e2h8")
-radius = 0.1
-height = 0.2
+radius = 0.3
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p6xcw"]
 animations = [{
@@ -101,14 +93,9 @@ script = ExtResource("1_5e2h8")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_47iq7")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("SphereMesh_5e2h8")
-
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.170673, 0)
-offset = Vector2(192, 0)
-pixel_size = 0.002
+offset = Vector2(192, -93.365)
+pixel_size = 0.006
 billboard = 1
 sprite_frames = SubResource("SpriteFrames_p6xcw")
 frame_progress = 0.463958
